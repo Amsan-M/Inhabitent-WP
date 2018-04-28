@@ -340,9 +340,6 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-footer {
-  background-color: red; }
-
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -461,7 +458,7 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none;
-    color: orange; }
+    color: red; }
 
 /* Small menu. */
 .menu-toggle,
