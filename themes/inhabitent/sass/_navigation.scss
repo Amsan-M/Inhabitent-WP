@@ -26,11 +26,12 @@ a {
 
 /* Menus */
 
+
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+    clear: both;
+    display: inline-block;
+    float: right;
+    margin-right: 2rem;
 
 	ul {
 		display: none;
@@ -79,6 +80,7 @@ a {
 	li {
 		float: left;
 		position: relative;
+		margin-left:1.5rem;
 
 		&:hover > a,
 		&.focus > a {

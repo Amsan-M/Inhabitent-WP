@@ -425,9 +425,9 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  display: inline-block;
+  float: right;
+  margin-right: 2rem; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -454,7 +454,8 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    margin-left: 1.5rem; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -663,3 +664,19 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+footer .site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("./assets/images/dark-wood.png");
+  background-size: cover; }
+
+.contact {
+  color: green;
+  margin-right: 4rem; }
+
+.buisness-hours {
+  color: blue; }
+
+h1.entry-title {
+  color: red; }
