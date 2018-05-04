@@ -24,7 +24,8 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: $base__space-unit 0 0;
+	// margin: $base__space-unit 0 0;
+	margin:0px;
 }
 
 .page-links {
@@ -46,4 +47,22 @@
 }
 .bypostauthor {
 	display: block;
+}
+
+
+.entry-content{
+	display:inline-flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: center;
+	.entry-title{
+		color: white;
+		position: absolute;
+		align-self: center;
+	}
+   
+}
+
+.entry-content p{
+	margin: 0px;
 }

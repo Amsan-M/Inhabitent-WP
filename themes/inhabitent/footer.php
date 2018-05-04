@@ -16,7 +16,7 @@
 
 
 					<div class= "contact"> 
-						<p>CONTACT INFO<p>
+					<h4> CONTACT INFO </h4> 
 						<p>info@inhabitent.com <p>
 						<p>	<i class="fas fa-phone"></i> 778-456-7891<p>
 						<p>	<i class="fab fa-facebook-square"></i>
@@ -26,19 +26,21 @@
 					
 
 				    <div class= "buisness-hours"> 
-				      <p>BUISNESS HOURS<p> 
+				      <h4> BUISNESS HOURS </h4> 
 				      <p>Monday-Friday: 9am to 5pm<p>
 				      <p>Saturday:10am to 2pm<p>
 				      <p>Sunday: closed<p> 
 					</div>   <!-- .buisness-hours -->
 
 <div class= "footer-image">
-	
+<?php
+	echo "<img src='images/logos/ihabitent-logo-text-dark.svg' alt='inhabitent logo'/>";
+	?>
 </div>
 				  <!--brand icon-->
 				
 					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				
+	
 				
 				</div><!-- .site-info -->
 			

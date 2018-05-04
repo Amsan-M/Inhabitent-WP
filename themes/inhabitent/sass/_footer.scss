@@ -1,24 +1,27 @@
 
 
 footer .site-info{
+    background-color: black;
     display:flex;
-    background-image: url("/images/dark-wood.png"); 
-background-size: cover;
+    background-image: url("<?php 'images/dark-wood.png' ?>");
+    background-size: cover;
+  
 
 }
     
 
 
-    .contact{
-        color:green; 
+    .contact,  .buisness-hours{
+        color:white; 
         margin-right:4rem;
+        h4{
+            color:orange;
+        }
         
     }
 
 
-    .buisness-hours{ 
-        color:blue;
-    }
+    
 
 
 

@@ -1,6 +1,10 @@
-
-
-h1.entry-title{
-    color:red;
-
+.site-header{
+  
+margin-top: 1.5rem;
+    display: inline-flex;
+    flex-direction: row;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
 }

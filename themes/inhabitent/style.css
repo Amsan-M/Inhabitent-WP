@@ -299,6 +299,10 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */ }
+
 blockquote, q {
   quotes: "" ""; }
   blockquote:before, blockquote:after, q:before, q:after {
@@ -459,7 +463,7 @@ a {
   .main-navigation a {
     display: block;
     text-decoration: none;
-    color: red; }
+    color: white; }
 
 /* Small menu. */
 .menu-toggle,
@@ -582,7 +586,7 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5rem 0 0; }
+  margin: 0px; }
 
 .page-links {
   clear: both;
@@ -599,6 +603,28 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.entry-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .entry-content .entry-title {
+    color: white;
+    position: absolute;
+    -ms-flex-item-align: center;
+        align-self: center; }
+
+.entry-content p {
+  margin: 0px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -665,18 +691,32 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 footer .site-info {
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("./assets/images/dark-wood.png");
+  background-image: url("<?php 'images/dark-wood.png' ?>");
   background-size: cover; }
 
-.contact {
-  color: green;
+.contact, .buisness-hours {
+  color: white;
   margin-right: 4rem; }
+  .contact h4, .buisness-hours h4 {
+    color: orange; }
 
-.buisness-hours {
-  color: blue; }
-
-h1.entry-title {
-  color: red; }
+.site-header {
+  margin-top: 1.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
