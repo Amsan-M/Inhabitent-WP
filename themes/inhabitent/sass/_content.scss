@@ -55,8 +55,13 @@
 	flex-direction:column;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top:10%;
 	.entry-title{
 		color: white;
+		font-family:"mainFontlight"; 
+		text-transform: uppercase;
 		position: absolute;
 		align-self: center;
 	}
@@ -65,4 +70,74 @@
 
 .entry-content p{
 	margin: 0px;
+}
+
+.site-content{
+	display: flex;
+	flex-direction:row ;
+}
+
+
+// ================================================================================
+// content styling about page 
+// ================================================================================
+
+body.page-id-22 {
+
+
+	
+	.entry-content{
+		display:inline-flex;
+		flex-direction:column;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top:0px;
+	
+
+		
+		.entry-title{
+			color: white;
+			position: absolute;
+			align-self: center;
+			margin-top: -25%;
+		}
+	 
+		
+		
+	}
+	.entry-content p{
+		color:#404040;
+		font-family:"mainFontLight";
+		
+
+	}
+
+	h2{
+		text-align: center;
+	}
+
+	p{
+		margin-bottom: 1.5rem;
+margin-left: 15%;
+margin-right: 14%;
+	}
+
+
+	.entry-img{
+		display: flex;
+    justify-content: center;
+	}
+}
+
+// ================================================================================
+// content styling find us page
+// ================================================================================
+
+
+body.page-id-49{
+	.site-content{
+		flex-direction: row-reverse;
+	}
 }

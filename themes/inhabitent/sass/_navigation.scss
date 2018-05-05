@@ -6,6 +6,8 @@
 
 a {
 	color: $color__link;
+	
+	
 
 	&:visited {
 		color: $color__link-visited;
@@ -89,9 +91,12 @@ a {
 	a {
 		display: block;
 		text-decoration: none;
-		color:white;   
+		color:green;   
 		
 	}
+
+
+
 
 	.current_page_item > a,
 	.current-menu-item > a,
@@ -113,6 +118,20 @@ a {
 		display: block;
 	}
 }
+
+// find us page navigation bar
+body.page-id-22 {
+
+
+.main-navigation a{
+	color:white;
+}
+
+	}
+
+
+
+
 
 .comment-navigation,
 .posts-navigation,

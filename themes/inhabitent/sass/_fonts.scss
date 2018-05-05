@@ -1,3 +1,37 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face{
+    font-family:"mainFontLight";
+    src:url("css/fonts/Merriweather-Light.ttf")format("ttf");
+
+}
+
+@font-face{
+    font-family:"mainFontLightItalic";
+    src:url("css/fonts/Merriweather-LightItalic.ttf")format("ttf");
+
+}
+
+@font-face{
+    font-family:"mainFontBold";
+    src:url("css/fonts/Merriweather-Bold.ttf")format("ttf");
+
+}
+@font-face{
+    font-family:"mainFontBoldItalic";
+    src:url("css/fonts/Merriweather-BoldItalic.ttf")format("ttf");
+
+}
+
+@font-face{
+    font-family:"headingsFont";
+    src:url("css/fonts/Novecentosanswide-Normal.ttf")format("ttf");
+
+}
+
+@font-face{
+    font-family:"headingsFontBold";
+    src:url("css/fonts/Novecentosanswide-DemiBold.ttf")format("ttf");
+
+}

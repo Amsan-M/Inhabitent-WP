@@ -2,11 +2,11 @@
 
 
 /*
-Template Name: find us
+Template Name: journal
 */
 
 /**
- * The template for displaying find us page.
+ * The template for displaying journal page.
  *
  * @package RED_Starter_Theme
  */
@@ -15,6 +15,7 @@ Template Name: find us
 get_header();  ?>
 
 <?php get_sidebar(); ?> 
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
