@@ -1,24 +1,48 @@
 
 
 footer .site-info{
-    background-color: black;
-    display:flex;
-    background-image: url("<?php 'images/dark-wood.png' ?>");
-    background-size: cover;
   
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    background-image:url('../css/images/logos/inhabitent-logo-text.svg'), url('../css/images/dark-wood.png');
+    background-size: 25%, cover;
+    background-position: right center;
+    background-repeat: no-repeat, no-repeat;
+    
+   
+  
+    .contact,  .buisness-hours{
+
+     
+        flex-direction: column;
+        flex-wrap:wrap;
+        color:white; 
+       
+        height:auto;
+        width:30%;
+        margin-right:1rem;
+        margin-left:3rem;
+      
+        h4{
+            color:orange;
+            width:100%;
+        }
+
+        footer .contact p{
+        color:blue;
+        }
+        
+    }
+
 
 }
     
 
 
-    .contact,  .buisness-hours{
-        color:white; 
-        margin-right:4rem;
-        h4{
-            color:orange;
-        }
-        
-    }
+    
 
 
     

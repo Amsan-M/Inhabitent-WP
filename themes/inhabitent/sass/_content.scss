@@ -55,9 +55,10 @@
 	flex-direction:column;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top:10%;
+	margin-left: 0px;
+    margin-right: 0px;
+	margin-top:0px;
+	
 	.entry-title{
 		color: white;
 		font-family:"mainFontlight"; 
@@ -91,11 +92,7 @@ body.page-id-22 {
 		flex-direction:column;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin-left: 0px;
-		margin-right: 0px;
-		margin-top:0px;
-	
-
+		
 		
 		.entry-title{
 			color: white;
@@ -110,6 +107,8 @@ body.page-id-22 {
 	.entry-content p{
 		color:#404040;
 		font-family:"mainFontLight";
+		margin-left: 15%;
+		margin-right: 14%;
 		
 
 	}
@@ -120,8 +119,7 @@ body.page-id-22 {
 
 	p{
 		margin-bottom: 1.5rem;
-margin-left: 15%;
-margin-right: 14%;
+		
 	}
 
 
@@ -141,3 +139,11 @@ body.page-id-49{
 		flex-direction: row-reverse;
 	}
 }
+
+// ================================================================================
+// content styling journal page
+// ================================================================================
+
+// body.page-id-51{
+// 	background-color: hotpink;
+// }

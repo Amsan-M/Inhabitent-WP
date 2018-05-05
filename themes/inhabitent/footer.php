@@ -33,9 +33,7 @@
 					</div>   <!-- .buisness-hours -->
 
 <div class= "footer-image">
-<?php
-	echo "<img src='images/logos/ihabitent-logo-text-dark.svg' alt='inhabitent logo'/>";
-	?>
+
 </div>
 				  <!--brand icon-->
 				

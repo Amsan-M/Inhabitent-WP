@@ -225,30 +225,6 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-@font-face {
-  font-family: "mainFontLight";
-  src: url("css/fonts/Merriweather-Light.ttf") format("ttf"); }
-
-@font-face {
-  font-family: "mainFontLightItalic";
-  src: url("css/fonts/Merriweather-LightItalic.ttf") format("ttf"); }
-
-@font-face {
-  font-family: "mainFontBold";
-  src: url("css/fonts/Merriweather-Bold.ttf") format("ttf"); }
-
-@font-face {
-  font-family: "mainFontBoldItalic";
-  src: url("css/fonts/Merriweather-BoldItalic.ttf") format("ttf"); }
-
-@font-face {
-  font-family: "headingsFont";
-  src: url("css/fonts/Novecentosanswide-Normal.ttf") format("ttf"); }
-
-@font-face {
-  font-family: "headingsFontBold";
-  src: url("css/fonts/Novecentosanswide-DemiBold.ttf") format("ttf"); }
-
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -379,7 +355,7 @@ input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
-  background: green;
+  background: #035555;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
@@ -416,7 +392,7 @@ textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
-  background-color: red; }
+  background-color: #ccc; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -671,9 +647,9 @@ body.page-id-22 .main-navigation a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%; }
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px; }
   .entry-content .entry-title {
     color: white;
     font-family: "mainFontlight";
@@ -706,10 +682,7 @@ body.page-id-22 .entry-content {
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px; }
+          justify-content: center; }
   body.page-id-22 .entry-content .entry-title {
     color: white;
     position: absolute;
@@ -719,15 +692,15 @@ body.page-id-22 .entry-content {
 
 body.page-id-22 .entry-content p {
   color: #404040;
-  font-family: "mainFontLight"; }
+  font-family: "mainFontLight";
+  margin-left: 15%;
+  margin-right: 14%; }
 
 body.page-id-22 h2 {
   text-align: center; }
 
 body.page-id-22 p {
-  margin-bottom: 1.5rem;
-  margin-left: 15%;
-  margin-right: 14%; }
+  margin-bottom: 1.5rem; }
 
 body.page-id-22 .entry-img {
   display: -webkit-box;
@@ -811,18 +784,38 @@ iframe {
 --------------------------------------------------------------*/
 /* Front page */
 footer .site-info {
-  background-color: black;
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("<?php 'images/dark-wood.png' ?>");
-  background-size: cover; }
-
-.contact, .buisness-hours {
-  color: white;
-  margin-right: 4rem; }
-  .contact h4, .buisness-hours h4 {
-    color: orange; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url("../css/images/logos/inhabitent-logo-text.svg"), url("../css/images/dark-wood.png");
+  background-size: 25%, cover;
+  background-position: right center;
+  background-repeat: no-repeat, no-repeat; }
+  footer .site-info .contact, footer .site-info .buisness-hours {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: white;
+    height: auto;
+    width: 30%;
+    margin-right: 1rem;
+    margin-left: 3rem; }
+    footer .site-info .contact h4, footer .site-info .buisness-hours h4 {
+      color: orange;
+      width: 100%; }
+    footer .site-info .contact footer .contact p, footer .site-info .buisness-hours footer .contact p {
+      color: blue; }
 
 .site-header {
   margin-top: 1.5rem;
