@@ -222,9 +222,42 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather-B';
+  src: url("./fonts/Merriweather-Bold.woff2") format("woff2"), url("./fonts/Merriweather-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather-LI';
+  src: url("./fonts/Merriweather-LightItalic.woff2") format("woff2"), url("./fonts/Merriweather-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather-L';
+  src: url("./fonts/Merriweather-Light.woff2") format("woff2"), url("./fonts/Merriweather-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento-DemiBold';
+  src: url("./fonts/Novecento-DemiBold.woff2") format("woff2"), url("./fonts/Novecento-DemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento-Normal';
+  src: url("./fonts/Novecento-Normal.woff2") format("woff2"), url("./fonts/Novocento-Normal.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather-BI';
+  src: url("./fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("./fonts/Merriweather-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -283,9 +316,11 @@ mark, ins {
 big {
   font-size: 125%; }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------------------------------------------------------------------------------
+
 # Elements
---------------------------------------------------------------*/
+
+----------------------------------------------------------------------------------------------------------------------*/
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -596,9 +631,6 @@ body.page-id-22 .main-navigation a {
   margin: 0px;
   padding: 0px; }
 
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -652,7 +684,6 @@ body.page-id-22 .main-navigation a {
   margin-top: 0px; }
   .entry-content .entry-title {
     color: white;
-    font-family: "mainFontlight";
     text-transform: uppercase;
     position: absolute;
     -ms-flex-item-align: center;
@@ -807,12 +838,14 @@ footer .site-info {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     color: white;
+    font-family: 'Merriweather-L';
     height: auto;
     width: 30%;
     margin-right: 1rem;
     margin-left: 3rem; }
     footer .site-info .contact h4, footer .site-info .buisness-hours h4 {
       color: orange;
+      font-family: 'Merriweather-B';
       width: 100%; }
     footer .site-info .contact footer .contact p, footer .site-info .buisness-hours footer .contact p {
       color: blue; }

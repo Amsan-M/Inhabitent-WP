@@ -1,7 +1,8 @@
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
+// ====================================================================================================================
 
+// #                                                        Content DEFAULT 
+
+// ====================================================================================================================
 /* Posts and pages */
 
 .sticky {
@@ -12,7 +13,7 @@
 	margin: 0 0 $base__space-unit;
 }
 
-.updated:not(.published){
+.updated:not(.published) {
 	display: none;
 }
 
@@ -25,7 +26,7 @@
 .entry-content,
 .entry-summary {
 	// margin: $base__space-unit 0 0;
-	margin:0px;
+	margin: 0px;
 }
 
 .page-links {
@@ -45,105 +46,92 @@
 .comment-content a {
 	word-wrap: break-word;
 }
+
 .bypostauthor {
 	display: block;
 }
 
-
-.entry-content{
-	display:inline-flex;
-	flex-direction:column;
+.entry-content {
+	display: inline-flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-left: 0px;
-    margin-right: 0px;
-	margin-top:0px;
-	
-	.entry-title{
+	margin-right: 0px;
+	margin-top: 0px;
+	.entry-title {
 		color: white;
-		font-family:"mainFontlight"; 
 		text-transform: uppercase;
 		position: absolute;
 		align-self: center;
 	}
-   
 }
 
-.entry-content p{
+.entry-content p {
 	margin: 0px;
 }
 
-.site-content{
+.site-content {
 	display: flex;
-	flex-direction:row ;
+	flex-direction: row;
 }
 
+// ==========================================================================================================
 
-// ================================================================================
-// content styling about page 
-// ================================================================================
+//                                  ABOUT PAGE SPECIAL STYLING
+
+// ==========================================================================================================
+
 
 body.page-id-22 {
-
-
-	
-	.entry-content{
-		display:inline-flex;
-		flex-direction:column;
+	.entry-content {
+		display: inline-flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
-		
-		
-		.entry-title{
+		.entry-title {
 			color: white;
 			position: absolute;
 			align-self: center;
 			margin-top: -25%;
 		}
-	 
-		
-		
 	}
-	.entry-content p{
-		color:#404040;
-		font-family:"mainFontLight";
+	.entry-content p {
+		color: #404040;
+		font-family: "mainFontLight";
 		margin-left: 15%;
 		margin-right: 14%;
-		
-
 	}
-
-	h2{
+	h2 {
 		text-align: center;
 	}
-
-	p{
+	p {
 		margin-bottom: 1.5rem;
-		
 	}
-
-
-	.entry-img{
+	.entry-img {
 		display: flex;
-    justify-content: center;
+		justify-content: center;
 	}
 }
 
-// ================================================================================
-// content styling find us page
-// ================================================================================
 
 
-body.page-id-49{
-	.site-content{
+// =====================================================================================================================
+
+//    											 FIND-US PAGE SPECIAL STYLING
+
+// ======================================================================================================================
+
+
+body.page-id-49 {
+	.site-content {
 		flex-direction: row-reverse;
 	}
 }
 
-// ================================================================================
-// content styling journal page
-// ================================================================================
-
+// =========================================================================================================================
+// content styling journal page? 
+// =========================================================================================================================
 // body.page-id-51{
 // 	background-color: hotpink;
 // }

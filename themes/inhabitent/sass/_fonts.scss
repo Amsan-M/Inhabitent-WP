@@ -1,3 +1,76 @@
-/*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
+// /*--------------------------------------------------------------
+// # Embedded Fonts
+// --------------------------------------------------------------*/
+@font-face {
+    font-family: 'Merriweather-B';
+    src: url('./fonts/Merriweather-Bold.woff2') format('woff2'),
+        url('./fonts/Merriweather-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather-LI';
+    src: url('./fonts/Merriweather-LightItalic.woff2') format('woff2'),
+        url('./fonts/Merriweather-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Merriweather-L';
+    src: url('./fonts/Merriweather-Light.woff2') format('woff2'),
+        url('./fonts/Merriweather-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novecento-DemiBold';
+    src: url('./fonts/Novecento-DemiBold.woff2') format('woff2'),
+        url('./fonts/Novecento-DemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Novecento-Normal';
+    src: url('./fonts/Novecento-Normal.woff2') format('woff2'),
+        url('./fonts/Novocento-Normal.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather-BI';
+    src: url('./fonts/Merriweather-BoldItalic.woff2') format('woff2'),
+        url('./fonts/Merriweather-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+
+
+// @font-face {
+//     font-family: 'merriweatherlight';
+//     src: url('merriweather-light-webfont.woff2') format('woff2'),
+//          url('merriweather-light-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+
+
+
+// @font-face {
+//     font-family: 'merriweatherlight_italic';
+//     src: url('merriweather-lightitalic-webfont.woff2') format('woff2'),
+//          url('merriweather-lightitalic-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
