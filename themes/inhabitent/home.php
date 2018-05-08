@@ -2,11 +2,11 @@
 
 
 /*
-Template Name: journal
+Template Name: homepage
 */
 
 /**
- * The template for displaying journal page.
+ * The template for displaying home page.
  *
  * @package RED_Starter_Theme
  */
@@ -14,10 +14,11 @@ Template Name: journal
 <?php 
 get_header();  ?>
 
-<?php get_sidebar(); ?> 
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+
+		<main id="home-main" class="homepage-main" role="main">
+
+			<div class = "banner-logo"> <div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -26,5 +27,6 @@ get_header();  ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+	
 
+<?php get_footer(); ?>

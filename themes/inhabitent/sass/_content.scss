@@ -60,10 +60,10 @@
 	margin-right: 0px;
 	margin-top: 0px;
 	.entry-title {
-		color: white;
+		color: black;
 		text-transform: uppercase;
-		position: absolute;
-		align-self: center;
+		font-family: 'Novecento-DemiBold';
+		
 	}
 }
 
@@ -98,15 +98,17 @@ body.page-id-22 {
 	}
 	.entry-content p {
 		color: #404040;
-		font-family: "mainFontLight";
+		font-family: 'Merriweather-L';
 		margin-left: 15%;
 		margin-right: 14%;
 	}
 	h2 {
 		text-align: center;
+		font-family: 'Novecento-DemiBold';
 	}
 	p {
 		margin-bottom: 1.5rem;
+		
 	}
 	.entry-img {
 		display: flex;
@@ -126,6 +128,26 @@ body.page-id-22 {
 body.page-id-49 {
 	.site-content {
 		flex-direction: row-reverse;
+		font-family: 'Merriweather-L';
+	}
+
+	.entry-content{
+		margin-top:10%;
+		margin-top: 10%;
+		margin-left: 5%;
+		margin-right:5%;
+	}
+
+	.entry-title{
+	color: black;
+    text-transform: uppercase;
+    font-family: Novecento-DemiBold;
+	}
+
+	.entry-content h2{
+		text-transform: uppercase;
+		color:black;
+		font-family: 'Merriweather-L';
 	}
 }
 
@@ -135,3 +157,5 @@ body.page-id-49 {
 // body.page-id-51{
 // 	background-color: hotpink;
 // }
+
+

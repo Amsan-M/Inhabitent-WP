@@ -620,7 +620,8 @@ body.page-id-22 .main-navigation a {
   margin-left: 1rem;
   margin-top: 5rem;
   padding: 2%;
-  font-family: "mainFontLight"; }
+  font-family: 'Merriweather-L';
+  font-size: 16px; }
 
 .widget.widget_archive a {
   color: green;
@@ -683,11 +684,9 @@ body.page-id-22 .main-navigation a {
   margin-right: 0px;
   margin-top: 0px; }
   .entry-content .entry-title {
-    color: white;
+    color: black;
     text-transform: uppercase;
-    position: absolute;
-    -ms-flex-item-align: center;
-        align-self: center; }
+    font-family: 'Novecento-DemiBold'; }
 
 .entry-content p {
   margin: 0px; }
@@ -723,12 +722,13 @@ body.page-id-22 .entry-content {
 
 body.page-id-22 .entry-content p {
   color: #404040;
-  font-family: "mainFontLight";
+  font-family: 'Merriweather-L';
   margin-left: 15%;
   margin-right: 14%; }
 
 body.page-id-22 h2 {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Novecento-DemiBold'; }
 
 body.page-id-22 p {
   margin-bottom: 1.5rem; }
@@ -745,7 +745,24 @@ body.page-id-49 .site-content {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; }
+          flex-direction: row-reverse;
+  font-family: 'Merriweather-L'; }
+
+body.page-id-49 .entry-content {
+  margin-top: 10%;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+body.page-id-49 .entry-title {
+  color: black;
+  text-transform: uppercase;
+  font-family: Novecento-DemiBold; }
+
+body.page-id-49 .entry-content h2 {
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Merriweather-L'; }
 
 /*--------------------------------------------------------------
 # Media
@@ -814,6 +831,38 @@ iframe {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+body.page-id-132 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100%; }
+  body.page-id-132 .banner-logo {
+    background-image: url("../css/images/logos/inhabitent-logo-full.svg"), url("../css/images/home-hero.jpg");
+    background-size: auto, cover;
+    background-repeat: no-repeat,no-repeat;
+    background-position: center, center;
+    width: 100%;
+    height: 100rem; }
+  body.page-id-132 .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto; }
+
 footer .site-info {
   width: 100%;
   height: auto;
@@ -827,7 +876,7 @@ footer .site-info {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-image: url("../css/images/logos/inhabitent-logo-text.svg"), url("../css/images/dark-wood.png");
-  background-size: 25%, cover;
+  background-size: 20%, cover;
   background-position: right center;
   background-repeat: no-repeat, no-repeat; }
   footer .site-info .contact, footer .site-info .buisness-hours {
@@ -845,7 +894,7 @@ footer .site-info {
     margin-left: 3rem; }
     footer .site-info .contact h4, footer .site-info .buisness-hours h4 {
       color: orange;
-      font-family: 'Merriweather-B';
+      font-family: 'Novecento-DemiBold';
       width: 100%; }
     footer .site-info .contact footer .contact p, footer .site-info .buisness-hours footer .contact p {
       color: blue; }

@@ -24,7 +24,7 @@ get_header();  ?>
 
 			<?php endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
+		</main><!-- #main --> 
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
