@@ -19,7 +19,13 @@ get_header();
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-            <?php 
+
+
+<div class = "product-info">
+
+<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			
+			<?php 
 
  $price = CFS()->get( 'price' );
  $exerpt =CFS()->get( 'exerpt' );
@@ -28,8 +34,9 @@ get_header();
 echo "<p class=\"price\">Price: \${$price}</p>";
 echo "<p class=\"product-exerpt\">{$exerpt}</p>";
 
-?>
 
+?>
+</div> <!-- product-info -->
 			<?php the_post_navigation(); ?>
 
 			<?php
@@ -44,5 +51,10 @@ echo "<p class=\"product-exerpt\">{$exerpt}</p>";
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
+
+
+
+
+

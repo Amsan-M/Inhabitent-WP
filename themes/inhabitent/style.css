@@ -7,7 +7,6 @@ Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: Inhabitent
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
@@ -513,6 +512,16 @@ a {
   .main-navigation ul {
     display: block; } }
 
+.site-branding {
+  background-image: url("../css/images/logos/inhabitent-logo-tent.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%; }
+
 body.page-id-22 .main-navigation a {
   color: white; }
 
@@ -901,18 +910,94 @@ footer .site-info {
       color: blue; }
 
 .site-header {
+  height: 2rem;
   margin-top: 1.5rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between; }
+
+.site-branding {
+  background-image: url(../css/images/logos/inhabitent-logo-tent.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  width: 10%;
+  height: 100%; }
+
+.products-template-default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .products-template-default .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 1440px; }
+  .products-template-default .site-main {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .products-template-default article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin-top: 7%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 3%; }
+  .products-template-default .entry-header {
+    margin-top: 10%; }
+  .products-template-default .entry-title {
+    width: 50%;
+    height: 10%;
+    margin-top: 10%;
+    text-align: left;
+    color: #d99054; }
+  .products-template-default .product-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 5%; }
+  .products-template-default .site-main .post-navigation, .products-template-default .site-main .posts-navigation {
+    margin: 0 0 1.5rem;
+    overflow: hidden;
+    width: 100%;
+    margin: 1rem; }

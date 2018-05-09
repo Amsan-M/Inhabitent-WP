@@ -1,10 +1,19 @@
-.site-header{
-  
-margin-top: 1.5rem;
-    display: inline-flex;
-    flex-direction: row;
-    position: absolute;
-    flex-wrap: wrap;
+.site-header {
+    height: 2rem;
+    margin-top: 1.5rem;
     width: 100%;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    flex-direction: column;
+    align-content: space-between;
+}
+.site-branding{
+background-image: url(../css/images/logos/inhabitent-logo-tent.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: -ms-flexbox;
+    display: flex;
+    width: 10%;
+    height: 100%;
 }
