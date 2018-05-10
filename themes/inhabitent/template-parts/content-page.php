@@ -9,15 +9,17 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+<div class="entry-content">
 
 	<header class="entry-header">
-	<!-- <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> -->
+	 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 
 	</header> <!--.entry-header--> 
 
-	<div class="entry-content">
-	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	
+	<?php 
+	// the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<?php the_content(); ?>
-		</div><!-- .entry-content -->
+		<!-- closing div for .entriy-content supposed to be here but moved to the wordpress wysiwyg of the about page to wrap entry title and entry img without entry text-->
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),

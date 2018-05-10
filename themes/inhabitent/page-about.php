@@ -3,17 +3,16 @@
 Template Name: about
 */
 
-
 /**
- * The template for displaying all pages.
+ * The template for displaying about page.
  *
  * @package RED_Starter_Theme
  */
 ?>
+
+
 <?php get_header();  ?>
 
-<?php 
-//  get_sidebar(); ?> 
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

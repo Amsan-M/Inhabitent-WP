@@ -6,18 +6,31 @@
 // ==========================================================================================================
 
 .page-template-page-about {
+
 	.entry-content {
-		display: inline-flex;
-		flex-direction: column;
+		display: flex;
 		flex-wrap: wrap;
+		align-items: center;
 		justify-content: center;
-		.entry-title {
-			color: white;
-			position: absolute;
-			align-self: center;
-			margin-top: -25%;
-		}
+		align-content: center;
+		justify-items: center;
 	}
+
+	.entry-header{
+		position:absolute;
+		
+	}
+		
+	.entry-title {
+			color:white;
+			display:flex;
+	
+		}
+
+	.entry-text{
+		margin:7%;
+	}	
+	
 	.entry-content p {
 		color: #404040;
 		font-family: 'Merriweather-L';
