@@ -1,4 +1,10 @@
 <?php
+
+
+/*
+Template Name: post pages 
+*/
+
 /**
  * The template for displaying all pages.
  *
@@ -6,6 +12,8 @@
  */
 
 get_header(); ?>
+
+<? get_sidebar(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

@@ -10,11 +10,14 @@ Template Name: homepage
  *
  * @package RED_Starter_Theme
  */
+
+ 
 ?>
 <?php 
 get_header();  ?>
 
-
+<!-- <?php 
+get_sidebar(); ?> -->
 
 		<main id="home-main" class="homepage-main" role="main">
 
