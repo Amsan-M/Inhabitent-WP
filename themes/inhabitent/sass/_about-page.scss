@@ -1,0 +1,38 @@
+
+// ==========================================================================================================
+
+//                                  ABOUT PAGE 
+
+// ==========================================================================================================
+
+.page-template-page-about {
+	.entry-content {
+		display: inline-flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		.entry-title {
+			color: white;
+			position: absolute;
+			align-self: center;
+			margin-top: -25%;
+		}
+	}
+	.entry-content p {
+		color: #404040;
+		font-family: 'Merriweather-L';
+		margin-left: 15%;
+		margin-right: 14%;
+	}
+	h2 {
+		text-align: center;
+		font-family: 'Novecento-DemiBold';
+	}
+	p {
+		margin-bottom: 1.5rem;
+	}
+	.entry-img {
+		display: flex;
+		justify-content: center;
+	}
+}
