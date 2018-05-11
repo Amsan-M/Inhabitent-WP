@@ -26,5 +26,12 @@
         height: auto;
     }
 
+    .last-posts{
+        display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    }
+
 
 }

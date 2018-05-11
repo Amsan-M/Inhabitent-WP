@@ -16,10 +16,14 @@ Template Name: homepage
 <?php 
 get_header();  ?>
 
-<!-- <?php 
-get_sidebar(); ?> -->
+ <?php 
+// get_sidebar(); ?>
 
 		<main id="home-main" class="homepage-main" role="main">
+
+
+
+
 
 			<div class = "banner-logo"> <div>
 
@@ -29,7 +33,41 @@ get_sidebar(); ?> -->
 
 			<?php endwhile; // End of the loop. ?>
 
+
 		</main><!-- #main -->
+
+		<div class = "last-posts">
+
+
+
+	<?php
+	$args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => 3 );
+	$posts = new WP_Query( $args ); // instantiate our object
+	?>
+
+
+
+	<?php if ( $posts->have_posts() ) : ?>
+	<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
+		<!-- Content of the queried post results goes here */  -->
+
+<div class = "single-thumbnail"> 
+		<?php the_post_thumbnail( 'medium' ); ?>
+		<?php the_title(); ?>
+		<?php echo "<br>" ?>
+		<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+		
+</div>	
+		
+	
+
+	<?php endwhile; ?>
+	<?php wp_reset_postdata(); ?>
+	<?php else : ?>
+		<h2>Nothing found!</h2>
+	<?php endif; ?>
+
+	</div>
 	
 
 <?php get_footer(); ?>
