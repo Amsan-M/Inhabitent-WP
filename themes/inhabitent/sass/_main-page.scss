@@ -26,12 +26,55 @@
         height: auto;
     }
 
+
+    .latest-post-heading{
+        display:flex;
+        flex-direction: row; 
+        flex-wrap:wrap;
+        margin:1%;
+        width:100%;
+        align-content: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-family: 'headings-bold';
+    }
+
+
     .last-posts{
         display: inline-flex;
-    flex-direction: column;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 5%;
+    font-family: 'main-light'
 
     }
 
+    .single-thumbnail{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        margin:1%;
+        border:solid 1px lightgrey;
+        width: 30%;
+    }
+
+    img{
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+
+   .single-thumbnail-meta{
+       margin-top:1%;
+    
+      
+       
+
+    }
 
 }

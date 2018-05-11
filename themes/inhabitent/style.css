@@ -223,37 +223,37 @@ th {
   padding: 0; }
 
 @font-face {
-  font-family: 'Merriweather-B';
+  font-family: 'main-bold';
   src: url("./fonts/Merriweather-Bold.woff2") format("woff2"), url("./fonts/Merriweather-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Merriweather-LI';
+  font-family: 'main-light-italic';
   src: url("./fonts/Merriweather-LightItalic.woff2") format("woff2"), url("./fonts/Merriweather-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Merriweather-L';
+  font-family: 'main-light';
   src: url("./fonts/Merriweather-Light.woff2") format("woff2"), url("./fonts/Merriweather-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novecento-DemiBold';
+  font-family: 'headings-bold';
   src: url("./fonts/Novecento-DemiBold.woff2") format("woff2"), url("./fonts/Novecento-DemiBold.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Novecento-Normal';
+  font-family: 'headings';
   src: url("./fonts/Novecento-Normal.woff2") format("woff2"), url("./fonts/Novocento-Normal.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Merriweather-BI';
+  font-family: 'main-bold-italic';
   src: url("./fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("./fonts/Merriweather-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic; }
@@ -850,16 +850,62 @@ footer .site-info {
             flex-direction: column;
     width: 100%;
     height: auto; }
+  .page-template-page-main .latest-post-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 1%;
+    width: 100%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase;
+    font-family: 'headings-bold'; }
   .page-template-page-main .last-posts {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 5%;
+    font-family: 'main-light'; }
+  .page-template-page-main .single-thumbnail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    margin: 1%;
+    border: solid 1px lightgrey;
+    width: 30%; }
+  .page-template-page-main img {
+    height: auto;
+    max-width: 100%;
+    width: 100%; }
+  .page-template-page-main .single-thumbnail-meta {
+    margin-top: 1%; }
 
 body.blog .hentry {
   display: -webkit-box;
