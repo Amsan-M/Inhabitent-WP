@@ -1,19 +1,18 @@
 
 
-footer .site-info{
-  
-    width:100%;
-    height:auto;
-    display:flex;
+footer .site-info {
+    width: 100%;
+    height: auto;
+    display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    background-image:url('../css/images/logos/inhabitent-logo-text.svg'), url('../css/images/dark-wood.png');
-    background-size: 20%, cover;
-    background-position: right center;
-    background-repeat: no-repeat, no-repeat;
-    
-    
-   
+    flex-wrap: wrap;
+    background-image: url(../css/images/logos/inhabitent-logo-text.svg),url(../css/images/dark-wood.png);
+    background-size: 20%,cover;
+    background-position: 100%;
+    background-repeat: no-repeat,no-repeat;
+    background-position-y: 15%;
+    background-position-x: 95%;
+
   
     .contact,  .buisness-hours{
 
@@ -21,18 +20,19 @@ footer .site-info{
         flex-direction: column;
         flex-wrap:wrap;
         color:white; 
-        font-family: 'Merriweather-L';
+        font-family: 'main-light';
         
        
         height:auto;
         width:30%;
-        margin-right:1rem;
         margin-left:3rem;
       
         h4{
-            color:orange;
-            font-family: 'Novecento-DemiBold';
+            color:$orange;
+            font-family: 'headings-bold';
+            font-size:1.3rem;
             width:100%;
+            text-transform:uppercase;
         }
 
         footer .contact p{

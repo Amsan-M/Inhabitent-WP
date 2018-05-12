@@ -4,8 +4,16 @@
 //                                  ABOUT PAGE 
 
 // ==========================================================================================================
-
 .page-template-page-about {
+
+
+	.main-navigation a {
+		display: block;
+		text-decoration: none;
+		font-family: 'headings';
+		color: white;
+		font-size: 1.5rem;
+	}
 
 	.entry-content {
 		display: flex;
@@ -16,36 +24,41 @@
 		justify-items: center;
 	}
 
-	.entry-header{
-		position:absolute;
-		
+	.entry-header {
+		position: absolute;
 	}
-		
-	.entry-title {
-			color:white;
-			display:flex;
-	
-		}
 
-	.entry-text{
-		margin:7%;
-	}	
-	
+	.entry-title {
+		color: white;
+		display: flex;
+		font-family: 'headings-bold';
+		font-size:3rem;
+	}
+
+	.entry-text {
+		margin: 7%;
+	}
+
 	.entry-content p {
-		color: #404040;
-		font-family: 'Merriweather-L';
 		margin-left: 15%;
 		margin-right: 14%;
 	}
+
 	h2 {
 		text-align: center;
-		font-family: 'Novecento-DemiBold';
+		font-family: 'headings';
+		font-size: 2rem;
 	}
+
 	p {
+		font-family: 'main-light';
 		margin-bottom: 1.5rem;
 	}
+
 	.entry-img {
 		display: flex;
 		justify-content: center;
 	}
+
+
 }

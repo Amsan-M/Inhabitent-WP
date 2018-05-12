@@ -27,9 +27,9 @@
 
 				    <div class= "buisness-hours"> 
 				      <h4> BUISNESS HOURS </h4> 
-				      <p>Monday-Friday: 9am to 5pm<p>
-				      <p>Saturday:10am to 2pm<p>
-				      <p>Sunday: closed<p> 
+				      <p> <strong> Monday-Friday:</strong> 9am to 5pm<p>
+				      <p><strong>Saturday:</strong> 10am to 2pm<p>
+				      <p><strong>Sunday:</strong>  closed<p> 
 					</div>   <!-- .buisness-hours -->
 
 <div class= "footer-image">

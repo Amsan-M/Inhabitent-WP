@@ -26,7 +26,7 @@
 }
 
 @font-face {
-    font-family: 'headings-bold';
+    font-family: 'headings';
     src: url('./fonts/Novecento-DemiBold.woff2') format('woff2'),
         url('./fonts/Novecento-DemiBold.woff') format('woff');
     font-weight: normal;
@@ -34,7 +34,7 @@
 }
 
 @font-face {
-    font-family: 'headings';
+    font-family: 'headings-bold';
     src: url('./fonts/Novecento-Normal.woff2') format('woff2'),
         url('./fonts/Novocento-Normal.woff') format('woff');
     font-weight: bold;

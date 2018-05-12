@@ -27,14 +27,42 @@
 	margin-left: 1rem;
 	margin-top: 5rem;
 	padding: 2%;
-	font-family: 'Merriweather-L';
+	font-family: 'main-light';
 	font-size: 16px;
+	padding: 5%;
 }
 
+.textwidget{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	
+}
+ 
+
+ .textwidget p{
+	 
+	 font-family:'main-light';
+ }
+
+ .textwidget h4, .widget_archive h2{
+	 font-family:'headings-bold';
+	 font-size:1.5rem;
+ }
+
+ .textwidget h4{
+	 margin-top:5%;
+ }
+
 // archive 
+
+.widget.widget_archive{
+	margin-top:15%;
+}
 .widget.widget_archive a {
 	color: #248a83;;
 	text-decoration: none;
+	font-family:'main-light';
 }
 
 .widget.widget_archive ul {
