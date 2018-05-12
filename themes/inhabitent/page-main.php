@@ -54,6 +54,8 @@ Template Name: homepage
 		
 			<?php the_post_thumbnail( 'medium' ); ?>
 
+			  <?php the_content(); ?>
+
 			<div class = "single-thumbnail-meta"> 
 				<?php red_starter_posted_on(); ?> 
 				<?php comments_number('0 comment', '1 comment'); ?> 
