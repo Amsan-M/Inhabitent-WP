@@ -30,13 +30,18 @@ Template Name: products
 
         <div class = "single-product">
 
-            
-            <?php the_content(); ?>
+       
+
+           <a href="<?php the_permalink(); ?>" <?php 
+           the_content(); ?> </a>
+    
 
             <div class = "product-info">
 
             <?php the_title(); ?>
             <?php echo CFS()->get( 'price' ); ?>
+            <?php 
+            //  get_template_part( 'template-parts/content', 'page' ); ?>
 
             </div> <!-- product-info -->
 

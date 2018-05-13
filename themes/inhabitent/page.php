@@ -1,9 +1,9 @@
 <?php
 
 /**
- * The template for displaying all pages.
+ * The template for displaying journal page.
  * 
- * (default template, all pages heve their own custom templates)
+ * (default template, but as all pages heve their own custom templates only the blog post uses this template)
  *
  * @package RED_Starter_Theme
  */
