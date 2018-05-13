@@ -16,8 +16,8 @@ Template Name: products
 <?php get_header();  ?>
 
 
-<main id="shop-main" class="products-main" role="main">
 
+<div class = "products-gallery">
 			
         <?php
         $args = array( 'post_type' => 'products', 'order' => 'ASC', 'posts_per_page' => -1  );
@@ -28,28 +28,22 @@ Template Name: products
         <?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
 
-        <div class = "single-product">
 
-       
-
-           <a href="<?php the_permalink(); ?>" <?php 
-           the_content(); ?> </a>
-    
-
-            <div class = "product-info">
-
+       <div class = "single-product">
+           <div class = "product-image">
+           <a href="<?php the_permalink(); ?>"  
+           <?php get_template_part( 'template-parts/content', 'single' ); ?>
+           </div>
+           <div class = "product-info">
             <?php the_title(); ?>
-            <?php echo CFS()->get( 'price' ); ?>
-            <?php 
-            //  get_template_part( 'template-parts/content', 'page' ); ?>
-
-            </div> <!-- product-info -->
-
-        </div> <!-- single-product -->  
+            <?php echo CFS()->get( 'price' ); ?> </a>
+</div>
+        </div>
+           
 
 
     <?php endwhile; ?>
-
+    </div>
     <?php wp_reset_postdata(); ?>
     <?php else : ?>
 
@@ -59,7 +53,7 @@ Template Name: products
 			
 
 
-</main><!-- #main -->
+
 
 
 		
