@@ -71,7 +71,7 @@ function adventures_custom_taxonomy() {
 		'parent_item'                => __( 'Article', 'text_domain' ),
 		'parent_item_colon'          => __( 'Article', 'text_domain' ),
 		'new_item_name'              => __( 'Article', 'text_domain' ),
-		'add_new_item'               => __( 'Add Article', 'text_domain' ),
+		'add_new_item'               => __( 'Add new Article', 'text_domain' ),
 		'edit_item'                  => __( 'Article', 'text_domain' ),
 		'update_item'                => __( 'Article', 'text_domain' ),
 		'view_item'                  => __( 'Article', 'text_domain' ),
