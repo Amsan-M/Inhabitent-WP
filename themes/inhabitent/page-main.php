@@ -52,6 +52,7 @@ Template Name: homepage
 
 		<div class = "single-thumbnail"> 
 		
+
 			<?php the_post_thumbnail( 'medium' ); ?>
 
 
@@ -59,7 +60,7 @@ Template Name: homepage
 				<?php red_starter_posted_on(); ?> 
 				<?php comments_number('0 comment', '1 comment'); ?> 
 				<?php red_starter_posted_by(); ?>
-				<h1> <?php the_title(); ?> </h1>
+				<a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> </h1> </a>
 			</div> <!-- single-thumbnail-meta -->
 
 			<?php echo "<br>" ?>

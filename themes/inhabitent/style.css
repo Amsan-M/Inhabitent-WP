@@ -1132,6 +1132,15 @@ body.blog .entry-content {
         flex-basis: 20%;
     border: 1px solid lightgrey;
     margin: 1%; }
+  .page-template-archive-products img {
+    border-bottom: 4px solid lightgrey;
+    height: 10rem;
+    max-width: 100%; }
+  .page-template-archive-products .product-info a {
+    color: black;
+    margin: 0px;
+    font-family: 'main-light';
+    text-decoration: none; }
 
 .post-template-default .content-area {
   margin-top: 10%;
