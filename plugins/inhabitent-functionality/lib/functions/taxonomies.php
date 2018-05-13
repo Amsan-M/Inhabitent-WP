@@ -64,10 +64,10 @@ add_action( 'init', 'product_custom_taxonomy', 0 );
 function adventures_custom_taxonomy() {
 
 	$labels = array(
-		'name'                       => _x( 'articles', 'Taxonomy General Name', 'text_domain' ),
-		'singular_name'              => _x( 'article', 'Taxonomy Singular Name', 'text_domain' ),
+		'name'                       => _x( 'Articles', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Article', 'Taxonomy Singular Name', 'text_domain' ),
 		'menu_name'                  => __( 'Articles', 'text_domain' ),
-		'all_items'                  => __( 'Articles', 'text_domain' ),
+		'all_items'                  => __( 'All Articles', 'text_domain' ),
 		'parent_item'                => __( 'Article', 'text_domain' ),
 		'parent_item_colon'          => __( 'Article', 'text_domain' ),
 		'new_item_name'              => __( 'Article', 'text_domain' ),
