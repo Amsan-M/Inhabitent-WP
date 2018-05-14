@@ -40,8 +40,10 @@ Template Name: homepage
 
 						<div class = "do-icon">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/do.svg">
+						<a href="/Inhabitent/do/" <h1> do</h1> </a>
 						</div>
 						<div class = "category-description"></div>
+						
 
 					</div> 
 
@@ -53,6 +55,7 @@ Template Name: homepage
 
 						<div class = "eat-icon">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/eat.svg">
+						<a href="/Inhabitent/eat/" <h1> eat</h1> </a>
 						</div>
 						<div class = "category-description"></div>
 
@@ -65,6 +68,7 @@ Template Name: homepage
 
 						<div class = "sleep-icon">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/sleep.svg">
+						<a href="/Inhabitent/sleep/" <h1> sleep</h1> </a>
 						</div>
 						<div class = "category-description"></div>
 
@@ -78,6 +82,7 @@ Template Name: homepage
 
 						<div class = "wear-icon">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/wear.svg">
+						<a href="/Inhabitent/wear/" <h1> wear </h1> </a>
 						</div>
 						<div class = "category-description"></div>
 
@@ -108,12 +113,12 @@ Template Name: homepage
 
 		<?php
 		$args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => 3 );
-		$posts = new WP_Query( $args ); // instantiate our object
+		$posts = new WP_Query( $args ); 
 		?>
 
 		<?php if ( $posts->have_posts() ) : ?>
 		<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
-		<!-- Content of the queried post results goes here */  -->
+	
 
 
 
@@ -152,7 +157,7 @@ Template Name: homepage
 	<div class = "adventures-gallery">
 			
 			<?php
-			$args = array( 'post_type' => 'adventures', 'order' => 'ASC', 'posts_per_page' => -1  );
+			$args = array( 'post_type' => 'adventures', 'order' => 'ASC', 'posts_per_page' => 4  );
 			$adventures = new WP_Query( $args ); // instantiate our object
 			?>
 	
