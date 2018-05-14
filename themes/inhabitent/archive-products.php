@@ -15,7 +15,19 @@ Template Name: products
 
 <?php get_header();  ?>
 
+<div class = "shop menu">
 
+<h1> <?php the_title(); ?> </h1>
+
+<nav> 
+    <ul>
+        <li><a href="/Inhabitent/do/" <h1> do </h1> </a></li>
+        <li><a href="/Inhabitent/eat/" <h1> eat </h1> </a></li>
+        <li><a href="/Inhabitent/sleep/" <h1> sleep </h1> </a></li>
+        <li><a href="/Inhabitent/wear/" <h1> wear </h1> </a></li>
+    </ul>
+
+</div>
 
 <div class = "products-gallery">
 			

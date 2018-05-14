@@ -8,7 +8,26 @@ Template Name: eat category
 
 
 
+
+
 <?php get_header();  ?>
+
+<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+			<?php endwhile; // End of the loop. ?>
+
+		</main><!-- #main -->
+    </div><!-- #primary -->
+    
+
+
+<div class = "products">
+
 <?php
 $eatcategory = new WP_Query( array (
   'post_type' => 'products',
@@ -21,15 +40,20 @@ $eatcategory = new WP_Query( array (
 
 
 
-       <div class = "single-product">
+        <div class = "single-product">
+
+
            <div class = "product-image">
-           <a href="<?php the_permalink(); ?>"  
-           <?php get_template_part( 'template-parts/content', 'single' ); ?>
+
+                <a href="<?php the_permalink(); ?>"  
+                <?php get_template_part( 'template-parts/content', 'single' ); ?>
            </div>
+
            <div class = "product-info">
-            <?php the_title(); ?>
-            <?php echo CFS()->get( 'price' ); ?> </a>
-</div>
+                <?php the_title(); ?>
+                <?php echo CFS()->get( 'price' ); ?> </a>
+            </div>
+
         </div>
            
 
@@ -43,8 +67,8 @@ $eatcategory = new WP_Query( array (
 
     <?php endif; ?>
 			
+    
 
 
-	
-
+</div>
 <?php get_footer(); ?>

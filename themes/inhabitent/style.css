@@ -840,7 +840,6 @@ footer .site-info {
       align-content: space-between; }
 
 .site-branding {
-  background-image: url(../css/images/logos/inhabitent-logo-tent.svg);
   background-size: contain;
   background-repeat: no-repeat;
   display: -ms-flexbox;
@@ -1158,6 +1157,66 @@ body.blog .entry-content {
     font-family: 'main-light';
     text-decoration: none; }
 
+.page-template-archive-adventures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .page-template-archive-adventures .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .page-template-archive-adventures .adventures-title {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .page-template-archive-adventures .all-adventures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .page-template-archive-adventures .single-adventure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin: 1%; }
+
 .post-template-default .content-area {
   margin-top: 10%;
   margin-left: 10%;
@@ -1245,3 +1304,12 @@ body.blog .entry-content {
     overflow: hidden;
     width: 100%;
     margin: 1rem; }
+
+.adventures-template-default {
+  background-color: green; }
+
+.page-template-taxonomy-do-category,
+.page-template-taxonomy-eat-category,
+.page-template-taxonomy-sleep-category,
+.page-template-taxonomy-wear-category {
+  background-color: pink; }

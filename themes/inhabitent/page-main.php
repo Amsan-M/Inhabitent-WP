@@ -16,75 +16,123 @@ Template Name: homepage
 <?php get_header();  ?>
 
 
-		<main id="home-main" class="homepage-main" role="main">
+	<main id="home-main" class="homepage-main" role="main">
 
-			<div class = "banner-logo"> <div>
+		<div class = "banner-logo"> <div>
 
-				<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
+			<?php while ( have_posts() ) : the_post(); ?>
+			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 			<?php endwhile; // End of the loop. ?>
 
 
-		</main><!-- #main -->
+	</main><!-- #main -->
 
 
 
-			<div class = "shop-categories">
+ <!--       ===========================================                    Shop categories section             ================================================= -->
+
+	<div class = "shop-categories">
 
 
-				<ul>
-				<li> 
-					<div class = "do-category"> 
+		<ul>
+			
+			<li> 
+					
+				<div class = "do-category"> 
 
-						<div class = "do-icon">
+						
+					<div class = "do-icon">
+
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/do.svg">
-						<a href="/Inhabitent/do/" <h1> do</h1> </a>
-						</div>
-						<div class = "category-description"></div>
+						
+					</div>
+
+
+					<div class = "category-description">
+
+						<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
+
+						<button type="button"><a href="/Inhabitent/do/" <h1> do stuff</h1> </a> </button>
+
+					</div>
 						
 
-					</div> 
+				</div> 
 
 					
-				</li>
+			</li>
 
-				<li> 
-					<div class = "eat-category"> 
 
-						<div class = "eat-icon">
+
+			<li> 
+
+				<div class = "eat-category"> 
+
+					<div class = "eat-icon">
+
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/eat.svg">
-						<a href="/Inhabitent/eat/" <h1> eat</h1> </a>
-						</div>
-						<div class = "category-description"></div>
+						
+					</div>
 
-					</div> 
+
+					<div class = "category-description">
+
+						<p> Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
+
+						<button type="button"><a href="/Inhabitent/eat/" <h1> eat stuff</h1> </a> </button>
+
+					</div>
+
+				</div> 
 
 					
-				</li>
-				<li> 
-					<div class = "sleep-category"> 
+			</li>
 
-						<div class = "sleep-icon">
+
+			<li> 
+					
+				<div class = "sleep-category"> 
+
+					<div class = "sleep-icon">
+
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/sleep.svg">
-						<a href="/Inhabitent/sleep/" <h1> sleep</h1> </a>
-						</div>
-						<div class = "category-description"></div>
+	
+					</div>
 
-					</div> 
+
+					<div class = "category-description">
+
+						<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
+							
+						<button type="button"><a href="/Inhabitent/sleep/" <h1> sleep stuff</h1> </a> </button>
+
+					</div>
+
+				</div> 
 
 					
-				</li>
+			</li>
+
 
 				<li> 
+
+					
 					<div class = "wear-category"> 
 
 						<div class = "wear-icon">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/wear.svg">
-						<a href="/Inhabitent/wear/" <h1> wear </h1> </a>
+
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/wear.svg">
+						
 						</div>
-						<div class = "category-description"></div>
+
+
+						<div class = "category-description">
+
+							<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
+
+							<button type="button"><a href="/Inhabitent/wear/" <h1> wear stuff</h1> </a> </button>
+
+						</div>
 
 					</div> 
 
@@ -92,16 +140,19 @@ Template Name: homepage
 				</li>
 
 
-				</ul>
-			</div>
+		</ul>
+	</div>   <!-- shop-categories -->
 
 
 
+<!--       ===========================================                   last posts section             ================================================= -->
 
 
-		<div class ="latest-post-heading"> 
-			<h1> inhabitent journal </h1>
-		</div>  
+	<div class ="latest-post-heading"> 
+
+		<h1> inhabitent journal </h1>
+
+	</div>  
 
 
 
@@ -122,73 +173,100 @@ Template Name: homepage
 
 
 
-		<div class = "single-thumbnail"> 
-		
-
-			<?php the_post_thumbnail( 'medium' ); ?>
-
-
-			<div class = "single-thumbnail-meta"> 
-				<?php red_starter_posted_on(); ?> 
-				<?php comments_number('0 comment', '1 comment'); ?> 
-				<?php red_starter_posted_by(); ?>
-				<a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> </h1> </a>
-			</div> <!-- single-thumbnail-meta -->
-
-			<?php echo "<br>" ?>
-
+			<div class = "single-thumbnail"> 
 			
+
+				<?php the_post_thumbnail( 'medium' ); ?>
+
+
+				<div class = "single-thumbnail-meta"> 
+
+					<?php red_starter_posted_on(); ?> 
+					<?php comments_number('0 comment', '1 comment'); ?> 
+					<?php red_starter_posted_by(); ?>
+					<a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> </h1><button type="button">read entry</button> </a>
+					
+				</div> <!-- single-thumbnail-meta -->
+
+				<?php echo "<br>" ?>
+
+				
+				
 			
-		
-		</div>	<!-- single-thumbnail -->
+			</div>	<!-- single-thumbnail -->
 		
 	
 
 		<?php endwhile; ?>
+
 		<?php wp_reset_postdata(); ?>
 		<?php else : ?>
+
 			<h2>Nothing found!</h2>
+
 		<?php endif; ?>
 
 	</div><!-- last posts -->
 
 
 
+	<!--       ===========================================                   adventures section             ================================================= -->
+
+
+
 	<div class = "adventures-gallery">
 			
-			<?php
-			$args = array( 'post_type' => 'adventures', 'order' => 'ASC', 'posts_per_page' => 4  );
-			$adventures = new WP_Query( $args ); // instantiate our object
-			?>
+		<?php
+		$args = array( 'post_type' => 'adventures', 'order' => 'ASC', 'posts_per_page' => 4  );
+		$adventures = new WP_Query( $args ); // instantiate our object
+		?>
 	
-			<?php if ( $adventures ->have_posts() ) : ?>
-			<?php while ( $adventures ->have_posts() ) : $adventures ->the_post(); ?>
+		<?php if ( $adventures ->have_posts() ) : ?>
+		<?php while ( $adventures ->have_posts() ) : $adventures ->the_post(); ?>
 	
 	
 	
-		   <div class = "single-adventure">
-			   <div class = "adventure-image">
+		<div class = "single-adventure">
+
+			<div class = "adventure-image"> 
+
 			   <?php the_post_thumbnail( 'medium' ); ?>
-			   <a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> </h1> </a>
+
 			</div>
+
+			<div class = "adventure-link">
+
+			   <a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> <button type="button">read more</button></h1> </a>
+
 			</div>
+
+
+			
+		</div>
 			   
 	
 	
-		<?php endwhile; ?>
-		</div>
-		<?php wp_reset_postdata(); ?>
-		<?php else : ?>
+	<?php endwhile; ?>
+
 	
-			<h2>Nothing found!</h2>
+
+
+	<?php wp_reset_postdata(); ?>
+	<?php else : ?>
 	
-		<?php endif; ?>
+		<h2>Nothing found!</h2>
+	
+	<?php endif; ?>
+	
+	
 				
 	
+	<div class = "adventure-page-button">
+		<button type="button"><a href="/Inhabitent/all-adventures/" <h1> Read More Adventures</h1> </a> </button>
+	</div>
 	
 	
-	
-	
+	</div>
 			
 			
 	

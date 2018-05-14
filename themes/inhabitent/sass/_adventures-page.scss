@@ -1,0 +1,43 @@
+.page-template-archive-adventures{
+   
+    display:flex;
+    flex-wrap:wrap;
+
+
+    .site-content{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+    }
+
+    .adventures-title{
+        display:inline-flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        width:100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        justify-content: center;
+
+    }
+
+    .all-adventures{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width:100%;
+        justify-content:center;
+    }
+    
+    
+    .single-adventure{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis:40%;
+        margin: 1%;
+
+    }
+
+
+} 

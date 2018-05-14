@@ -1,16 +1,16 @@
 <?php
 
 /**
- * The template for displaying journal page.
  * 
- * (default template, but as all pages heve their own custom templates only the blog post uses this template)
+ * 
+ * (default template, but as all pages heve their own custom templates)
  *
  * @package RED_Starter_Theme
  */
 ?>
 <?php get_header(); ?>
 
-<?php  get_sidebar(); ?> 
+ <?php  get_sidebar(); ?> 
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
