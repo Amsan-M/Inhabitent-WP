@@ -30,11 +30,78 @@ Template Name: homepage
 		</main><!-- #main -->
 
 
+
+			<div class = "shop-categories">
+
+
+				<ul>
+				<li> 
+					<div class = "do-category"> 
+
+						<div class = "do-icon">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/do.svg">
+						</div>
+						<div class = "category-description"></div>
+
+					</div> 
+
+					
+				</li>
+
+				<li> 
+					<div class = "eat-category"> 
+
+						<div class = "eat-icon">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/eat.svg">
+						</div>
+						<div class = "category-description"></div>
+
+					</div> 
+
+					
+				</li>
+				<li> 
+					<div class = "sleep-category"> 
+
+						<div class = "sleep-icon">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/sleep.svg">
+						</div>
+						<div class = "category-description"></div>
+
+					</div> 
+
+					
+				</li>
+
+				<li> 
+					<div class = "wear-category"> 
+
+						<div class = "wear-icon">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/wear.svg">
+						</div>
+						<div class = "category-description"></div>
+
+					</div> 
+
+					
+				</li>
+
+
+				</ul>
+			</div>
+
+
+
+
+
 		<div class ="latest-post-heading"> 
 			<h1> inhabitent journal </h1>
 		</div>  
 
 
+
+
+	
 
 		
 	<div class = "last-posts">
