@@ -33,115 +33,117 @@ Template Name: homepage
 
 	<div class = "shop-categories">
 
+		<div class = "shop-menu">
 
-		<ul>
-			
-			<li> 
-					
-				<div class = "do-category"> 
-
-						
-					<div class = "do-icon">
-
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/do.svg">
-						
-					</div>
-
-
-					<div class = "category-description">
-
-						<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-
-						<button type="button"><a href="/Inhabitent/do/" <h1> do stuff</h1> </a> </button>
-
-					</div>
-						
-
-				</div> 
-
-					
-			</li>
-
-
-
-			<li> 
-
-				<div class = "eat-category"> 
-
-					<div class = "eat-icon">
-
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/eat.svg">
-						
-					</div>
-
-
-					<div class = "category-description">
-
-						<p> Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-
-						<button type="button"><a href="/Inhabitent/eat/" <h1> eat stuff</h1> </a> </button>
-
-					</div>
-
-				</div> 
-
-					
-			</li>
-
-
-			<li> 
-					
-				<div class = "sleep-category"> 
-
-					<div class = "sleep-icon">
-
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/sleep.svg">
-	
-					</div>
-
-
-					<div class = "category-description">
-
-						<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-							
-						<button type="button"><a href="/Inhabitent/sleep/" <h1> sleep stuff</h1> </a> </button>
-
-					</div>
-
-				</div> 
-
-					
-			</li>
-
-
+			<ul>
+				
 				<li> 
-
-					
-					<div class = "wear-category"> 
-
-						<div class = "wear-icon">
-
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/wear.svg">
 						
+					<div class = "do-category"> 
+
+							
+						<div class = "do-icon">
+
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/do.svg">
+							
 						</div>
 
 
 						<div class = "category-description">
 
-							<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
+							<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
 
-							<button type="button"><a href="/Inhabitent/wear/" <h1> wear stuff</h1> </a> </button>
+							<button type="button"><a href="/Inhabitent/do/" <h1> do stuff</h1> </a> </button>
+
+						</div>
+							
+
+					</div> 
+
+						
+				</li>
+
+
+
+				<li> 
+
+					<div class = "eat-category"> 
+
+						<div class = "eat-icon">
+
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/eat.svg">
+							
+						</div>
+
+
+						<div class = "category-description">
+
+							<p> Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
+
+							<button type="button"><a href="/Inhabitent/eat/" <h1> eat stuff</h1> </a> </button>
 
 						</div>
 
 					</div> 
 
-					
+						
 				</li>
 
 
-		</ul>
-	</div>   <!-- shop-categories -->
+				<li> 
+						
+					<div class = "sleep-category"> 
+
+						<div class = "sleep-icon">
+
+							<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/sleep.svg">
+		
+						</div>
+
+
+						<div class = "category-description">
+
+							<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
+								
+							<button type="button"><a href="/Inhabitent/sleep/" <h1> sleep stuff</h1> </a> </button>
+
+						</div>
+
+					</div> 
+
+						
+				</li>
+
+
+					<li> 
+
+						
+						<div class = "wear-category"> 
+
+							<div class = "wear-icon">
+
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/wear.svg">
+							
+							</div>
+
+
+							<div class = "category-description">
+
+								<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
+
+								<button type="button"><a href="/Inhabitent/wear/" <h1> wear stuff</h1> </a> </button>
+
+							</div>
+
+						</div> 
+
+						
+					</li>
+
+
+			</ul>
+		</div> <!-- shop menu -->
+		</div>   <!-- shop-categories -->
 
 
 
@@ -157,7 +159,7 @@ Template Name: homepage
 
 
 
-	
+	<div class = "posts-wrapper">
 
 		
 	<div class = "last-posts">
@@ -170,7 +172,8 @@ Template Name: homepage
 		<?php if ( $posts->have_posts() ) : ?>
 		<?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
 	
-
+		
+		
 
 
 			<div class = "single-thumbnail"> 
@@ -195,20 +198,22 @@ Template Name: homepage
 			
 			</div>	<!-- single-thumbnail -->
 		
+			
 	
 
-		<?php endwhile; ?>
+			<?php endwhile; ?>
 
-		<?php wp_reset_postdata(); ?>
-		<?php else : ?>
+			<?php wp_reset_postdata(); ?>
+			<?php else : ?>
 
-			<h2>Nothing found!</h2>
+				<h2>Nothing found!</h2>
 
-		<?php endif; ?>
+			<?php endif; ?>
 
+		
 	</div><!-- last posts -->
 
-
+</div> <!-- posts-wrapper -->
 
 	<!--       ===========================================                   adventures section             ================================================= -->
 

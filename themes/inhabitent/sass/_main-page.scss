@@ -63,28 +63,108 @@
 
 .shop-categories{
     display: inline-flex;
-    width: 80%;
-    margin:10%;
-}
-    .shop-categories ul{
-        list-style: none;
-    display: inline-flex;
     width: 100%;
+    justify-content: center;
+
+
 }
 
+.shop-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 5%;
+    justify-content: space-between;
+
+}
+
+
+    .shop-categories ul{
+        list-style: none;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+
+
+        li{
+            width: 20%;
+            margin: 1%;
+        
+        }
+
+    }
 .shop-categories img {
     height: auto;
     max-width: 100%;
-    width: 70%;
+    width: 60%;
 
     }
 
 
+    .do-category,
+    .eat-category,
+    .sleep-category,
+    .wear-category{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 1px solid #e1e1e1;
+    
+    }
 
+    .do-icon,
+    .eat-icon,
+    .sleep-icon,
+    .wear-icon{
 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
 
+        img{
+            width:40%;
+        }
+    }
 
+    .category-description{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin:1%;
 
+        p{
+            text-align:center
+        }
+
+        button{
+            background-color:$green;
+            border:none;
+            width:55%;
+            height:2rem;
+            box-shadow:none;
+            border-radius:0px;
+
+            a{
+            font-family:'headings';
+            text-transform: uppercase;
+            text-decoration:none;
+            color:white;
+            text-shadow:none;
+            
+            }
+
+        }
+
+    }
+    
 
 
 // =================================================================================================================================================================  
@@ -94,7 +174,12 @@
 // ==================================================================================================================================================================    
    
 
-
+    .posts-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
 
 
     .latest-post-heading {
@@ -113,7 +198,7 @@
     .last-posts {
         display: flex;
         height: 100%;
-        width: 100%;
+        width: 80%;
         max-width: 100%;
         flex-direction: row;
         flex-wrap: wrap;

@@ -15,11 +15,11 @@ Template Name: products
 
 <?php get_header();  ?>
 
-<div class = "shop menu">
+<div class = "shop-menu">
 
 <h1> <?php the_title(); ?> </h1>
 
-<nav> 
+<nav class = "categories-menu"> 
     <ul>
         <li><a href="/Inhabitent/do/" <h1> do </h1> </a></li>
         <li><a href="/Inhabitent/eat/" <h1> eat </h1> </a></li>

@@ -887,18 +887,124 @@ footer .site-info {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .page-template-page-main .shop-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 80%;
-    margin: 10%; }
+    margin-top: 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .page-template-page-main .shop-categories ul {
     list-style: none;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    width: 100%; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-template-page-main .shop-categories ul li {
+      width: 20%;
+      margin: 1%; }
   .page-template-page-main .shop-categories img {
     height: auto;
     max-width: 100%;
-    width: 70%; }
+    width: 60%; }
+  .page-template-page-main .do-category,
+  .page-template-page-main .eat-category,
+  .page-template-page-main .sleep-category,
+  .page-template-page-main .wear-category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: 1px solid #e1e1e1; }
+  .page-template-page-main .do-icon,
+  .page-template-page-main .eat-icon,
+  .page-template-page-main .sleep-icon,
+  .page-template-page-main .wear-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .page-template-page-main .do-icon img,
+    .page-template-page-main .eat-icon img,
+    .page-template-page-main .sleep-icon img,
+    .page-template-page-main .wear-icon img {
+      width: 40%; }
+  .page-template-page-main .category-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1%; }
+    .page-template-page-main .category-description p {
+      text-align: center; }
+    .page-template-page-main .category-description button {
+      background-color: #248A83;
+      border: none;
+      width: 55%;
+      height: 2rem;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-radius: 0px; }
+      .page-template-page-main .category-description button a {
+        font-family: 'headings';
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        text-shadow: none; }
+  .page-template-page-main .posts-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .page-template-page-main .latest-post-heading {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -923,7 +1029,7 @@ footer .site-info {
     display: -ms-flexbox;
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -974,6 +1080,9 @@ footer .site-info {
           color: #248A83; }
         .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta h1:hover {
           color: black; }
+
+body.blog .content-area {
+  margin-top: 10%; }
 
 body.blog .hentry {
   display: -webkit-box;
@@ -1032,6 +1141,23 @@ body.blog .entry-meta {
 
 body.blog .entry-content {
   margin-top: 5%; }
+
+body.blog button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #248A83;
+  width: 20%;
+  border: none;
+  text-shadow: none;
+  border-radius: 0px;
+  height: 3rem; }
+  body.blog button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'main-light'; }
+
+body.blog article {
+  margin-top: 10%; }
 
 .page-template-page-about .main-navigation a {
   display: block;
@@ -1188,7 +1314,9 @@ body.blog .entry-content {
     margin-bottom: 10%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin: 5%;
+    border-bottom: 1px dashed lightgrey; }
   .page-template-archive-adventures .all-adventures {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1216,6 +1344,82 @@ body.blog .entry-content {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     margin: 1%; }
+  .page-template-archive-adventures .adventure-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 40%;
+    margin-top: 5%;
+    position: absolute;
+    margin: 3%; }
+    .page-template-archive-adventures .adventure-link a {
+      font-size: 3rem;
+      text-decoration: none;
+      color: white;
+      font-family: 'headings'; }
+    .page-template-archive-adventures .adventure-link button {
+      background-color: transparent;
+      border: 1px solid white;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-radius: 0px;
+      text-shadow: none;
+      color: white;
+      font-family: 'main-light';
+      height: 3rem;
+      width: 25%; }
+
+.page-template-archive-products .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.page-template-archive-products .shop-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+
+.page-template-archive-products nav.categories-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%; }
+  .page-template-archive-products nav.categories-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%; }
+    .page-template-archive-products nav.categories-menu ul li {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      margin: 10%;
+      list-style: none; }
 
 .post-template-default .content-area {
   margin-top: 10%;

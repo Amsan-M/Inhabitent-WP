@@ -1,0 +1,44 @@
+.page-template-archive-products{
+    
+
+    .site-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .shop-menu{
+
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    }
+
+    nav.categories-menu{
+
+        display: inline-flex;
+        width: 100%;
+
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+
+            li{
+                display:inline-flex;
+                margin:10%;
+                list-style:none;
+            }
+        
+        }
+
+
+    }
+
+
+
+
+}

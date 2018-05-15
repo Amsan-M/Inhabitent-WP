@@ -18,6 +18,8 @@
         margin-top: 10%;
         margin-bottom: 10%;
         justify-content: center;
+        margin: 5%;
+        border-bottom: 1px dashed lightgrey;
 
     }
 
@@ -37,6 +39,39 @@
         flex-basis:40%;
         margin: 1%;
 
+    }
+
+    .adventure-link{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 40%;
+        margin-top:5%;
+        position: absolute;
+        margin: 3%;
+
+        a{
+            font-size:3rem;
+            text-decoration:none;
+            color:white;
+            font-family: 'headings';
+        }
+
+        button{
+            background-color:transparent;
+            border:1px solid white;
+            box-shadow:none;
+            border-radius:0px;
+            text-shadow:none;
+            color:white;
+            font-family: 'main-light';
+            height:3rem;
+            width:25%;
+
+
+        }
+    
+    
     }
 
 

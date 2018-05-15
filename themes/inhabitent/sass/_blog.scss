@@ -1,6 +1,8 @@
 body.blog{
 
-
+    .content-area{
+        margin-top: 10%;
+    }
     
 
    
@@ -72,9 +74,28 @@ body.blog{
      }
 
 
+     button{
+         box-shadow:none;
+         background-color:$green;
+         width:20%;
+         border:none;
+         text-shadow:none;
+         border-radius:0px;
+         height:3rem;
+      
 
+         a{
+             text-decoration:none;
+             color:white;
+             font-family:'main-light';
+
+         }
+
+     }
      
-
+     article{
+         margin-top:10%;
+     }
 
 
 }

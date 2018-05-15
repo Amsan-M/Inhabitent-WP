@@ -42,7 +42,7 @@ Template Name: adventures
 
 			<div class = "adventure-link">
 
-			   <a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> </h1> <button type = "button"> read more </button> </a>
+			   <a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> <br> </h1> <button type = "button"> read more </button> </a>
 
 			</div>
 
