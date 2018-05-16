@@ -27,8 +27,8 @@ Template Name: homepage
 
 	</main><!-- #main -->
 
-
-
+<section>
+<div class = "section-wrapper">
  <!--       ===========================================                    Shop categories section             ================================================= -->
 
 	<div class = "shop-categories">
@@ -178,16 +178,27 @@ Template Name: homepage
 
 			<div class = "single-thumbnail"> 
 			
-
-				<?php the_post_thumbnail( 'medium' ); ?>
-
+				<div class = "thumbnail-wrapper">
+				<?php the_post_thumbnail( 'medium'); ?>
+				</div>
 
 				<div class = "single-thumbnail-meta"> 
 
-					<?php red_starter_posted_on(); ?> 
+					<div class = "post-info">
+
+					<?php red_starter_posted_on(); ?> / 
 					<?php comments_number('0 comment', '1 comment'); ?> 
-					<?php red_starter_posted_by(); ?>
-					<a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> </h1><button type="button">read entry</button> </a>
+					
+
+					</div> <!-- post-info -->
+
+
+					<div class = "post-title">
+					<a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> 
+					</div> <!-- post-title -->
+
+				<div class = "post-button"> </h1><button type="button"> <p> read entry </p></button>
+			 </div> <!-- post-button--> </a>
 					
 				</div> <!-- single-thumbnail-meta -->
 
@@ -218,7 +229,7 @@ Template Name: homepage
 	<!--       ===========================================                   adventures section             ================================================= -->
 
 
-
+<div class = "adventures-gallery-wrapper">
 	<div class = "adventures-gallery">
 			
 		<?php
@@ -235,13 +246,13 @@ Template Name: homepage
 
 			<div class = "adventure-image"> 
 
-			   <?php the_post_thumbnail( 'medium' ); ?>
+			   <?php the_post_thumbnail( 'large' ); ?>
 
 			</div>
 
 			<div class = "adventure-link">
 
-			   <a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> <button type="button">read more</button></h1> </a>
+			   <a href="<?php the_permalink(); ?>" <p> <?php the_title(); ?> </p> <button type="button"> <p> read more </p> </button></h1> </a>
 
 			</div>
 
@@ -272,13 +283,13 @@ Template Name: homepage
 	
 	
 	</div>
-			
-			
-	
+	</div> <!-- div gallery wrapper -->		
 			
 	
+			
 	
-	
+	</div> <!-- section-wrapper-->	
+</section>
 			
 	
 		
