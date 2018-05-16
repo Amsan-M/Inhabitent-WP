@@ -25,12 +25,18 @@
 					</div>    <!-- .contact-->
 					
 
-				    <div class= "buisness-hours"> 
-				      <h4> BUISNESS HOURS </h4> 
+				   <div class= "buisness-hours">  
+				      <!-- <h4> BUISNESS HOURS </h4> 
 				      <p> <strong> Monday-Friday:</strong> 9am to 5pm<p>
 				      <p><strong>Saturday:</strong> 10am to 2pm<p>
-				      <p><strong>Sunday:</strong>  closed<p> 
-					</div>   <!-- .buisness-hours -->
+				      <p><strong>Sunday:</strong>  closed<p>  -->
+					
+
+				<?php if (is_active_sidebar ('footer-sidebar')):?>
+				<?php dynamic_sidebar('footer-sidebar'); ?>
+					<?php endif; ?>
+
+					</div>   		
 
 <div class= "footer-image">
 

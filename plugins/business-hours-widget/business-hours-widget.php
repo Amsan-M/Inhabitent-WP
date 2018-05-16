@@ -158,9 +158,9 @@ class Inhabitent_buisness_hours extends WP_Widget {
 			(array) $instance,
 			array(
 				'title' => 'Buisness Hours',
-				'monday_friday' => '',
-				'saturday'=> '',
-				'sunday' => ''
+				'monday_friday' => ' ',
+				'saturday'=> ' ',
+				'sunday' => ' '
 			)
 		);
 
