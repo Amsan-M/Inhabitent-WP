@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying single posts.
+ * Template part for displaying single products.
  *
  * @package RED_Starter_Theme
  */
@@ -11,8 +11,7 @@
 	<header class="entry-header">
 		<?php 
 	if ( has_post_thumbnail() ) : ?>
-			<?php 
-			the_post_thumbnail( 'large' ); ?>
+			<?php the_post_thumbnail( 'large' ); ?>
 			<h1> <?php the_title(); ?> </h1>
 		<?php
 		 endif; ?>
@@ -23,8 +22,12 @@
 
 		<!-- commented below are finfo about author and publication dates  -->
 			<?php 
-			red_starter_posted_on(); ?> / <?php 
-			red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?> 
+			//red_starter_posted_on(); ?> 
+			<!-- /  -->
+			<?php 
+			//red_starter_comment_count(); ?> 
+			 <!-- /  -->
+			<?php //red_starter_posted_by(); ?> 
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 

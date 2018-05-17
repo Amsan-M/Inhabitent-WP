@@ -15,7 +15,8 @@ get_header();
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<?php get_template_part( 'template-parts/content', 'singleproduct' ); ?>
+		
 
 
 
@@ -28,14 +29,18 @@ get_header();
  $price = CFS()->get( 'price' );
  $exerpt =CFS()->get( 'exerpt' );
 
-
-echo "<p class=\"price\">Price: \${$price}</p>";
-echo "<p class=\"product-exerpt\">{$exerpt}</p>";
-
-
 ?>
+<?php echo "<p class=\"price\">Price: \${$price}</p>";?>
+
+<?php echo "<p class=\"product-exerpt\">{$exerpt}</p>";?>
+
+
+
+<div class = "social-media-buttons">
+<button type="button"> <i class="fab fa-facebook-f"></i> <p> like </p> </button><button type="button"> <i class="fab fa-twitter"></i>  <p>tweet </p> </button><button type="button"> <i class="fab fa-pinterest"></i> <p> pin </p> </button>
+</div> <!-- social media buttons-->
 </div> <!-- product-info -->
-			<?php the_post_navigation(); ?>
+			<?php //the_post_navigation(); ?>
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.

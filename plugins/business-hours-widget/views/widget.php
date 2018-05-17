@@ -19,7 +19,7 @@ if ( strlen(trim($monday_friday)) > 0):?>
 
 <?php endif;?>
 
-<?php if ( strlen(trim($monday_friday)) > 0): ?>
+<?php if ( strlen(trim($sunday)) > 0): ?>
     <p>
     <span class= "day-of-the-week"> Sunday:  </span> 
     <?php echo $sunday; ?>

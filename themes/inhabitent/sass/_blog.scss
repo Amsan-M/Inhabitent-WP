@@ -16,9 +16,7 @@ body.blog{
 
     }
 
-    .widget-area{
-        width: 30%;
-    }
+   
 
     
     .site-main{
@@ -29,7 +27,7 @@ body.blog{
     }
 
 
-    img{
+   .entry-header img{
         
      width: 100%;
      max-width: 100%;
@@ -70,6 +68,8 @@ body.blog{
     position: absolute;
     right:0px;
     bottom:0px;
+    text-transform:uppercase;
+    font-family:'headings';
     
 
     }
@@ -77,6 +77,8 @@ body.blog{
 
      .entry-content{
         margin-top:5%;
+        font-family:'main-light';
+        font-size:1rem;
      }
 
 
@@ -92,6 +94,7 @@ body.blog{
 
          a{
              text-decoration:none;
+             text-transform:uppercase;
              color:black;
              font-family:'main-light';
 

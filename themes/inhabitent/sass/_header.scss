@@ -1,19 +1,36 @@
 .site-header {
-    height: 2rem;
-    margin-top: 1.5rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    flex-direction: column;
-    align-content: space-between;
+    
+        position:absolute;
+        margin-top: 1.5rem;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width:100%;
+        min-width:1120px;
 }
+
+
 .site-branding{
-  
-    background-size: contain;
+	background-image: url('../css/images/logos/inhabitent-logo-tent.svg');
+	background-size: contain;
     background-repeat: no-repeat;
-    display: -ms-flexbox;
     display: flex;
-    width: 10%;
-    height: 100%;
+    width: 50px;  
+    height: 50px;
+}
+
+.page-template-page-main{
+    .site-branding{
+        background-image: url('../css/images/logos/inhabitent-logo-tent-white.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        width: 50px;
+        height: 50px;
+    }
 }

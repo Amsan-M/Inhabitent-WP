@@ -7,6 +7,13 @@
 
 get_header(); ?>
 
+
+  <div class = "sidebar-wrapper">
+
+<?php get_sidebar(); ?>
+</div>
+
+
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -20,19 +27,26 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
-
+				<button type="button"><a href="<?php the_permalink(); ?>" <h1> Read More &#8594; </h1> </a> </button>
 			<?php endwhile; ?>
 
 			<?php red_starter_numbered_pagination(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php get_template_part( 'template-parts/content', 'searchnotfound' ); ?>
 
 		<?php endif; ?>
 
 		</main><!-- #main -->
-	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+	
+	</section><!-- #primary -->
+  
+
+
+
+
+
+
 <?php get_footer(); ?>

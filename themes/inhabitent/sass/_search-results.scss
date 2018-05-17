@@ -1,0 +1,51 @@
+.search.search-results{
+
+    .site-content{
+        flex-direction:row-reverse;
+    }
+
+    .content-area{
+        margin-top:10%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .sidebar-wrapper{
+        width:100%;
+    }
+
+    .entry-title a{
+        color:$green;
+        font-family:'headings-bold';
+        text-transform:uppercase;
+
+    }
+
+    .entry-summary p{
+        font-family:'main-light';
+        font-size:1rem;
+    }
+
+    button{
+        box-shadow:none;
+        background-color:transparent;
+        width:20%;
+        border:1px solid black;
+        text-shadow:none;
+        border-radius:0px;
+        height:3rem;
+     
+
+        a{
+            text-decoration:none;
+            text-transform:uppercase;
+            color:black;
+            font-family:'main-light';
+
+        }
+
+    }
+    
+
+
+    
+}

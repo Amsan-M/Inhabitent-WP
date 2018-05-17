@@ -44,7 +44,7 @@ Template Name: about
 
 		</main>
 	<!-- </div> -->
-	#primary
+
 
 
 <?php get_footer(); ?>

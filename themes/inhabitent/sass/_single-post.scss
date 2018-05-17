@@ -11,7 +11,7 @@
     }
 
 
-    img {
+    .entry-header img {
         height: auto;
         max-width: 100%;
         width: 100%;
@@ -35,7 +35,6 @@
         }
         .entry-meta{
             position:absolute;
-            width:70%;
             right:0px;
             bottom:0px;
         }
@@ -45,9 +44,10 @@
     .entry-header{
         background-color:$green;
         color:white;
-        a{
+        a, span{
             text-decoration: none;
             color:white;
+            text-transform: uppercase;
         }
 
     }
@@ -59,11 +59,55 @@
     }
 
     .entry-footer{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
         margin-top:5%;
         a{
             color:$green;
             text-transform:uppercase;
             font-family: 'headings';
+        }
+
+        span.cat-links{
+            margin-right:1%;
+        }
+
+        .social-media-buttons{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+
+
+            button{
+                display:flex;
+                flex-direction:row;
+                flex-wrap:wrap;
+                justify-content: center;
+                align-content: center;
+                
+                background-color:white;
+                border-radius:0px;
+                box-shadow:none;
+                border:1px solid black;
+                height:3rem;
+                width:8rem;
+                margin-right: 1%;
+                margin-top:5%;
+
+
+                p{
+                    text-shadow:none;
+                    font-family:'headings';
+                    font-size:1rem;
+                    color:black;
+                    text-transform:uppercase;
+                    margin:0px;
+                    
+                }
+            }
+
         }
     }
 
@@ -95,6 +139,7 @@
         }
         textarea{
             background-color: #f4f4f4;
+            border-radius: 0px;
         }
         input[type=email], input[type=password], input[type=search], input[type=text], input[type=url] {
             color: #666;
@@ -103,10 +148,36 @@
             border-radius: 0px;
             background-color: #f4f4f4;
         }
+
+
+        
+        input[type=submit]{
+            background-color:$green;
+            border:none;
+            width:7rem;
+            height:3rem;
+            box-shadow:none;
+            border-radius:0px;
+            font-family:'headings';
+            text-transform: uppercase;
+            text-decoration:none;
+            color:white;
+            text-shadow:none;
+            
+            
+
+        }
+
+        label{
+            font-family:'main-light';
+            font-size:1rem;
+            text-transform:uppercase;
+        }
+
     }
    
 
 }
 
 
-    
+  

@@ -22,14 +22,14 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width: 35%;
+	width: 100%;
 	border-left: 1px solid #e1e1e1;
 	margin-left: 1rem;
 	margin-top: 5rem;
-	padding: 2%;
+	// width: 40%;
 	font-family: 'main-light';
 	font-size: 16px;
-	padding: 5%;
+	padding-left:3%;
 }
 
 .widget.inhabitent-buisness-hours-class p,
@@ -39,8 +39,10 @@
 }
 
 .widget.inhabitent-buisness-hours-class h3,
-.widget.inhabitent-contact-info-class h3{
-	font-family:'headings';
+.widget.widget_text h2{
+	font-family:'headings-bold';
+	font-size:1.5rem;
+	text-transform:uppercase;
 }
  
 

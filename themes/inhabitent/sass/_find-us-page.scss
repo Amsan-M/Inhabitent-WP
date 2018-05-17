@@ -24,12 +24,18 @@
 	.entry-title{
 	color: black;
     text-transform: uppercase;
-    font-family: Novecento-DemiBold;
+    font-family: 'headings-bold';
 	}
 
 	.entry-content h2{
 		text-transform: uppercase;
 		color:black;
 		font-family: 'Merriweather-L';
+	}
+
+
+	.widget-area{
+		width:40%;
+		margin-top:15%;
 	}
 }
