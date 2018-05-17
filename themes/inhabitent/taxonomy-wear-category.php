@@ -43,7 +43,7 @@ $wearcategory = new WP_Query( array (
        <div class = "single-product">
            <div class = "product-image">
            <a href="<?php the_permalink(); ?>"  
-           <?php get_template_part( 'template-parts/content', 'single' ); ?>
+           <?php the_content(); ?>
            </div>
            <div class = "product-info">
             <?php the_title(); ?>

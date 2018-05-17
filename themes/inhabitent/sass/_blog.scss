@@ -1,26 +1,28 @@
 body.blog{
 
     .content-area{
-        margin-top: 10%;
+        margin-top: 1%;
+        margin-left: 3%;
+        margin-right: 1%;
+
     }
     
 
    
-    .hentry{
+    header{
+        position:relative;
 
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+     
 
     }
 
     .widget-area{
-        width: 100%;
+        width: 30%;
     }
 
     
     .site-main{
-        margin-top: 10%;
+        margin-top: 5%;
         margin-left:5%;
         margin-right: 5%;
         
@@ -46,13 +48,16 @@ body.blog{
    .entry-title{
         background-color: $green;
         background-color: #248a83;
-        display: flex;
         position: absolute;
+        width:80%;
     
 
        a{
            color:white;
-           font-size:1rem;
+           font-size:3rem;
+           font-family:'headings-bold';
+           text-decoration: none;
+
        }
 
     }
@@ -63,8 +68,9 @@ body.blog{
     background-color: #248a83;
     color: #fff;
     position: absolute;
-    display: flex;
-    align-self: flex-end;
+    right:0px;
+    bottom:0px;
+    
 
     }
 
@@ -76,9 +82,9 @@ body.blog{
 
      button{
          box-shadow:none;
-         background-color:$green;
+         background-color:transparent;
          width:20%;
-         border:none;
+         border:1px solid black;
          text-shadow:none;
          border-radius:0px;
          height:3rem;
@@ -86,7 +92,7 @@ body.blog{
 
          a{
              text-decoration:none;
-             color:white;
+             color:black;
              font-family:'main-light';
 
          }

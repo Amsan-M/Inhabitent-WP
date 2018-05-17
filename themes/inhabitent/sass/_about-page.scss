@@ -6,59 +6,44 @@
 // ==========================================================================================================
 .page-template-page-about {
 
+	// display:flex;
 
-	.main-navigation a {
-		display: block;
-		text-decoration: none;
-		font-family: 'headings';
-		color: white;
-		font-size: 1.5rem;
+
+	.site-content{
+		display:flex;
+		flex-direction:row;
+		
+		
 	}
 
-	.entry-content {
-		display: flex;
+	.page-image{
+		display:flex;
 		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		align-content: center;
-		justify-items: center;
+		width:100%;
+		background-image: url('../css/images/about-hero.jpg');
+		background-size: cover;
+	
 	}
 
-	.entry-header {
-		position: absolute;
-	}
 
-	.entry-title {
-		color: white;
+	.entry-text{
 		display: flex;
-		font-family: 'headings-bold';
-		font-size:3rem;
+		flex-direction:row;
+		flex-wrap:wrap;
+
+		width:100%;	
+			
+		
+	
+
+	
+
 	}
 
-	.entry-text {
-		margin: 7%;
-	}
 
-	.entry-content p {
-		margin-left: 15%;
-		margin-right: 14%;
-	}
 
-	h2 {
-		text-align: center;
-		font-family: 'headings';
-		font-size: 2rem;
-	}
 
-	p {
-		font-family: 'main-light';
-		margin-bottom: 1.5rem;
-	}
-
-	.entry-img {
-		display: flex;
-		justify-content: center;
-	}
+	
 
 
 }

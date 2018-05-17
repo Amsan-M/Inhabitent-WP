@@ -12,7 +12,7 @@ if ( strlen(trim($monday_friday)) > 0):?>
 
 <?php if ( strlen(trim($saturday)) > 0): ?>
     <p>
-    <span class= "day-of-the-week"> Monday to Friday:  </span> 
+    <span class= "day-of-the-week"> Saturday:  </span> 
     <?php echo $saturday; ?>
     </p>
     
@@ -21,7 +21,7 @@ if ( strlen(trim($monday_friday)) > 0):?>
 
 <?php if ( strlen(trim($monday_friday)) > 0): ?>
     <p>
-    <span class= "day-of-the-week"> Monday to Friday:  </span> 
+    <span class= "day-of-the-week"> Sunday:  </span> 
     <?php echo $sunday; ?>
     </p>
     

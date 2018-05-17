@@ -32,27 +32,25 @@
 	padding: 5%;
 }
 
-.textwidget{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	
+.widget.inhabitent-buisness-hours-class p,
+.widget.inhabitent-contact-info-class p{
+	font-family:'main-light';
+
+}
+
+.widget.inhabitent-buisness-hours-class h3,
+.widget.inhabitent-contact-info-class h3{
+	font-family:'headings';
 }
  
 
- .textwidget p{
-	 
-	 font-family:'main-light';
- }
 
- .textwidget h4, .widget_archive h2{
-	 font-family:'headings-bold';
-	 font-size:1.5rem;
- }
+span.day-of-the-week{
+	font-weight:bold;
 
- .textwidget h4{
-	 margin-top:5%;
- }
+}
+
+ 
 
 // archive 
 

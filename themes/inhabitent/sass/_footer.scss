@@ -12,9 +12,10 @@ footer .site-info {
     background-repeat: no-repeat,no-repeat;
     background-position-y: 15%;
     background-position-x: 95%;
+    margin-top:5%;
 
   
-    .contact,  .buisness-hours{
+    div{
 
      
         flex-direction: column;
@@ -27,7 +28,7 @@ footer .site-info {
         width:30%;
         margin-left:3rem;
       
-        h4{
+        h3{
             color:$orange;
             font-family: 'headings-bold';
             font-size:1.3rem;
@@ -35,9 +36,7 @@ footer .site-info {
             text-transform:uppercase;
         }
 
-        footer .contact p{
-        color:blue;
-        }
+       
         
     }
 
