@@ -13,6 +13,7 @@
 	if ( has_post_thumbnail() ) : ?>
 			<?php 
 			the_post_thumbnail( 'large' ); ?>
+			<h1> <?php the_title(); ?> </h1>
 		<?php
 		 endif; ?>
 

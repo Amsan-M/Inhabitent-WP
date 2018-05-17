@@ -3,8 +3,8 @@
 
     .content-area{
         margin-top: 10%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -17,9 +17,94 @@
         width: 100%;
     }
 
+    
+
+    .entry-header{
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        position:relative;
+
+        h1{
+            background-color:$green;
+            position:absolute;
+            padding:1%;
+            text-transform:uppercase;
+            font-size:2.5rem;
+            font-family:'headings-bold';
+        }
+        .entry-meta{
+            position:absolute;
+            width:70%;
+            right:0px;
+            bottom:0px;
+        }
+    }
+
+    .entry-meta,
+    .entry-header{
+        background-color:$green;
+        color:white;
+        a{
+            text-decoration: none;
+            color:white;
+        }
+
+    }
+
     .entry-content{
         margin-top:5%;
+        font-family:'main-light';
+        font-size:1rem;
     }
+
+    .entry-footer{
+        margin-top:5%;
+        a{
+            color:$green;
+            text-transform:uppercase;
+            font-family: 'headings';
+        }
+    }
+
+
+
+    .comment-form{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        border-radius:0px;
+
+        .comment-form-comment,
+        .comment-form-url{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .comment-form-author, 
+        .comment-form-email{
+           
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 45%;
+            margin:1%;
+        
+        }
+        textarea{
+            background-color: #f4f4f4;
+        }
+        input[type=email], input[type=password], input[type=search], input[type=text], input[type=url] {
+            color: #666;
+            border: 1px solid #ccc;
+            height:2rem;
+            border-radius: 0px;
+            background-color: #f4f4f4;
+        }
+    }
+   
 
 }
 
