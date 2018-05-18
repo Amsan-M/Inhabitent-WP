@@ -244,18 +244,12 @@ Template Name: homepage
 	
 		<div class = "single-adventure">
 
-			<!-- <div class = "adventure-image">  -->
-
-			   
-
-			<!-- </div> -->
-
-			<!-- <div class = "adventure-link"> -->
+			
 
 			   
 				<?php the_post_thumbnail( 'medium' ); ?>
 				<a href="<?php the_permalink(); ?>" <p> <?php the_title(); ?> </p> <button type="button"> <p> read more </p> </button></h1> </a>
-			<!-- </div> -->
+			
 			</div>
         
 			
