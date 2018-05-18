@@ -1172,82 +1172,46 @@ footer .site-info {
             text-transform: uppercase;
             margin: 0px; }
   .page-template-page-main .adventures-gallery-wrapper {
+    margin-top: 10%;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    max-width: 100%; }
     .page-template-page-main .adventures-gallery-wrapper .adventures-gallery {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
       width: 100%;
-      max-width: 100%; }
-    .page-template-page-main .adventures-gallery-wrapper .single-adventure {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-    .page-template-page-main .adventures-gallery-wrapper .single-adventure:nth-child(1) img,
-    .page-template-page-main .adventures-gallery-wrapper .single-adventure:nth-child(2) img,
-    .page-template-page-main .adventures-gallery-wrapper .single-adventure:nth-child(3) img,
-    .page-template-page-main .adventures-gallery-wrapper .single-adventure:nth-child(4) img {
-      width: 100%; }
-    .page-template-page-main .adventures-gallery-wrapper button {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
-      background-color: transparent;
-      border-radius: 0px;
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      border: 2px solid white;
-      height: 3rem;
-      width: 10rem;
-      margin-bottom: 10%; }
-      .page-template-page-main .adventures-gallery-wrapper button a {
-        color: red; }
-    .page-template-page-main .adventures-gallery-wrapper .adventure-link button p {
-      font-family: 'headings';
-      color: white;
-      text-shadow: none; }
-    .page-template-page-main .adventures-gallery-wrapper a {
-      text-shadow: none;
-      text-decoration: none;
-      font-family: 'headings';
-      font-size: 1rem;
-      color: white;
-      text-transform: capitalize;
-      font-size: 2rem;
-      margin: 0px;
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 0.5rem; }
+  .page-template-page-main .single-adventure a {
+    position: absolute; }
+  .page-template-page-main .single-adventure {
+    position: relative; }
+  .page-template-page-main .single-adventure:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; }
+    .page-template-page-main .single-adventure:nth-child(1) img {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+    .page-template-page-main .single-adventure:nth-child(1) a {
       position: absolute; }
+  .page-template-page-main .single-adventure:nth-child(2) {
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 5; }
+    .page-template-page-main .single-adventure:nth-child(2) img {
+      width: 100%;
+      height: 100%; }
+    .page-template-page-main .single-adventure:nth-child(2) a {
+      position: absolute; }
+  .page-template-page-main .single-adventure:nth-child(3) {
+    grid-column-start: 3;
+    grid-row-start: 2; }
+    .page-template-page-main .single-adventure:nth-child(3) img {
+      width: 100%;
+      height: 100%; }
 
 body.blog .content-area {
   margin-top: 1%;
@@ -1347,6 +1311,7 @@ body.blog article {
     background-size: 100%;
     width: 100%;
     background-repeat: no-repeat;
+    background-position: bottom center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

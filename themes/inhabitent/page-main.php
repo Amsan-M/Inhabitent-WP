@@ -252,13 +252,14 @@ Template Name: homepage
 
 			<!-- <div class = "adventure-link"> -->
 
-			   <a href="<?php the_permalink(); ?>" <p> <?php the_title(); ?> </p> <button type="button"> <p> read more </p> </button></h1> </a>
+			   
 				<?php the_post_thumbnail( 'medium' ); ?>
+				<a href="<?php the_permalink(); ?>" <p> <?php the_title(); ?> </p> <button type="button"> <p> read more </p> </button></h1> </a>
 			<!-- </div> -->
-
-
+			</div>
+        
 			
-		</div>
+		
 			   
 	
 	
