@@ -273,7 +273,7 @@ Template Name: homepage
 				
 	
 	<div class = "adventure-page-button">
-		<button type="button"><a href="/Inhabitent/all-adventures/" <h1> Read More Adventures</h1> </a> </button>
+		<button type="button"><a href="/Inhabitent/all-adventures/" <h1> More Adventures</h1> </a> </button>
 	</div>
 	
 	

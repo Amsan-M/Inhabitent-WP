@@ -915,124 +915,180 @@ footer .site-info {
               flex-direction: row;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-  .page-template-page-main .shop-categories {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .page-template-page-main .shop-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-    margin-top: 5%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-  .page-template-page-main .shop-categories ul {
-    list-style: none;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .page-template-page-main .shop-categories ul li {
-      width: 23%;
-      margin: 1%; }
-  .page-template-page-main .shop-categories img {
-    height: auto;
-    max-width: 100%;
-    width: 60%; }
-  .page-template-page-main .do-category,
-  .page-template-page-main .eat-category,
-  .page-template-page-main .sleep-category,
-  .page-template-page-main .wear-category {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    border: 1px solid #e1e1e1; }
-  .page-template-page-main .do-icon,
-  .page-template-page-main .eat-icon,
-  .page-template-page-main .sleep-icon,
-  .page-template-page-main .wear-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 30%; }
-    .page-template-page-main .do-icon img,
-    .page-template-page-main .eat-icon img,
-    .page-template-page-main .sleep-icon img,
-    .page-template-page-main .wear-icon img {
-      width: 30%;
-      margin: 10%; }
-  .page-template-page-main .category-description {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .page-template-page-main .category-description p {
-      text-align: center;
-      font-family: 'main-light';
-      margin: 5%; }
-    .page-template-page-main .category-description button {
-      background-color: #248A83;
-      border: none;
-      width: 55%;
-      height: 3rem;
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      border-radius: 0px; }
-      .page-template-page-main .category-description button a {
-        font-family: 'headings';
-        text-transform: uppercase;
-        text-decoration: none;
-        color: white;
-        text-shadow: none; }
-  .page-template-page-main .latest-post-heading {
+
+.page-template-page-main .shop-categories {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-template-page-main .shop-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.page-template-page-main .shop-categories ul {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .page-template-page-main .shop-categories ul li {
+    width: 23%;
+    margin: 1%; }
+
+.page-template-page-main .shop-categories img {
+  height: auto;
+  max-width: 100%;
+  width: 60%; }
+
+.page-template-page-main .do-category,
+.page-template-page-main .eat-category,
+.page-template-page-main .sleep-category,
+.page-template-page-main .wear-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #e1e1e1; }
+
+.page-template-page-main .do-icon,
+.page-template-page-main .eat-icon,
+.page-template-page-main .sleep-icon,
+.page-template-page-main .wear-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30%; }
+  .page-template-page-main .do-icon img,
+  .page-template-page-main .eat-icon img,
+  .page-template-page-main .sleep-icon img,
+  .page-template-page-main .wear-icon img {
+    width: 30%;
+    margin: 10%; }
+
+.page-template-page-main .category-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .page-template-page-main .category-description p {
+    text-align: center;
+    font-family: 'main-light';
+    margin: 5%; }
+  .page-template-page-main .category-description button {
+    background-color: #248A83;
+    border: none;
+    width: 55%;
+    height: 3rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0px; }
+    .page-template-page-main .category-description button a {
+      font-family: 'headings';
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      text-shadow: none; }
+
+.page-template-page-main .latest-post-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1%;
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-family: 'headings'; }
+
+.page-template-page-main .posts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.page-template-page-main .last-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'main-light'; }
+  .page-template-page-main .last-posts .single-thumbnail {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1043,42 +1099,29 @@ footer .site-info {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 1%;
-    width: 100%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-transform: uppercase;
-    font-family: 'headings'; }
-  .page-template-page-main .posts-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .page-template-page-main .last-posts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    border: solid 1px lightgrey;
+    width: 30%;
     height: 100%;
-    width: 100%;
-    max-width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-family: 'main-light'; }
-    .page-template-page-main .last-posts .single-thumbnail {
+    font-size: 1rem; }
+    .page-template-page-main .last-posts .single-thumbnail .thumbnail-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%;
+      height: 40%; }
+      .page-template-page-main .last-posts .single-thumbnail .thumbnail-wrapper img {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        border-bottom: solid 5px lightgrey; }
+    .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta {
+      margin-top: 1%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1088,30 +1131,13 @@ footer .site-info {
               flex-direction: row;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      margin: 1%;
-      border: solid 1px lightgrey;
-      width: 30%;
-      height: 100%;
-      font-size: 1rem; }
-      .page-template-page-main .last-posts .single-thumbnail .thumbnail-wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 100%;
-        height: 40%; }
-        .page-template-page-main .last-posts .single-thumbnail .thumbnail-wrapper img {
-          max-width: 100%;
-          width: 100%;
-          height: 100%;
-          border-bottom: solid 5px lightgrey; }
-      .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta {
-        margin-top: 1%;
+      height: 60%;
+      width: 100%;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      margin-left: 5%; }
+      .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta .post-info {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1121,181 +1147,204 @@ footer .site-info {
                 flex-direction: row;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        height: 60%;
         width: 100%;
-        -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
-        margin-left: 5%; }
-        .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta .post-info {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: row;
-                  flex-direction: row;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          width: 100%;
-          font-size: 0.85rem; }
-        .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta a {
-          color: #248A83;
-          font-size: 1.5rem;
-          font-family: 'headings-bold';
+        font-size: 0.85rem; }
+      .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta a {
+        color: #248A83;
+        font-size: 1.5rem;
+        font-family: 'headings-bold';
+        text-transform: uppercase;
+        text-decoration: none; }
+      .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta h1:hover {
+        color: black; }
+      .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+        background-color: white;
+        border-radius: 0px;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border: 1px solid black;
+        height: 3rem;
+        width: 10rem;
+        margin-bottom: 10%; }
+        .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta button p {
+          text-shadow: none;
+          font-family: 'headings';
+          font-size: 1rem;
+          color: black;
           text-transform: uppercase;
-          text-decoration: none; }
-        .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta h1:hover {
-          color: black; }
-        .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta button {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: row;
-                  flex-direction: row;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -ms-flex-line-pack: center;
-              align-content: center;
-          background-color: white;
-          border-radius: 0px;
-          -webkit-box-shadow: none;
-                  box-shadow: none;
-          border: 1px solid black;
-          height: 3rem;
-          width: 10rem;
-          margin-bottom: 10%; }
-          .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta button p {
-            text-shadow: none;
-            font-family: 'headings';
-            font-size: 1rem;
-            color: black;
-            text-transform: uppercase;
-            margin: 0px; }
-  .page-template-page-main .adventures-gallery-wrapper {
-    margin-top: 10%;
+          margin: 0px; }
+
+.page-template-page-main .adventures-gallery-wrapper {
+  margin-top: 10%;
+  width: 100%;
+  max-width: 100%;
+  height: 30rem; }
+  .page-template-page-main .adventures-gallery-wrapper .adventures-gallery {
     width: 100%;
-    max-width: 100%; }
-    .page-template-page-main .adventures-gallery-wrapper .adventures-gallery {
-      width: 100%;
-      height: 100%;
-      max-width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-gap: 0.5rem; }
-  .page-template-page-main .single-adventure img {
+    height: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-gap: 0.5rem; }
+
+.page-template-page-main .single-adventure img {
+  width: 100%;
+  position: relative; }
+
+.page-template-page-main .single-adventure a {
+  position: absolute;
+  font-family: 'main-bold';
+  font-size: 2rem;
+  max-width: 80%;
+  word-break: break-word;
+  color: white;
+  text-shadow: none;
+  text-decoration: none;
+  margin-top: 5%;
+  margin-left: 1%;
+  text-transform: capitalize; }
+
+.page-template-page-main .single-adventure:nth-child(1) {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3; }
+  .page-template-page-main .single-adventure:nth-child(1) img {
+    position: absolute;
     width: 100%;
-    position: relative; }
-  .page-template-page-main .single-adventure a {
+    height: 100%; }
+  .page-template-page-main .single-adventure:nth-child(1) a {
     position: absolute; }
-  .page-template-page-main .single-adventure:nth-child(1) {
-    position: relative;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3; }
-    .page-template-page-main .single-adventure:nth-child(1) img {
-      position: absolute;
-      width: 100%;
-      height: 100%; }
-    .page-template-page-main .single-adventure:nth-child(1) a {
-      position: absolute; }
-  .page-template-page-main .single-adventure:nth-child(2) {
-    position: relative;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .page-template-page-main .single-adventure:nth-child(2) .single-adventure:nth-child(2) img {
-      position: absolute;
-      width: 100%;
-      height: 100%; }
-    .page-template-page-main .single-adventure:nth-child(2) .single-adventure:nth-child(2) a {
-      position: absolute; }
-  .page-template-page-main .single-adventure:nth-child(3) {
-    grid-column-start: 3;
-    grid-row-start: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .page-template-page-main .single-adventure:nth-child(3) .single-adventure img {
-      position: absolute;
-      width: 100%;
-      height: 100%; }
-  .page-template-page-main .single-adventure:nth-child(4) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .page-template-page-main .single-adventure:nth-child(4) .single-adventure img {
-      width: 100%;
-      height: 100%; }
-    .page-template-page-main .single-adventure:nth-child(4) a {
-      display: block;
-      font-size: 1rem;
-      width: 40%; }
-  .page-template-page-main button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    background-color: transparent;
-    border-radius: 0px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: 2px solid white;
-    height: 3rem;
-    width: 4rem;
-    margin-bottom: 10%; }
-    .page-template-page-main button p {
-      text-decoration: none;
-      text-shadow: none;
-      color: white; }
-  .page-template-page-main .single-adventure a {
-    font-family: 'main-bold';
-    font-size: 2rem;
-    max-width: 80%;
-    word-break: break-word;
-    color: white;
-    text-shadow: none;
+
+.page-template-page-main .single-adventure:nth-child(2) {
+  position: relative;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .page-template-page-main .single-adventure:nth-child(2) .single-adventure:nth-child(2) img {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .page-template-page-main .single-adventure:nth-child(2) .single-adventure:nth-child(2) a {
+    position: absolute; }
+
+.page-template-page-main .single-adventure:nth-child(3) {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .page-template-page-main .single-adventure:nth-child(3) .single-adventure img {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .page-template-page-main .single-adventure:nth-child(3) a {
+    font-size: 0.8rem; }
+
+.page-template-page-main .single-adventure:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .page-template-page-main .single-adventure:nth-child(4) .single-adventure img {
+    width: 100%;
+    height: 100%; }
+  .page-template-page-main .single-adventure:nth-child(4) a {
+    display: block;
+    font-size: 0.8rem;
+    width: 40%; }
+
+.page-template-page-main .single-adventure button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: transparent;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid white;
+  height: 3rem;
+  width: 5rem;
+  margin: 0px; }
+  .page-template-page-main .single-adventure button p {
     text-decoration: none;
-    margin-top: 5%;
-    margin-left: 1%;
-    text-transform: capitalize; }
+    text-shadow: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'headings';
+    margin: 0px; }
+
+.page-template-page-main .adventure-page-button button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #248A83;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid white;
+  height: 3.2rem;
+  width: 18rem;
+  margin: 0px; }
+  .page-template-page-main .adventure-page-button button a {
+    text-decoration: none;
+    text-shadow: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'headings';
+    margin: 0px;
+    font-size: 1.5rem; }
+
+.page-template-page-main footer {
+  margin-top: 10%; }
 
 body.blog .content-area {
   margin-top: 1%;
@@ -1321,7 +1370,8 @@ body.blog .entry-wrapper {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 body.blog .entry-image {
   width: 100%;
@@ -1331,7 +1381,8 @@ body.blog .entry-image {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   body.blog .entry-image img {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
 
 body.blog .entry-title {
   background-color: #248A83;
@@ -1680,6 +1731,18 @@ body.blog article {
         flex-basis: 48%;
     height: 500px;
     margin: 1%; }
+  .page-template-archive-adventures .adventure-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: 100%; }
   .page-template-archive-adventures .adventure-image,
   .page-template-archive-adventures img {
     height: 100%; }
@@ -1693,29 +1756,20 @@ body.blog article {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 40%;
-    height: 100%;
+    width: 35%;
+    height: 20%;
     margin-top: 5%;
     position: absolute;
-    margin: 3%;
-    width: 100%; }
+    margin: 3%; }
     .page-template-archive-adventures .adventure-link a {
-      font-size: 3rem;
+      font-size: 2.8rem;
       text-decoration: none;
+      text-transform: capitalize;
       color: white;
-      font-family: 'headings';
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      min-width: 100%;
+      font-family: 'main-light';
       position: absolute;
-      width: 100%; }
+      width: 470px;
+      height: 4rem; }
     .page-template-archive-adventures .adventure-link button {
       background-color: transparent;
       border: 1px solid white;
@@ -1724,9 +1778,11 @@ body.blog article {
       border-radius: 0px;
       text-shadow: none;
       color: white;
-      font-family: 'main-light';
+      font-family: 'headings';
+      font-size: 1rem;
+      text-transform: uppercase;
       height: 3rem;
-      width: 25%; }
+      width: 30%; }
 
 .search-no-results .hfeed.site {
   display: -webkit-box;

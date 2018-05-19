@@ -34,6 +34,8 @@ Template Name: adventures
 	
 		<div class = "single-adventure">
 
+			<span class = "adventure-wrapper">
+
 			<div class = "adventure-image"> 
 
 			   <?php the_post_thumbnail( 'large' ); ?>
@@ -45,6 +47,7 @@ Template Name: adventures
 			   <a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> <br> </h1> <button type = "button"> read more </button> </a>
 
 			</div>
+			
 
 		</div>
 			   

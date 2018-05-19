@@ -42,6 +42,15 @@
         margin: 1%;
 
     }
+
+    .adventure-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+
+    }
     .adventure-image,
      img{
          
@@ -54,24 +63,26 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 40%;
-        height:100%;
+        width: 35%;
+        height: 20%;
         margin-top:5%;
         position: absolute;
         margin: 3%;
-        width:100%;
+        // width:100%;
 
         a{
-            font-size:3rem;
+            font-size:2.8rem;
             text-decoration:none;
+            text-transform:capitalize;
             color:white;
-            font-family: 'headings';
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            min-width: 100%;
+            font-family: 'main-light';
+            // display: flex;
+            // flex-wrap: wrap;
+            // flex-direction: row;
+            //min-width: 100%;
             position: absolute;
-            width:100%;
+            width: 470px;
+            height: 4rem;
         }
 
         button{
@@ -81,9 +92,11 @@
             border-radius:0px;
             text-shadow:none;
             color:white;
-            font-family: 'main-light';
+            font-family: 'headings';
+            font-size:1rem;
+            text-transform:uppercase;
             height:3rem;
-            width:25%;
+            width:30%;
 
 
         }
