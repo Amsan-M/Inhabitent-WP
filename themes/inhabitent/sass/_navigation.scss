@@ -145,7 +145,14 @@ a {
 .menu-navigation-container{
 	display: inline-flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 80%;
 }
 
+.main-navigation fieldset{
+	border:none;
+}
 
+.site-branding{
+	width:50px;
+	height:50px;
+}

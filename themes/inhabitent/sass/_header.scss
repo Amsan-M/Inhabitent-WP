@@ -3,11 +3,11 @@
         position:absolute;
         margin-top: 1.5rem;
         display: -ms-flexbox;
-        display: flex;
+        display: inline-flex;
         -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -ms-flex-direction: row;
-        flex-direction: row;
+        // flex-wrap: wrap;
+        // -ms-flex-direction: row;
+        // flex-direction: row;
         -ms-flex-pack: justify;
         justify-content: space-between;
         width:100%;
@@ -15,7 +15,7 @@
 }
 
 
-.site-branding{
+.logo-link a{
 	background-image: url('../css/images/logos/inhabitent-logo-tent.svg');
 	background-size: contain;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@
 }
 
 .page-template-page-main{
-    .site-branding{
+    .logo-link{
         background-image: url('../css/images/logos/inhabitent-logo-tent-white.svg');
         background-size: contain;
         background-repeat: no-repeat;

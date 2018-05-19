@@ -1,4 +1,4 @@
-// stylesheet for archives tags and categories 
+// stylesheet for archives: tags and categories 
 
 
 body.archive.tag,
@@ -39,12 +39,17 @@ body.archive.category{
 
         }
 
+        .entry-title{
+            width:80%;
+        }
+
         .entry-title a{
             text-decoration:none;
             font-family:'headings-bold';
             font-size:2rem; 
             color:white;
             text-transform:uppercase;
+            
         }
 
     
