@@ -1,0 +1,25 @@
+.search.search-no-results{
+    min-width:1120px;
+    display:flex;
+    flex-wrap:wrap;
+    .hfeed.site{
+        width:100%;
+    }
+
+    .site-content{
+        display:flex;
+        flex-direction:row-reverse;
+        margin-top:10%
+    }
+
+    .content-area{
+        width:80%;
+
+    
+    }
+
+
+    .site-main{
+        border-top: 1px solid lightgrey;
+    }
+}

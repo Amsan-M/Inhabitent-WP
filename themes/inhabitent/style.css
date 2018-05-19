@@ -1114,7 +1114,7 @@ footer .site-info {
           -ms-flex-direction: column;
               flex-direction: column;
       width: 100%;
-      height: 40%; }
+      height: 50%; }
       .page-template-page-main .last-posts .single-thumbnail .thumbnail-wrapper img {
         max-width: 100%;
         width: 100%;
@@ -1131,7 +1131,7 @@ footer .site-info {
               flex-direction: row;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      height: 60%;
+      height: 50%;
       width: 100%;
       -webkit-box-align: end;
           -ms-flex-align: end;
@@ -1784,7 +1784,7 @@ body.blog article {
       height: 3rem;
       width: 30%; }
 
-.search-no-results .hfeed.site {
+.error404 .hfeed.site {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1796,7 +1796,7 @@ body.blog article {
       flex-wrap: wrap;
   width: 100%; }
 
-.search-no-results .site-content {
+.error404 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1808,8 +1808,8 @@ body.blog article {
       flex-wrap: wrap;
   width: 100%;
   margin-top: 10%; }
-  .search-no-results .site-content .content-area,
-  .search-no-results .site-content .widget-area {
+  .error404 .site-content .content-area,
+  .error404 .site-content .widget-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1819,47 +1819,50 @@ body.blog article {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .search-no-results .site-content .content-area {
+  .error404 .site-content .content-area {
     width: 70%; }
 
-.search-no-results .site-main {
+.error404 .site-main {
   width: 100%;
   margin-left: 5%; }
 
-.search-no-results section.error-404-not-found {
+.error404 section.error-404-not-found {
   margin: 10%;
   width: 100%; }
 
-.search-no-results section.content-area {
+.error404 section.content-area {
   width: 100%; }
 
-.search-no-results form.search-form fieldset {
+.error404 form.search-form fieldset {
   border: none; }
 
-.search-no-results .widget-area {
-  width: 100%;
+.error404 .widget-area {
+  width: 30%;
   height: auto;
   margin: 0px; }
 
-.search-no-results .sidebar-wrapper {
+.error404 .sidebar-wrapper {
   width: 30%; }
 
-.search-no-results .site-footer {
+.error404 .site-footer {
   width: 100%; }
 
-.search-no-results .widget.widget h2 {
+.error404 .widget.widget h2 {
   font-size: 1.5rem;
   font-family: 'headings-bold'; }
 
-.search-no-results .widget.widget ul {
+.error404 .widget.widget ul {
   list-style: none; }
-  .search-no-results .widget.widget ul li a {
+  .error404 .widget.widget ul li a {
     text-decoration: none;
     font-family: 'main-light';
     color: #248A83;
     font-size: 1rem; }
-  .search-no-results .widget.widget ul li a:hover {
+  .error404 .widget.widget ul li a:hover {
     color: black; }
+
+.error404 .widget.inhabitent-buisness-hours-class {
+  width: 100%; }
 
 .search.search-results .site-content {
   -webkit-box-orient: horizontal;
@@ -1898,6 +1901,29 @@ body.blog article {
     text-transform: uppercase;
     color: black;
     font-family: 'main-light'; }
+
+.search.search-no-results {
+  min-width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .search.search-no-results .hfeed.site {
+    width: 100%; }
+  .search.search-no-results .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-top: 10%; }
+  .search.search-no-results .content-area {
+    width: 80%; }
+  .search.search-no-results .site-main {
+    border-top: 1px solid lightgrey; }
 
 .post-template-default .content-area {
   margin-top: 10%;
@@ -2464,6 +2490,76 @@ body.blog article {
   font-family: 'main-light';
   text-decoration: none; }
 
-body.archive.tag,
-body.archive.category {
-  background-color: pink; }
+body.archive.tag .hentry,
+body.archive.category .hentry {
+  margin-top: 5%; }
+
+body.archive.tag .content-area,
+body.archive.category .content-area {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  body.archive.tag .content-area .site-main,
+  body.archive.category .content-area .site-main {
+    width: 80%;
+    margin-top: 10%; }
+
+body.archive.tag .entry-wrapper,
+body.archive.category .entry-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  body.archive.tag .entry-wrapper .entry-image,
+  body.archive.category .entry-wrapper .entry-image {
+    width: 100%; }
+    body.archive.tag .entry-wrapper .entry-image img,
+    body.archive.category .entry-wrapper .entry-image img {
+      width: 100%;
+      height: 100%; }
+  body.archive.tag .entry-wrapper .entry-title,
+  body.archive.tag .entry-wrapper .entry-meta,
+  body.archive.category .entry-wrapper .entry-title,
+  body.archive.category .entry-wrapper .entry-meta {
+    position: absolute;
+    background-color: #248A83;
+    color: white; }
+  body.archive.tag .entry-wrapper .entry-title a,
+  body.archive.category .entry-wrapper .entry-title a {
+    text-decoration: none;
+    font-family: 'headings-bold';
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase; }
+  body.archive.tag .entry-wrapper .entry-meta,
+  body.archive.category .entry-wrapper .entry-meta {
+    position: absolute;
+    right: 0px;
+    bottom: 0px; }
+
+body.archive.tag .entry-content p,
+body.archive.category .entry-content p {
+  font-size: 1rem;
+  margin-top: 5%; }
+
+body.archive.tag button,
+body.archive.category button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  width: 20%;
+  border: 1px solid black;
+  text-shadow: none;
+  border-radius: 0px;
+  height: 3rem; }
+  body.archive.tag button a,
+  body.archive.category button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'main-light'; }

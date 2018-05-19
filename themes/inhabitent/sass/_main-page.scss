@@ -2,12 +2,16 @@
 /* Front page */
 .page-template-page-main {
 
-
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+
+
+    
+
+  
     
 
 
@@ -265,7 +269,7 @@ section{
                 flex-wrap: wrap;
                 flex-direction: column;
                 width: 100%;
-                height: 40%;
+                height: 50%;
                  
 
 
@@ -283,7 +287,7 @@ section{
                     display:flex;
                     flex-direction:row;
                     flex-wrap:wrap;
-                    height:60%;
+                    height:50%;
                     width:100%;
                     align-items: flex-end;
                     margin-left:5%;

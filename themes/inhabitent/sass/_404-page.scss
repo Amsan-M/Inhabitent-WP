@@ -1,4 +1,4 @@
-.search-no-results{
+.error404{
 
     .hfeed.site{
         display: flex;
@@ -53,7 +53,7 @@
         border:none;
     }
     .widget-area{
-        width: 100%;
+        width: 30%;;
         height: auto;
         margin:0px;
     }
@@ -90,4 +90,10 @@
 
         }
     }
+
+
+    .widget.inhabitent-buisness-hours-class{
+        width:100%;
+    }
+
 }

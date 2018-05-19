@@ -25,7 +25,7 @@ get_header(); ?>
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
-
+            <button type="button"><a href="<?php the_permalink(); ?>" <h1> Read More &#8594; </h1> </a> </button>	
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
