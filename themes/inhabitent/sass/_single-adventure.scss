@@ -1,3 +1,129 @@
-.adventures-template-default{
+.adventures-template-default.single-adventures{
     
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    //overflow-x: hidden; 
+
+
+    h2.entry-title {
+        margin:0px;
+        font-family:'headings-bold';
+        text-transform: uppercase;
+        order:2; 
+        margin-top:5%;
+        margin-bottom:2%;
+        width:80%;
+
+        a{
+        text-decoration: none;
+        font-size:2rem;
+        color:black;
+        }
+       
+
+    }
+
+
+    .adventure{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        
+    }
+    
+    
+    .adventure-text{
+        font-family:'main-light';
+        font-size:1rem;
+        order:3;
+        width:80%; 
+        margin-top:5%;
+
+    }
+
+    p{
+        order:1;
+        margin:0px;
+    }
+
+
+    article { 
+        display: flex;  
+        flex-direction:row;
+        flex-wrap:wrap; 
+    }
+        
+       
+
+        article > .entry-title {
+            width:80%; 
+            order: 2; 
+        }
+
+        article > p{  
+            width:100%; 
+            order: 1; 
+        }
+
+        article > .adventure-text  { 
+            order: 4; 
+        }
+
+        article > span.byline{
+            width:80%;  
+            order: 3; 
+            font-family: 'headings';
+            font-size:1rem;
+            text-transform: uppercase;    
+        }
+
+    
+    
+    
+    button{
+        display:inline-flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;            
+        width:8rem;
+        height:3rem;
+        box-shadow:none;
+        text-shadow:none;
+        color:black;
+        background-color:white;
+       border-radius:0px;
+        border:1px solid black;
+        margin:2%;  
+        margin-left:10%;
+//         margin-bottom:5%;      
+
+                p{
+                    margin:0px;
+                    margin-left:3%;
+                    text-transform:uppercase;
+                    font-family:'headings';
+                    font-size:1rem;
+                }
+
+                i{
+                    font-size:1rem;
+                    margin-right:0.5rem;
+                }
+        }
+
+article{
+    justify-content: center;
+}
+//     .social-media-buttons{
+//         
+
+        
+//     }
+
+// // }}}}}}}}}}
+
+
 }

@@ -10,7 +10,7 @@
 .page-template-page-findus{
 	.site-content {
 		flex-direction: row-reverse;
-		font-family: 'Merriweather-L';
+		font-family: 'main-light';
 		
 	}
 
@@ -30,12 +30,49 @@
 	.entry-content h2{
 		text-transform: uppercase;
 		color:black;
-		font-family: 'Merriweather-L';
+		font-family: 'headings-bold';
+		font-size:2rem;
+	}
+
+	.entry-content p{
+		font-family: 'main-light';
+		
 	}
 
 
 	.widget-area{
 		width:40%;
 		margin-top:15%;
+	}
+
+	input, textarea{
+		background-color: #f4f4f4;
+		border-radius: 0px;
+		border:1px solid #e1e1e1;
+
+	}
+
+	input[type=submit] {
+		background-color: $green;
+		box-shadow: none;
+		border:none;
+		width:6rem;
+		height:2.5rem;
+		color:white;
+		text-shadow: none;
+		font-family: 'headings';
+		text-transform:uppercase;
+
+	}
+
+
+	label{
+		font-family: 'headings';
+		text-transform:uppercase;
+		
+	}
+
+	span.star{
+		color:$orange;
 	}
 }

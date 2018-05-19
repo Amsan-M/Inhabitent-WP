@@ -8,6 +8,7 @@
         display:flex;
         flex-wrap:wrap;
         flex-direction:row;
+        justify-content:center;
     }
 
     .adventures-title{
@@ -27,8 +28,8 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        width:100%;
-        justify-content:center;
+        width:90%;
+        //justify-content:center;
     }
     
     
@@ -36,25 +37,41 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        flex-basis:40%;
+        flex-basis:48%;
+        height:500px;
         margin: 1%;
 
     }
+    .adventure-image,
+     img{
+         
+        height:100%;
+    }
+
+
 
     .adventure-link{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 40%;
+        max-width: 40%;
+        height:100%;
         margin-top:5%;
         position: absolute;
         margin: 3%;
+        width:100%;
 
         a{
             font-size:3rem;
             text-decoration:none;
             color:white;
             font-family: 'headings';
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            min-width: 100%;
+            position: absolute;
+            width:100%;
         }
 
         button{

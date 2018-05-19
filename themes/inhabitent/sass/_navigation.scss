@@ -31,9 +31,10 @@ a {
 
 .main-navigation {
     
-    display: inline-block;
-   max-width:1120px;
-    margin-right: 2rem;
+    display: inline-flex;
+    max-width:1120px;
+	margin-right: 2rem;
+	width:60%;
 
 	ul {
 		display: none;
@@ -136,11 +137,15 @@ a {
 
 // ==============================================================================================
 
-//									 FIND-US PAGE 
+//									 nav
 
 // ==============================================================================================
 
 
-
+.menu-navigation-container{
+	display: inline-flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
 
 
