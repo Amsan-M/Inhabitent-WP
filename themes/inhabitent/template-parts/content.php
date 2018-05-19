@@ -11,11 +11,13 @@
 
 	<header class="entry-header">
 
+	 <div class = "entry-wrapper">
+      <div class= "entry-image">
 		<?php if ( has_post_thumbnail() ) : ?>
 		<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 		
-
+	     </div>
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
@@ -27,10 +29,10 @@
 
 		</div><!-- .entry-meta -->
 
-
+    
 		<?php endif; ?>
-
-
+		</div>
+    
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

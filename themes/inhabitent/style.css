@@ -1315,13 +1315,23 @@ body.blog .entry-header img {
   max-width: 100%;
   height: 100%; }
 
-body.blog .entry-header {
+body.blog .entry-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative; }
+
+body.blog .entry-image {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  body.blog .entry-image img {
+    width: 100%; }
 
 body.blog .entry-title {
   background-color: #248A83;
@@ -1366,7 +1376,12 @@ body.blog button {
     font-family: 'main-light'; }
 
 body.blog article {
-  margin-top: 10%; }
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .page-template-page-about {
   display: -webkit-box;
