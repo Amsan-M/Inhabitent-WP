@@ -543,7 +543,7 @@ a {
   width: 50px;
   height: 50px; }
 
-#search-toggle {
+.main-navigation #search-toggle {
   display: none; }
 
 /*--------------------------------------------------------------
@@ -1930,6 +1930,12 @@ body.blog article {
     width: 80%; }
   .search.search-no-results .site-main {
     border-top: 1px solid lightgrey; }
+  .search.search-no-results form {
+    display: initial; }
+    .search.search-no-results form fieldset {
+      border: none; }
+  .search.search-no-results .page-content button {
+    display: none; }
 
 .post-template-default .content-area {
   margin-top: 10%;

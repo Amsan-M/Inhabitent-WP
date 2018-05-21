@@ -22,4 +22,17 @@
     .site-main{
         border-top: 1px solid lightgrey;
     }
+
+    form{
+        display:initial;
+
+        fieldset{
+            border:none;
+        }
+    }
+
+    .page-content button{
+        display:none;
+    }
 }
+
