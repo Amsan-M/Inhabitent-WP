@@ -22,15 +22,17 @@
     .site-main{
         border-top: 1px solid lightgrey;
     }
-
-    form{
-        display:initial;
+      
+    .page-content{
+    form#search-toggle.search-form{
+    display:block;
+     
 
         fieldset{
             border:none;
         }
     }
-
+    }
     .page-content button{
         display:none;
     }

@@ -141,22 +141,22 @@ a {
 
 // ==============================================================================================
 
-
+ 
 .menu-navigation-container{
 	display: inline-flex;
     flex-wrap: wrap;
     width: 80%;
 }
 
-.main-navigation fieldset{
-	border:none;
-}
 
 .site-branding{
 	width:50px;
 	height:50px;
+
 }
 
-.main-navigation #search-toggle{
+form#search-toggle.search-form{
 	display:none;
 }
+
+

@@ -1,20 +1,23 @@
-jQuery( document ).ready(function () {
-    // alert('hey1');
+// jQuery( document ).ready(function () {
+//     // alert('hey1');
 
 
     
-});
+// });
 
-function toggleSearch(){
-    var searchBar = document.getElementById('search-toggle');
-    if (searchBar.style.display === 'none'|| searchBar.style.display=='') {
-        searchBar.style.display = 'block';
-        document.getElementById("input-focus").focus();
+
+function toggleSearch() {
+    var x = document.getElementById('search-toggle');
+    if (x.style.display === 'none'|| x.style.display=='') {
+        x.style.display = 'block';
+     document.getElementById('input-focus').focus();
+
+      
     } else {
-        searchBar.style.display = 'none';
+        x.style.display = 'none';
     }
 }
-// toggleSearch();
-document.getElementById("toogle-searchbar").onclick = function(){
-    toggleSearch();
-};
+
+document.getElementById('toogle-searchbar').onclick = function(){
+       toggleSearch();
+     };
