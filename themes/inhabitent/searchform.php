@@ -1,4 +1,5 @@
 
+<div class = "navigation-searchbar">
 
 <form role="search" id= "search-toggle" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 	<fieldset>
@@ -13,4 +14,6 @@
 		<!-- </button> -->
 	</fieldset>
 </form>
-<button id="toggle-searchbar" onClick=toggleSearch();>logo</button>
+<button id="toggle-searchbar" onClick=toggleSearch();><i class="fas fa-search"></i></button>
+
+</div>

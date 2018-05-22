@@ -471,7 +471,7 @@ a {
   display: inline-flex;
   max-width: 1120px;
   margin-right: 2rem;
-  width: 60%; }
+  width: 80%; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -534,14 +534,60 @@ a {
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 80%; }
+  width: 96%; }
 
 .site-branding {
   width: 50px;
   height: 50px; }
 
-form#search-toggle.search-form {
-  display: none; }
+.site-header form#search-toggle.search-form {
+  display: none;
+  height: 2rem;
+  margin-top: 1.4rem; }
+  .site-header form#search-toggle.search-form fieldset {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .site-header form#search-toggle.search-form fieldset input:focus {
+      outline: none; }
+    .site-header form#search-toggle.search-form fieldset input[type=search] {
+      background-color: transparent;
+      border: none; }
+    .site-header form#search-toggle.search-form fieldset input[type=url]:focus {
+      color: white; }
+    .site-header form#search-toggle.search-form fieldset ::-webkit-input-placeholder {
+      color: grey; }
+    .site-header form#search-toggle.search-form fieldset :-ms-input-placeholder {
+      color: grey; }
+    .site-header form#search-toggle.search-form fieldset ::-ms-input-placeholder {
+      color: grey; }
+    .site-header form#search-toggle.search-form fieldset ::placeholder {
+      color: grey; }
+
+.navigation-searchbar {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-top: -2rem; }
+  .navigation-searchbar button {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    padding: 0px; }
+    .navigation-searchbar button i {
+      color: #248A83;
+      text-shadow: none;
+      font-size: 1rem; }
+
+.page-template-page-main .navigation-searchbar i {
+  color: white; }
 
 /*--------------------------------------------------------------
 # Accessibility

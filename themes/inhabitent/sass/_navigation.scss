@@ -34,7 +34,7 @@ a {
     display: inline-flex;
     max-width:1120px;
 	margin-right: 2rem;
-	width:60%;
+	width:80%;
 
 	ul {
 		display: none;
@@ -145,7 +145,7 @@ a {
 .menu-navigation-container{
 	display: inline-flex;
     flex-wrap: wrap;
-    width: 80%;
+	width: 96%;
 }
 
 
@@ -155,8 +155,70 @@ a {
 
 }
 
+.site-header{
 form#search-toggle.search-form{
 	display:none;
+	height: 2rem;
+    margin-top: 1.4rem;
+
+	fieldset{
+		border:none;
+		box-shadow: none;
+		
+ input:focus { outline: none; }
+
+		input[type=search]{
+			background-color:transparent;
+			border:none;
+			//color:transparent;
+		}
+
+		input[type=url]:focus{
+			color:white;
+			
+
+		}
+		::placeholder{
+			color:grey;
+		}
+	}
 }
 
 
+}
+
+.navigation-searchbar{
+
+	display: inline-flex;
+    flex-wrap: wrap;
+	flex-direction: row-reverse;
+	margin-top: -2rem;
+	
+
+	button{
+		background-color: transparent;
+		box-shadow:none;
+		border:none;
+		padding:0px;
+		
+		i{
+			color:$green;
+			text-shadow:none;
+			font-size:1rem;
+		}
+	}
+}
+
+
+.page-template-page-main{
+	.navigation-searchbar{
+
+
+		i{
+			color:white;
+		}
+
+	}
+
+
+}
