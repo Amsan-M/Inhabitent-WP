@@ -464,13 +464,14 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-/* Menus */
 .main-navigation {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   max-width: 1120px;
-  margin-right: 2rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 80%; }
   .main-navigation ul {
     display: none;
@@ -552,9 +553,13 @@ a {
       outline: none; }
     .site-header form#search-toggle.search-form fieldset input[type=search] {
       background-color: transparent;
-      border: none; }
-    .site-header form#search-toggle.search-form fieldset input[type=url]:focus {
+      border: none;
+      width: 10px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
       color: white; }
+    .site-header form#search-toggle.search-form fieldset input[type=search]:focus {
+      width: 100%; }
     .site-header form#search-toggle.search-form fieldset ::-webkit-input-placeholder {
       color: grey; }
     .site-header form#search-toggle.search-form fieldset :-ms-input-placeholder {
@@ -570,24 +575,83 @@ a {
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin-top: -2rem; }
+  margin-top: -2rem;
+  width: 32%; }
+  .navigation-searchbar form {
+    display: block;
+    width: 74%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
   .navigation-searchbar button {
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
     border: none;
-    padding: 0px; }
+    padding: 0px;
+    width: 5%;
+    outline: none; }
     .navigation-searchbar button i {
       color: #248A83;
       text-shadow: none;
       font-size: 1rem; }
 
-.page-template-page-main .navigation-searchbar i {
+body.blog button#toggle-searchbar,
+.products-template-default button#toggle-searchbar {
+  margin-top: 7%;
+  border: none; }
+
+.page-template-page-about .site-header .main-navigation a,
+.page-template-page-main .site-header .main-navigation a {
   color: white; }
+
+.page-template-page-about .site-header form#search-toggle.search-form input[type=search],
+.page-template-page-main .site-header form#search-toggle.search-form input[type=search] {
+  background-color: transparent;
+  border: none;
+  width: 10px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  color: white; }
+
+.page-template-page-about .site-header form#search-toggle.search-form input[type=search]:focus,
+.page-template-page-main .site-header form#search-toggle.search-form input[type=search]:focus {
+  width: 100%; }
+
+.page-template-page-about .site-header form#search-toggle.search-form ::-webkit-input-placeholder,
+.page-template-page-main .site-header form#search-toggle.search-form ::-webkit-input-placeholder {
+  color: white; }
+
+.page-template-page-about .site-header form#search-toggle.search-form :-ms-input-placeholder,
+.page-template-page-main .site-header form#search-toggle.search-form :-ms-input-placeholder {
+  color: white; }
+
+.page-template-page-about .site-header form#search-toggle.search-form ::-ms-input-placeholder,
+.page-template-page-main .site-header form#search-toggle.search-form ::-ms-input-placeholder {
+  color: white; }
+
+.page-template-page-about .site-header form#search-toggle.search-form ::placeholder,
+.page-template-page-main .site-header form#search-toggle.search-form ::placeholder {
+  color: white; }
+
+.page-template-page-about .site-header .navigation-searchbar button i,
+.page-template-page-main .site-header .navigation-searchbar button i {
+  color: white; }
+
+body.archive.tag .navigation-searchbar,
+body.archive.category .navigation-searchbar,
+.products-template-default .navigation-searchbar,
+.adventures-template-default.single-adventures .navigation-searchbar {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  body.archive.tag .navigation-searchbar button,
+  body.archive.category .navigation-searchbar button,
+  .products-template-default .navigation-searchbar button,
+  .adventures-template-default.single-adventures .navigation-searchbar button {
+    background-color: transparent;
+    border: none;
+    width: 5%;
+    margin-top: 7%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1556,6 +1620,9 @@ body.blog article {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   font-family: 'main-light'; }
+
+.page-template-page-findus .content-area {
+  margin-left: 4%; }
 
 .page-template-page-findus .entry-content {
   margin-top: 10%;

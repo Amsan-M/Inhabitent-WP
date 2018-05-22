@@ -5,10 +5,7 @@
 /* Links */
 
 a {
-	color: $color__link;
-	// font-family: 'Novecento-DemiBold';
-	
-
+	color: $color__link; // font-family: 'Novecento-DemiBold';
 	&:visited {
 		color: $color__link-visited;
 	}
@@ -26,15 +23,16 @@ a {
 	}
 }
 
-/* Menus */
+// ==============================================================================================
+//									 navigation general styling 
+// ==============================================================================================
 
 
 .main-navigation {
-    
-    display: inline-flex;
-    max-width:1120px;
-	margin-right: 2rem;
-	width:80%;
+	display: inline-flex;
+	max-width: 1120px;
+	justify-content: flex-end;
+	width: 80%;
 
 	ul {
 		display: none;
@@ -56,169 +54,234 @@ a {
 			}
 
 			li {
-				&:hover > ul,
-				&.focus > ul {
+				&:hover>ul,
+				&.focus>ul {
 					left: 100%;
 				}
 			}
-
 			a {
-				width: 200px;
-				// font-family: 'Novecento-DemiBold';
+				width: 200px; // font-family: 'Novecento-DemiBold';
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
+			:hover>a,
+			.focus>a {}
 			a:hover,
-			a.focus {
-			}
+			a.focus {}
 		}
-
-		li:hover > ul,
-		li.focus > ul {
+		li:hover>ul,
+		li.focus>ul {
 			left: auto;
 		}
 	}
 	li {
-		
 		// position: relative;
 		// margin-left:1.5rem;
-
-		&:hover > a,
-		&.focus > a {
-		}
+		&:hover>a,
+		&.focus>a {}
 	}
 	a {
 		display: block;
 		text-decoration: none;
 		font-family: 'headings';
-		color:$green;;  
-		
-		
+		color: $green;
+		;
 	}
-
-
-
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+	.current_page_item>a,
+	.current-menu-item>a,
+	.current_page_ancestor>a {}
 }
 
 /* Small menu. */
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
 
+.menu-toggle {
+	display: none;
+}
 
-	.menu-toggle {
-		display: none;
+.main-navigation ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+	width: 100%;
+	justify-content: flex-end;
+	li {
+		margin-right: 3%;
 	}
-	.main-navigation ul {
-		
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		list-style: none;
-		width: 100%;
-		justify-content: flex-end;
+}
 
-		li{
-			margin-right:3%;
-		}
-	}
-	
-
-
-
-// ==============================================================================================
-
-//									 nav
-
-// ==============================================================================================
-
- 
-.menu-navigation-container{
+.menu-navigation-container {
 	display: inline-flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 	width: 96%;
 }
 
-
-.site-branding{
-	width:50px;
-	height:50px;
-
+.site-branding {
+	width: 50px;
+	height: 50px;
 }
 
-.site-header{
-form#search-toggle.search-form{
-	display:none;
-	height: 2rem;
-    margin-top: 1.4rem;
+.site-header {
 
-	fieldset{
-		border:none;
+
+	form#search-toggle.search-form {
+
+		display: none;
+		height: 2rem;
+		margin-top: 1.4rem;
+
+		fieldset {
+			border: none;
+			box-shadow: none;
+
+			input:focus {
+				outline: none;
+			}
+
+			input[type=search] {
+				background-color: transparent;
+				border: none;
+				width: 10px;
+				transition: width 0.4s ease-in-out;
+				color: white;
+			}
+
+			input[type=search]:focus {
+				width: 100%;
+			}
+
+			::placeholder {
+				color: grey;
+			}
+
+		} //fieldset
+
+	} //form#search-toggle.search-form
+
+} //site-header
+
+
+
+.navigation-searchbar {
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin-top: -2rem;
+	width: 32%;
+
+	form {
+		display: block;
+		width: 74%;
+		order: 2;
+	}
+
+	button {
+		background-color: transparent;
 		box-shadow: none;
-		
- input:focus { outline: none; }
+		border: none;
+		padding: 0px;
+		width: 5%;
+		outline: none;
 
-		input[type=search]{
-			background-color:transparent;
-			border:none;
-			//color:transparent;
+		i {
+			color: $green;
+			text-shadow: none;
+			font-size: 1rem;
 		}
+	}
+}//navigation search bar
 
-		input[type=url]:focus{
-			color:white;
-			
-
-		}
-		::placeholder{
-			color:grey;
-		}
+// ==============================================================================================
+//									 navigation bar styling for journal page
+// ==============================================================================================
+body.blog,
+.products-template-default{
+	button#toggle-searchbar {
+		margin-top: 7%;
+		border: none;
 	}
 }
 
 
-}
 
-.navigation-searchbar{
+// ==========================================================================================================================
+//									 navigation bar common styling for about and main page
+// =========================================================================================================================
 
-	display: inline-flex;
-    flex-wrap: wrap;
-	flex-direction: row-reverse;
-	margin-top: -2rem;
+
+.page-template-page-about,
+.page-template-page-main {
+
+
+	.site-header {
+
+		.main-navigation a {
+			color: white;
+		}
+
+		form#search-toggle.search-form {
+
+			input[type=search] {
+				background-color: transparent;
+				border: none;
+				width: 10px;
+				transition: width 0.4s ease-in-out;
+				color: white;
+			}
+
+			input[type=search]:focus {
+				width: 100%;
+			}
+
+			::placeholder {
+				color: white;
+			}
+
+		} //site header form#search-toggle.search-form
+
+	 
+
+
+		.navigation-searchbar button i {
+			color: white;
+		}
+
+	} //site header
+} // template main / template about
+
+
+
+
+// ==========================================================================================================================
+//									 navigation bar common styling forproduct template defaul page
+// ===================================================================================================
+
+
+
 	
 
-	button{
-		background-color: transparent;
-		box-shadow:none;
-		border:none;
-		padding:0px;
-		
-		i{
-			color:$green;
-			text-shadow:none;
-			font-size:1rem;
-		}
-	}
-}
 
+body.archive.tag,
+body.archive.category,
+.products-template-default,
+.adventures-template-default.single-adventures{
+	
+	.navigation-searchbar {
+		flex-wrap:nowrap;
+	
+	
+	
+		button{
+			background-color:transparent;
+			border:none;
+			width:5%;
+			margin-top:7%;
 
-.page-template-page-main{
-	.navigation-searchbar{
-
-
-		i{
-			color:white;
+			
 		}
 
+
 	}
-
-
 }
