@@ -559,17 +559,21 @@ a {
       width: 10px;
       -webkit-transition: width 0.4s ease-in-out;
       transition: width 0.4s ease-in-out;
-      color: white; }
+      color: grey; }
     .site-header form#search-toggle.search-form fieldset input[type=search]:focus {
       width: 100%; }
     .site-header form#search-toggle.search-form fieldset ::-webkit-input-placeholder {
-      color: grey; }
+      color: grey;
+      font-size: 0.7rem; }
     .site-header form#search-toggle.search-form fieldset :-ms-input-placeholder {
-      color: grey; }
+      color: grey;
+      font-size: 0.7rem; }
     .site-header form#search-toggle.search-form fieldset ::-ms-input-placeholder {
-      color: grey; }
+      color: grey;
+      font-size: 0.7rem; }
     .site-header form#search-toggle.search-form fieldset ::placeholder {
-      color: grey; }
+      color: grey;
+      font-size: 0.7rem; }
 
 .navigation-searchbar {
   display: -webkit-inline-box;
@@ -650,12 +654,14 @@ body.blog button#toggle-searchbar,
 .page-template-page-main .site-header .navigation-searchbar button i:hover {
   color: #f0e4d1; }
 
+body.archive.date .navigation-searchbar,
 body.archive.tag .navigation-searchbar,
 body.archive.category .navigation-searchbar,
 .products-template-default .navigation-searchbar,
 .adventures-template-default.single-adventures .navigation-searchbar {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
+  body.archive.date .navigation-searchbar button,
   body.archive.tag .navigation-searchbar button,
   body.archive.category .navigation-searchbar button,
   .products-template-default .navigation-searchbar button,
@@ -1033,10 +1039,11 @@ footer .site-info {
     width: 100%;
     height: auto; }
   .page-template-page-main .banner-logo {
-    background-image: url("../css/images/logos/inhabitent-logo-full.svg"), url("../css/images/home-hero.jpg");
-    background-size: auto, cover;
+    background: url("../css/images/logos/inhabitent-logo-full.svg"), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.36)), to(rgba(0, 0, 0, 0.36))), url("../css/images/home-hero.jpg");
+    background: url("../css/images/logos/inhabitent-logo-full.svg"), linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)), url("../css/images/home-hero.jpg");
+    background-size: auto,cover, cover;
     background-repeat: no-repeat, no-repeat;
-    background-position: center, center;
+    background-position: center,center, center;
     width: 100%;
     height: 50rem; }
   .page-template-page-main .main-navigation a {
@@ -1639,10 +1646,34 @@ body.blog article {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+  .page-template-page-about .site-header {
+    z-index: 1; }
   .page-template-page-about .page-image {
-    height: 45rem;
+    width: 100%;
+    height: 50rem;
     min-width: 1120px;
-    background-image: url("../css/images/about-hero.jpg");
+    position: absolute;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .page-template-page-about .page-image h1 {
+      text-transform: uppercase;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+      font-family: 'headings-bold'; }
+  .page-template-page-about .entry-img {
+    height: 50rem;
+    min-width: 1120px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.36)), to(rgba(0, 0, 0, 0.36)));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36));
     background-size: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -1655,7 +1686,9 @@ body.blog article {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .page-template-page-about .page-image .entry-title {
+    .page-template-page-about .entry-img img {
+      z-index: -1; }
+    .page-template-page-about .entry-img .entry-title {
       position: absolute;
       -ms-flex-item-align: center;
           align-self: center;
@@ -1685,6 +1718,8 @@ body.blog article {
     .page-template-page-about .entry-text p {
       font-family: 'main-light';
       font-size: 1rem; }
+  .page-template-page-about footer {
+    width: 100%; }
 
 .page-template-page-findus .site-content {
   -webkit-box-orient: horizontal;
@@ -2713,10 +2748,12 @@ body.blog article {
   margin-bottom: 0.2rem;
   text-align: center; }
 
+body.archive.date .hentry,
 body.archive.tag .hentry,
 body.archive.category .hentry {
   margin-top: 5%; }
 
+body.archive.date .content-area,
 body.archive.tag .content-area,
 body.archive.category .content-area {
   -webkit-box-pack: center;
@@ -2727,11 +2764,13 @@ body.archive.category .content-area {
   display: flex;
   margin-top: 7%;
   border-right: 1px solid #e1e1e1; }
+  body.archive.date .content-area .site-main,
   body.archive.tag .content-area .site-main,
   body.archive.category .content-area .site-main {
     width: 80%;
     margin-top: 10%; }
 
+body.archive.date .entry-wrapper,
 body.archive.tag .entry-wrapper,
 body.archive.category .entry-wrapper {
   position: relative;
@@ -2740,13 +2779,17 @@ body.archive.category .entry-wrapper {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  body.archive.date .entry-wrapper .entry-image,
   body.archive.tag .entry-wrapper .entry-image,
   body.archive.category .entry-wrapper .entry-image {
     width: 100%; }
+    body.archive.date .entry-wrapper .entry-image img,
     body.archive.tag .entry-wrapper .entry-image img,
     body.archive.category .entry-wrapper .entry-image img {
       width: 100%;
       height: 100%; }
+  body.archive.date .entry-wrapper .entry-title,
+  body.archive.date .entry-wrapper .entry-meta,
   body.archive.tag .entry-wrapper .entry-title,
   body.archive.tag .entry-wrapper .entry-meta,
   body.archive.category .entry-wrapper .entry-title,
@@ -2754,9 +2797,11 @@ body.archive.category .entry-wrapper {
     position: absolute;
     background-color: #248A83;
     color: white; }
+  body.archive.date .entry-wrapper .entry-title,
   body.archive.tag .entry-wrapper .entry-title,
   body.archive.category .entry-wrapper .entry-title {
     width: 80%; }
+  body.archive.date .entry-wrapper .entry-title a,
   body.archive.tag .entry-wrapper .entry-title a,
   body.archive.category .entry-wrapper .entry-title a {
     text-decoration: none;
@@ -2764,17 +2809,20 @@ body.archive.category .entry-wrapper {
     font-size: 2rem;
     color: white;
     text-transform: uppercase; }
+  body.archive.date .entry-wrapper .entry-meta,
   body.archive.tag .entry-wrapper .entry-meta,
   body.archive.category .entry-wrapper .entry-meta {
     position: absolute;
     right: 0px;
     bottom: 0px; }
 
+body.archive.date .entry-content p,
 body.archive.tag .entry-content p,
 body.archive.category .entry-content p {
   font-size: 1rem;
   margin-top: 5%; }
 
+body.archive.date button,
 body.archive.tag button,
 body.archive.category button {
   -webkit-box-shadow: none;
@@ -2785,6 +2833,7 @@ body.archive.category button {
   text-shadow: none;
   border-radius: 0px;
   height: 3rem; }
+  body.archive.date button a,
   body.archive.tag button a,
   body.archive.category button a {
     text-decoration: none;

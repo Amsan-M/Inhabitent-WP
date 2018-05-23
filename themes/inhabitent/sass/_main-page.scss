@@ -35,14 +35,16 @@
 
 
     .banner-logo {
-         background-image: url('../css/images/logos/inhabitent-logo-full.svg'), url('../css/images/home-hero.jpg');
-        background-size: auto, cover;
+        background:url('../css/images/logos/inhabitent-logo-full.svg'),linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36)),  url('../css/images/home-hero.jpg');
+        background-size: auto,cover, cover;
         background-repeat: no-repeat, no-repeat;
-        background-position: center, center;
+        background-position: center,center, center;
         width: 100%;
        height: 50rem;
     }
 
+
+   
 
     .main-navigation a {
         color:white;
@@ -412,6 +414,7 @@ section{
     .single-adventure img{
         width:100%;
         position:relative;
+        
 
      
     }
@@ -439,6 +442,7 @@ section{
     
     
         .single-adventure:nth-child(1){
+            
             position:relative;
             grid-column-start:1 ;
             grid-column-end:3 ;
