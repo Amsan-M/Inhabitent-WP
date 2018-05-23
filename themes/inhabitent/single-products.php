@@ -13,34 +13,37 @@ get_header();
  
 		<main id="main" class="site-main" role="main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'singleproduct' ); ?>
 		
 
 
 
-<div class = "product-info">
+			<div class = "product-info">
 
-<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			
-			<?php 
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+							
+							<?php 
 
- $price = CFS()->get( 'price' );
- $exerpt =CFS()->get( 'exerpt' );
+				$price = CFS()->get( 'price' );
+				$exerpt =CFS()->get( 'exerpt' );
 
-?>
-<?php echo "<p class=\"price\">Price: \${$price}</p>";?>
+				?>
+				<?php echo "<p class=\"price\">Price: \${$price}</p>";?>
 
-<?php echo "<p class=\"product-exerpt\">{$exerpt}</p>";?>
+				<?php echo "<p class=\"product-exerpt\">{$exerpt}</p>";?>
 
 
 
-<div class = "social-media-buttons">
-<button type="button"> <i class="fab fa-facebook-f"></i> <p> like </p> </button><button type="button"> <i class="fab fa-twitter"></i>  <p>tweet </p> </button><button type="button"> <i class="fab fa-pinterest"></i> <p> pin </p> </button>
-</div> <!-- social media buttons-->
-</div> <!-- product-info -->
-			<?php //the_post_navigation(); ?>
+				<div class = "social-media-buttons">
+				<button type="button"> <i class="fab fa-facebook-f"></i> <p> like </p> </button><button type="button"> <i class="fab fa-twitter"></i>  <p>tweet </p> </button><button type="button"> <i class="fab fa-pinterest"></i> <p> pin </p> </button>
+				</div> <!-- social media buttons-->
+
+			</div> <!-- product-info -->
+
+
+		
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -49,9 +52,11 @@ get_header();
 				endif;
 			?>
 
-		<?php endwhile; // End of the loop. ?>
+			<?php endwhile; // End of the loop. ?>
+
 
 		</main><!-- #main -->
+
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -19,9 +19,6 @@ get_header();
 
 				<?php get_template_part( 'template-parts/content', 'singleAdventure' ); ?>
 
-
-
-			
 	
 			</div> <!-- adventure -->
 
@@ -32,7 +29,7 @@ get_header();
  			</div>  <!-- social media buttons-->
 
 			
-			<!-- If comments are open or we have at least one comment, load up the comment template. -->
+			
 			<?php
 				
 				if ( comments_open() || get_comments_number() ) :
@@ -40,7 +37,7 @@ get_header();
 				endif;
 			?>
 
-		<?php endwhile; // End of the loop. ?>
+			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 		

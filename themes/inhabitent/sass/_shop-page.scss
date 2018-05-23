@@ -26,7 +26,7 @@
 
         display: inline-flex;
         width: 100%;
-        border-bottom:1px dashed lightgrey;
+        border-bottom:1px dashed $lightgrey;
         margin-left: 10%;
         margin-right: 10%;
 
@@ -75,14 +75,14 @@
         flex-direction: column;
         flex-wrap: wrap;
         flex-basis: 24%;
-        border: 1px solid lightgrey;
+        border: 1px solid $lightgrey;
         margin: 1px;
         margin-bottom:1%;
         align-items:center;
     
 
         img {
-            border-bottom: 4px solid lightgrey;
+            border-bottom: 4px solid $lightgrey;
             height: 12rem;
             max-width: 100%;
         }

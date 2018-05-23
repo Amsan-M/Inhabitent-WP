@@ -14,6 +14,8 @@ body.archive.category {
     .content-area {
         justify-content: center;
         display: flex;
+        margin-top: 7%;
+        border-right: 1px solid $lightgrey;
         .site-main {
             width: 80%;
             margin-top: 10%;
