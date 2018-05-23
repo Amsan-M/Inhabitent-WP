@@ -996,14 +996,17 @@ footer .site-info {
       height: 50px; }
 
 .page-template-page-main header,
-.page-template-page-about header {
+.page-template-page-about header,
+.adventures-template-default.single-adventures header {
   border-bottom: none; }
 
 .page-template-page-main .site-branding,
-.page-template-page-about .site-branding {
+.page-template-page-about .site-branding,
+.adventures-template-default.single-adventures .site-branding {
   margin-left: 5rem; }
   .page-template-page-main .site-branding .logo-link,
-  .page-template-page-about .site-branding .logo-link {
+  .page-template-page-about .site-branding .logo-link,
+  .adventures-template-default.single-adventures .site-branding .logo-link {
     background-image: url("../css/images/logos/inhabitent-logo-tent-white.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -1014,7 +1017,8 @@ footer .site-info {
     height: 50px;
     margin-left: 5rem; }
     .page-template-page-main .site-branding .logo-link a,
-    .page-template-page-about .site-branding .logo-link a {
+    .page-template-page-about .site-branding .logo-link a,
+    .adventures-template-default.single-adventures .site-branding .logo-link a {
       width: 50px;
       height: 50px; }
 
@@ -1622,7 +1626,8 @@ body.blog button {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-family: 'main-light'; }
+    font-family: 'main-light';
+    font-size: 1rem; }
 
 body.blog article {
   margin-top: 10%;

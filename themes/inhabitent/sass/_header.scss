@@ -35,7 +35,8 @@
 }
 
 .page-template-page-main,
-.page-template-page-about{
+.page-template-page-about,
+.adventures-template-default.single-adventures{
 
     header{
         border-bottom:none;
@@ -45,7 +46,7 @@
         margin-left:5rem;
 
         .logo-link {
-            background-image: url('../css/images/logos/inhabitent-logo-tent-white.svg');
+            background-image: url('../css/images/logos/inhabitent-logo-tent-white.svg'); 
             background-size: contain;
             background-repeat: no-repeat;
             display: flex;
