@@ -429,8 +429,11 @@ section{
         text-shadow:none;
         text-decoration:none;
         margin-top:5%;
-        margin-left:1%;
+        margin-left:1rem;
         text-transform:capitalize;
+        p{
+            margin:0px;
+        }
     }
 
     .single-adventure a:hover{
@@ -459,7 +462,9 @@ section{
 
                a{
                 position:absolute;
-            }
+                width: 20rem;
+
+                }
            
          }
 
@@ -481,9 +486,16 @@ section{
              
             }
 
-              .single-adventure:nth-child(2) a{
-            position:absolute;
+            .single-adventure:nth-child(2) a{
+                position:absolute;
+                width: 20rem;
+                margin-left:1rem;
             }
+
+            // p{
+            //     margin:0px;
+            // }
+            
         }
 
 
