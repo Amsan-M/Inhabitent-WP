@@ -4,6 +4,20 @@
     height: 100%;
     margin: 0px;
     padding: 0px;
+
+    .main-navigation a, i {
+        color:white;
+      
+        
+    }
+        .main-navigation a:hover, i:hover{
+        color:$yellow;
+    
+    }
+
+    form#search-toggle.search-form ::placeholder{
+        color:white;
+    }
  
 
 
@@ -81,7 +95,11 @@
         }
 
     
-    
+    .social-media-buttons{
+
+        margin-left:10%;
+
+    }
     
     button{
         display:inline-flex;
@@ -96,8 +114,8 @@
         background-color:white;
         border-radius:0px;
         border:1px solid black;
-        margin:2%;  
-        margin-left:10%;
+        margin-right:1%;  
+       
   
 
                 p{

@@ -658,6 +658,7 @@ body.archive.date .navigation-searchbar,
 body.archive.tag .navigation-searchbar,
 body.archive.category .navigation-searchbar,
 .products-template-default .navigation-searchbar,
+.search.search-results .navigation-searchbar,
 .adventures-template-default.single-adventures .navigation-searchbar {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
@@ -665,6 +666,7 @@ body.archive.category .navigation-searchbar,
   body.archive.tag .navigation-searchbar button,
   body.archive.category .navigation-searchbar button,
   .products-template-default .navigation-searchbar button,
+  .search.search-results .navigation-searchbar button,
   .adventures-template-default.single-adventures .navigation-searchbar button {
     background-color: transparent;
     border: none;
@@ -1455,8 +1457,10 @@ footer .site-info {
     height: 100%; }
   .page-template-page-main .single-adventure:nth-child(3) a {
     display: block;
-    font-size: 0.8rem;
-    width: 10rem; }
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 4rem;
+    margin-top: 1%; }
 
 .page-template-page-main .single-adventure:nth-child(4) {
   display: -webkit-box;
@@ -1473,8 +1477,10 @@ footer .site-info {
     height: 100%; }
   .page-template-page-main .single-adventure:nth-child(4) a {
     display: block;
-    font-size: 0.8rem;
-    width: 10rem; }
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 4rem;
+    margin-top: 1%; }
 
 .page-template-page-main .single-adventure button {
   display: -webkit-box;
@@ -2107,7 +2113,9 @@ body.blog article {
 .search.search-results .content-area {
   margin-top: 10%;
   margin-left: 5%;
-  margin-right: 5%; }
+  margin-right: 5%;
+  border-right: 1px solid #e1e1e1;
+  padding-right: 1%; }
 
 .search.search-results .sidebar-wrapper {
   width: 100%; }
@@ -2468,6 +2476,18 @@ body.blog article {
   height: 100%;
   margin: 0px;
   padding: 0px; }
+  .adventures-template-default.single-adventures .main-navigation a, .adventures-template-default.single-adventures i {
+    color: white; }
+  .adventures-template-default.single-adventures .main-navigation a:hover, .adventures-template-default.single-adventures i:hover {
+    color: #f0e4d1; }
+  .adventures-template-default.single-adventures form#search-toggle.search-form ::-webkit-input-placeholder {
+    color: white; }
+  .adventures-template-default.single-adventures form#search-toggle.search-form :-ms-input-placeholder {
+    color: white; }
+  .adventures-template-default.single-adventures form#search-toggle.search-form ::-ms-input-placeholder {
+    color: white; }
+  .adventures-template-default.single-adventures form#search-toggle.search-form ::placeholder {
+    color: white; }
   .adventures-template-default.single-adventures h2.entry-title {
     margin: 0px;
     font-family: 'headings-bold';
@@ -2537,6 +2557,8 @@ body.blog article {
     font-family: 'headings';
     font-size: 1rem;
     text-transform: uppercase; }
+  .adventures-template-default.single-adventures .social-media-buttons {
+    margin-left: 10%; }
   .adventures-template-default.single-adventures button {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -2559,8 +2581,7 @@ body.blog article {
     background-color: white;
     border-radius: 0px;
     border: 1px solid black;
-    margin: 2%;
-    margin-left: 10%; }
+    margin-right: 1%; }
     .adventures-template-default.single-adventures button p {
       margin: 0px;
       margin-left: 3%;
