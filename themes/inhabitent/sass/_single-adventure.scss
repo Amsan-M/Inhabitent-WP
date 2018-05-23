@@ -98,6 +98,11 @@
     .social-media-buttons{
 
         margin-left:10%;
+        i{
+            font-size:1rem;
+            margin-right:0.5rem;
+            color:BLACK;
+        }
 
     }
     
@@ -115,6 +120,7 @@
         border-radius:0px;
         border:1px solid black;
         margin-right:1%;  
+         
        
   
 
@@ -126,10 +132,7 @@
                     font-size:1rem;
                 }
 
-                i{
-                    font-size:1rem;
-                    margin-right:0.5rem;
-                }
+                
         }
 
 article{

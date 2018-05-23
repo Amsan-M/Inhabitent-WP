@@ -2559,6 +2559,10 @@ body.blog article {
     text-transform: uppercase; }
   .adventures-template-default.single-adventures .social-media-buttons {
     margin-left: 10%; }
+    .adventures-template-default.single-adventures .social-media-buttons i {
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      color: BLACK; }
   .adventures-template-default.single-adventures button {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -2588,9 +2592,6 @@ body.blog article {
       text-transform: uppercase;
       font-family: 'headings';
       font-size: 1rem; }
-    .adventures-template-default.single-adventures button i {
-      font-size: 1rem;
-      margin-right: 0.5rem; }
   .adventures-template-default.single-adventures article {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2861,3 +2862,8 @@ body.archive.category button {
     text-transform: uppercase;
     color: black;
     font-family: 'main-light'; }
+
+body.archive.date .widget-area,
+body.archive.tag .widget-area,
+body.archive.category .widget-area {
+  margin-top: 12%; }
