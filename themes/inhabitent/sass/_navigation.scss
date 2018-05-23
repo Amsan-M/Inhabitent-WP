@@ -5,7 +5,7 @@
 /* Links */
 
 a {
-	color: $color__link; // font-family: 'Novecento-DemiBold';
+	color: $color__link;
 	&:visited {
 		color: $color__link-visited;
 	}
@@ -24,9 +24,8 @@ a {
 }
 
 // ==============================================================================================
-//									 navigation general styling 
+//									 NAVIGATION GLOBAL STYLING
 // ==============================================================================================
-
 
 .main-navigation {
 	display: inline-flex;
@@ -59,31 +58,36 @@ a {
 					left: 100%;
 				}
 			}
+
 			a {
-				width: 200px; // font-family: 'Novecento-DemiBold';
+				width: 200px;
 			}
 			:hover>a,
 			.focus>a {}
 			a:hover,
 			a.focus {}
 		}
+
 		li:hover>ul,
 		li.focus>ul {
 			left: auto;
 		}
 	}
+
 	li {
-		// position: relative;
-		// margin-left:1.5rem;
 		&:hover>a,
 		&.focus>a {}
 	}
+
 	a {
 		display: block;
 		text-decoration: none;
 		font-family: 'headings';
 		color: $green;
 		;
+	}
+	a:hover{
+		color:black;
 	}
 	.current_page_item>a,
 	.current-menu-item>a,
@@ -126,7 +130,6 @@ a {
 
 .site-header {
 
-
 	form#search-toggle.search-form {
 
 		display: none;
@@ -142,6 +145,7 @@ a {
 			}
 
 			input[type=search] {
+
 				background-color: transparent;
 				border: none;
 				width: 10px;
@@ -164,20 +168,22 @@ a {
 } //site-header
 
 
-
 .navigation-searchbar {
+
 	display: inline-flex;
 	flex-wrap: wrap;
 	margin-top: -2rem;
 	width: 32%;
 
 	form {
+
 		display: block;
 		width: 74%;
 		order: 2;
 	}
 
 	button {
+
 		background-color: transparent;
 		box-shadow: none;
 		border: none;
@@ -190,14 +196,24 @@ a {
 			text-shadow: none;
 			font-size: 1rem;
 		}
+
+		i:hover{
+			color:black;
+		}
 	}
-}//navigation search bar
+} //navigation search bar
+
+
 
 // ==============================================================================================
-//									 navigation bar styling for journal page
+//									 JOURNAL PAGE STYLING SPECS
 // ==============================================================================================
+
+
+
 body.blog,
-.products-template-default{
+.products-template-default {
+
 	button#toggle-searchbar {
 		margin-top: 7%;
 		border: none;
@@ -207,23 +223,26 @@ body.blog,
 
 
 // ==========================================================================================================================
-//									 navigation bar common styling for about and main page
+//									 MAIN / ABOUT 
 // =========================================================================================================================
 
 
 .page-template-page-about,
 .page-template-page-main {
 
-
 	.site-header {
 
 		.main-navigation a {
 			color: white;
 		}
+		.main-navigation a:hover{
+			color:$yellow;
+		}
 
 		form#search-toggle.search-form {
 
 			input[type=search] {
+
 				background-color: transparent;
 				border: none;
 				width: 10px;
@@ -241,47 +260,36 @@ body.blog,
 
 		} //site header form#search-toggle.search-form
 
-	 
-
-
 		.navigation-searchbar button i {
 			color: white;
 		}
+		.navigation-searchbar button i:hover{
+			color:$yellow;
+		}
 
 	} //site header
+
 } // template main / template about
 
 
-
-
 // ==========================================================================================================================
-//									 navigation bar common styling forproduct template defaul page
-// ===================================================================================================
-
-
-
-	
+//						 PRODUCTS / TAG ARCHIVE/ CATEGORY ARCHIVE/ ADVENTURES   
+// =======================================================================================================
 
 
 body.archive.tag,
 body.archive.category,
 .products-template-default,
-.adventures-template-default.single-adventures{
-	
+.adventures-template-default.single-adventures {
+
 	.navigation-searchbar {
-		flex-wrap:nowrap;
-	
-	
-	
-		button{
-			background-color:transparent;
-			border:none;
-			width:5%;
-			margin-top:7%;
-
-			
+		flex-wrap: nowrap;
+		
+		button {
+			background-color: transparent;
+			border: none;
+			width: 5%;
+			margin-top: 7%;
 		}
-
-
 	}
 }

@@ -4,79 +4,70 @@
 //                                  ABOUT PAGE 
 
 // ==========================================================================================================
+
 .page-template-page-about {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 
-	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-
-
-	.site-content{
-		display:flex;
-		flex-direction:row;
-		flex-wrap:wrap;
-		
-		
+	.site-content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
-	.page-image{
-		height:45rem;
-		min-width:1120px;
+
+	// ===================================================================================
+	//                                HERO IMAGE 
+	// ===================================================================================
+
+
+	.page-image {
+		height: 45rem;
+		min-width: 1120px;
 		background-image: url('../css/images/about-hero.jpg');
 		background-size: 100%;
-		width:100%;
+		width: 100%;
 		background-repeat: no-repeat;
 		background-position: bottom center;
-		
-		  display: flex;
-		  flex-wrap: wrap;
-		  justify-content: center;
-
-		  .entry-title{
-			position: absolute;
-			align-self: center;
-			color:white; 
-			font-family:'headings-bold';
-			text-transform:uppercase;
-			font-size:2rem;
-		  }
-
-	
-	}
-
-	
-
-
-	.entry-text{
 		display: flex;
-		flex-direction:column;
-		flex-wrap:wrap;
-        justify-content:center;
-		margin-left:15%;
-		margin-right:15%;
+		flex-wrap: wrap;
+		justify-content: center;
 
-		h2{
-			font-family:'headings';
-			font-size:2rem;
-			text-align:center;
-		}
-
-		p{
-			font-family:'main-light';
-			font-size:1rem;
-		}
-			
-		
-	
-
-	
+			.entry-title {
+				position: absolute;
+				align-self: center;
+				color: white;
+				font-family: 'headings-bold';
+				text-transform: uppercase;
+				font-size: 2rem;
+			}
 
 	}
 
+	// ===================================================================================
+	//                               About Text
+	// ===================================================================================
 
+	.entry-text {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-left: 15%;
+		margin-right: 15%;
 
-
+			h2 {
+				font-family: 'headings';
+				font-size: 2rem;
+				text-align: center;
+			}
+			p {
+				font-family: 'main-light';
+				font-size: 1rem;
+			}
 	
+	}
 
 
 }

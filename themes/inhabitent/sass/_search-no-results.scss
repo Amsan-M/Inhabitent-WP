@@ -1,40 +1,37 @@
-.search.search-no-results{
-    min-width:1120px;
-    display:flex;
-    flex-wrap:wrap;
-    .hfeed.site{
-        width:100%;
+.search.search-no-results {
+    min-width: 1120px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .hfeed.site {
+        width: 100%;
     }
 
-    .site-content{
-        display:flex;
-        flex-direction:row-reverse;
-        margin-top:10%
+    .site-content {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 10%
     }
 
-    .content-area{
-        width:80%;
-
-    
+    .content-area {
+        width: 80%;
     }
 
-
-    .site-main{
+    .site-main {
         border-top: 1px solid lightgrey;
     }
-      
-    .page-content{
-    form#search-toggle.search-form{
-    display:block;
-     
 
-        fieldset{
-            border:none;
+    .page-content {
+        form#search-toggle.search-form {
+            display: block;
+            fieldset {
+                border: none;
+            }
         }
     }
-    }
-    .page-content button{
-        display:none;
-    }
-}
 
+    .page-content button {
+        display: none;
+    }
+    
+}

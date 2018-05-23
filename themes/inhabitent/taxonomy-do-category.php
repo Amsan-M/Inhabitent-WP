@@ -44,7 +44,7 @@ $docategory = new WP_Query( array (
            <?php the_content(); ?>
            </div>
            <div class = "product-info">
-            <?php the_title(); ?>..............$<?php echo CFS()->get( 'price' ); ?> </a>
+            <?php the_title(); ?>................$<?php echo CFS()->get( 'price' ); ?> </a>
 </div>
         </div>
            

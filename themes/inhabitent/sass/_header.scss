@@ -1,3 +1,6 @@
+// header div and logo ! the navigation bar is on a separate partial
+
+
 .site-header {
     
         position:absolute;
@@ -5,32 +8,62 @@
         display: -ms-flexbox;
         display: inline-flex;
         -ms-flex-wrap: wrap;
-        // flex-wrap: wrap;
-        // -ms-flex-direction: row;
-        // flex-direction: row;
         -ms-flex-pack: justify;
         justify-content: space-between;
         width:100%;
         min-width:1120px;
+        border-bottom:1px solid lightgrey;
 }
 
+.site-branding{
+    margin-left:5rem;
 
-.logo-link a{
-	background-image: url('../css/images/logos/inhabitent-logo-tent.svg');
-	background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    width: 50px;  
-    height: 50px;
-}
-
-.page-template-page-main{
-    .logo-link{
-        background-image: url('../css/images/logos/inhabitent-logo-tent-white.svg');
+    .logo-link {
+        background-image: url('../css/images/logos/inhabitent-logo-tent.svg');
         background-size: contain;
         background-repeat: no-repeat;
         display: flex;
-        width: 50px;
+        width: 50px;  
         height: 50px;
+        margin-left:5rem;
+
+       a{
+        width: 50px;
+        height: 50px; 
     }
+    }
+}
+
+.page-template-page-main,
+.page-template-page-about{
+
+    header{
+        border-bottom:none;
+    }
+
+    .site-branding{
+        margin-left:5rem;
+
+        .logo-link {
+            background-image: url('../css/images/logos/inhabitent-logo-tent-white.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            width: 50px;
+            height: 50px;
+            margin-left:5rem;
+
+            a{
+                width: 50px;
+                height: 50px; 
+            }
+        }
+    }    
+}
+
+.adventures-template-default.single-adventures{
+    header{
+        border-bottom:none;
+    }
+
 }

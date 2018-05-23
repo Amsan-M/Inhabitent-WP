@@ -2,18 +2,15 @@
 .page-template-taxonomy-eat-category,
 .page-template-taxonomy-sleep-category,
 .page-template-taxonomy-wear-category,
-{
-    
-    
+    {
 
-        .site-content {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-    
-        .hentry{
-    
+    .site-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hentry {
         width: 100%;
         justify-content: center;
         padding: 5%;
@@ -21,103 +18,90 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-            h1{
-                text-transform: uppercase;
-                font-family: 'headings-bold';
-                
-            }
+        h1 {
+            text-transform: uppercase;
+            font-family: 'headings-bold';
         }
-    
-        .content-area{
-    
-            display: inline-flex;
-            width: 100%;
-            border-bottom:1px dashed lightgrey;
-            margin-top:15%;
-            justify-content: center;
+    }
 
-    
-    
-           
-                    a{
-                        color:$green;
-                        text-decoration:none;
-                        text-transform:uppercase;
-                        font-family: 'headings';
-                    }
-                
-            
-            
-    
-    
+    .content-area {
+        display: inline-flex;
+        width: 100%;
+        margin-top: 15%;
+        justify-content: center;
+
+        .site-main {
+            width: 87%;
+            border-bottom: 1px dashed lightgrey;
         }
 
-
-
-
-
-
-        .entry-header{
-            width:100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-
-        .entry-content{
-            width:100%;
-            display:flex;
-            flex-direction: row;
-            flex-wrap:wrap;
-            justify-content:center;
-
-            p{
-             font-size:1rem;
-             font-family:'main-light';
-             text-align:center;
-            }
-        }
-
-
-    
-        .products{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-top: 10%;
-            width: 100%;
-            margin-left: 10%;
-            margin-right: 10%;
-            justify-content: space-between;
-        }
-        .single-product {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            flex-basis: 23%;
-            border: 1px solid lightgrey;
-            margin: 1%;
-        }
-        img {
-            border-bottom: 4px solid lightgrey;
-            height: 12rem;
-            max-width: 100%;
-        }
-        .product-info a {
-            color: black;
-            margin: 0px;
-            font-family: 'main-light';
+        a {
+            color: $green;
             text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'headings';
         }
-    
-    
+    }
 
+    .entry-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
+    .entry-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
 
+        p {
+            font-size: 1rem;
+            font-family: 'main-light';
+            text-align: center;
+        }
+    }
 
+    .products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 10%;
+        width: 100%;
+        margin-left: 7%;
+        margin-right: 7%;
+        justify-content: space-between;
+    }
 
+    .single-product {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 24%;
+        border: 1px solid lightgrey;
+        margin: 0px;
+    }
 
+    img {
+        border-bottom: 4px solid lightgrey;
+        height: 12rem;
+        max-width: 100%;
+    }
 
+    .product-info a {
+        color: black;
+        margin: 0px;
+        font-family: 'main-light';
+        text-decoration: none;
+    }
+
+    .product-info {
+        height: 3rem;
+        margin-top: -0.8rem;
+        margin-bottom: 0.2rem;
+        text-align: center;
+    }
     
 }

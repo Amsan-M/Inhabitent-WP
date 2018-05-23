@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single products posts.
+ * The template for displaying all single adventures.
  *
  * @package RED_Starter_Theme
  */
@@ -13,26 +13,28 @@ get_header();
  
 		<main id="main" class="site-main" role="main">
 
-<div class = "adventure">
+			<div class = "adventure">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php 
-			get_template_part( 'template-parts/content', 'singleAdventure' ); ?>
+				<?php get_template_part( 'template-parts/content', 'singleAdventure' ); ?>
 
 
 
 			
 	
-</div> <!-- product-info -->
+			</div> <!-- adventure -->
 
-<!-- <div class = "social-media-buttons"> -->
-<button type="button"> <i class="fab fa-facebook-f"></i> <p> like </p> </button><button type="button"> <i class="fab fa-twitter"></i>  <p>tweet </p> </button><button type="button"> <i class="fab fa-pinterest"></i> <p> pin </p> </button>
-<!-- </div> -->
-			<?php the_post_navigation(); ?>
 
+
+		 	<div class = "social-media-buttons"> 
+			<button type="button"> <i class="fab fa-facebook-f"></i> <p> like </p> </button><button type="button"> <i class="fab fa-twitter"></i>  <p>tweet </p> </button><button type="button"> <i class="fab fa-pinterest"></i> <p> pin </p> </button>
+ 			</div>  <!-- social media buttons-->
+
+			
+			<!-- If comments are open or we have at least one comment, load up the comment template. -->
 			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
+				
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
 				endif;
@@ -41,10 +43,9 @@ get_header();
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+		
 	</div><!-- #primary -->
-	<div class = "social-media-buttons">
 
-</div> <!-- social media buttons-->
 <?php get_footer(); ?>
 
 

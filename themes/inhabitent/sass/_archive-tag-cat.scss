@@ -1,96 +1,92 @@
-// stylesheet for archives: tags and categories 
+// ==================================================================================================
+// TAGS & CATEGORIES ARCHIVES 
+// ==================================================================================================
+
 
 
 body.archive.tag,
-body.archive.category{
+body.archive.category {
 
-    .hentry{
-        margin-top:5%;
+    .hentry {
+        margin-top: 5%;
     }
-   
-   .content-area{
-    justify-content: center;
-    display: flex;
 
-        .site-main{
-            width:80%;
+    .content-area {
+        justify-content: center;
+        display: flex;
+        .site-main {
+            width: 80%;
             margin-top: 10%;
         }
-   }
+    }
 
-    .entry-wrapper{
-        position:relative;
+    .entry-wrapper {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
 
-        .entry-image{
-            width:100%;
-            img{
-                width:100%;
-                height:100%;
+        .entry-image {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
             }
         }
 
-        .entry-title, 
-        .entry-meta{
-            position:absolute;
-            background-color:$green;
-            color:white;
 
+        .entry-title,
+        .entry-meta {
+            position: absolute;
+            background-color: $green;
+            color: white;
         }
 
-        .entry-title{
-            width:80%;
+        .entry-title {
+            width: 80%;
         }
-
-        .entry-title a{
-            text-decoration:none;
-            font-family:'headings-bold';
-            font-size:2rem; 
-            color:white;
-            text-transform:uppercase;
-            
+        
+        .entry-title a {
+            text-decoration: none;
+            font-family: 'headings-bold';
+            font-size: 2rem;
+            color: white;
+            text-transform: uppercase;
         }
-
-    
-
-        .entry-meta{
-            position:absolute; 
-            right:0px;
-            bottom:0px;           
+        .entry-meta {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
         }
-
-       
     }
 
 
-    .entry-content p{
-        font-size:1rem;
-        margin-top:5%;
-
+    .entry-content p {
+        font-size: 1rem;
+        margin-top: 5%;
     }
 
+    button {
+        box-shadow: none;
+        background-color: transparent;
+        width: 20%;
+        border: 1px solid black;
+        text-shadow: none;
+        border-radius: 0px;
+        height: 3rem;
 
-
-    button{
-        box-shadow:none;
-        background-color:transparent;
-        width:20%;
-        border:1px solid black;
-        text-shadow:none;
-        border-radius:0px;
-        height:3rem;
-     
-
-        a{
-            text-decoration:none;
-            text-transform:uppercase;
-            color:black;
-            font-family:'main-light';
-
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+            font-family: 'main-light';
         }
-
+  
+ 
+ 
     }
-    
+
+
 }
+
 

@@ -1,108 +1,99 @@
-.page-template-archive-adventures{
-   
-    display:flex;
-    flex-wrap:wrap;
+.page-template-archive-adventures {
+    display: flex;
+    flex-wrap: wrap;
 
-
-    .site-content{
-        display:flex;
-        flex-wrap:wrap;
-        flex-direction:row;
-        justify-content:center;
+    .site-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
     }
 
-    .adventures-title{
-        display:inline-flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-        width:100%;
+    .adventures-title {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
         margin-top: 10%;
         margin-bottom: 10%;
         justify-content: center;
         margin: 5%;
         border-bottom: 1px dashed lightgrey;
-
     }
 
-    .all-adventures{
+    .all-adventures {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        width:90%;
-        //justify-content:center;
+        width: 90%; 
     }
-    
-    
-    .single-adventure{
+
+    .single-adventure {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        flex-basis:48%;
-        height:500px;
+        flex-basis: 48%;
+        height: 500px;
         margin: 1%;
-
     }
 
-    .adventure-wrapper{
+    .adventure-wrapper {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
         height: 100%;
-
     }
+
     .adventure-image,
-     img{
-         
-        height:100%;
+    img {
+        height: 100%;
     }
 
-
-
-    .adventure-link{
+    .adventure-link {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 35%;
         height: 20%;
-        margin-top:5%;
+        margin-top: 5%;
         position: absolute;
         margin: 3%;
-        // width:100%;
 
-        a{
-            font-size:2.8rem;
-            text-decoration:none;
-            text-transform:capitalize;
-            color:white;
+        a {
+            font-size: 2.8rem;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: white;
             font-family: 'main-light';
-            // display: flex;
-            // flex-wrap: wrap;
-            // flex-direction: row;
-            //min-width: 100%;
             position: absolute;
             width: 470px;
             height: 4rem;
         }
 
-        button{
-            background-color:transparent;
-            border:1px solid white;
-            box-shadow:none;
-            border-radius:0px;
-            text-shadow:none;
-            color:white;
+            a:hover{
+                color:$yellow;
+            }
+
+        button {
+            background-color: transparent;
+            border: 1px solid white;
+            box-shadow: none;
+            border-radius: 0px;
+            text-shadow: none;
+            color: white;
             font-family: 'headings';
-            font-size:1rem;
-            text-transform:uppercase;
-            height:3rem;
-            width:30%;
-
-
+            font-size: 1rem;
+            text-transform: uppercase;
+            height: 3rem;
+            width: 30%;
         }
-    
+
+            button:hover{
+                background-color:$green;
+                color:white;
+                border:none;
+            }
     
     }
-
-
-} 
+}
