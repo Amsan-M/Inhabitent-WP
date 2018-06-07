@@ -1,14 +1,22 @@
+
+
 <?php
 /**
  * The template for displaying all single posts.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent
+ * 
  */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+
+			<!-- <button type="button" id="close-comments">Close Comments</button>  -->
+
+			 <?php// $the_nonce = wp_create_nonce( 'wp_rest' ); 
+			//echo //$the_nonce?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

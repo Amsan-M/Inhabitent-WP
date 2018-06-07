@@ -5,7 +5,7 @@
  * 
  * (default template, but as all pages heve their own custom templates)
  *
- * @package RED_Starter_Theme
+ * @package inhabitent
  */
 ?>
 <?php get_header(); ?>

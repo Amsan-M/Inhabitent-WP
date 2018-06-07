@@ -8,7 +8,7 @@ Template Name: find us
 /**
  * The template for displaying find us page.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent
  */
 ?>
 <?php 

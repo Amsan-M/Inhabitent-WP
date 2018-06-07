@@ -7,7 +7,7 @@ Template Name: adventures
 /**
  * The template for displaying adventure archive page.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent
  */
 
  

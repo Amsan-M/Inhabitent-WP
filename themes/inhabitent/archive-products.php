@@ -7,7 +7,7 @@ Template Name: products
 /**
  * The template for displaying home page.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent
  */
 
  

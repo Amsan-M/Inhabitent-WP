@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single products posts.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent
  */
 
 get_header(); 

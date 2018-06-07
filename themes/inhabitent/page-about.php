@@ -6,7 +6,7 @@ Template Name: about
 /**
  * The template for displaying about page.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent
  */
 ?>
 
@@ -25,7 +25,7 @@ Template Name: about
 			<div class = "page-image">
 
 				
-
+				<?php echo CFS()->get( 'about_img' ); ?>
 
 		
 

@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single adventures posts.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent
  */
 
 ?>

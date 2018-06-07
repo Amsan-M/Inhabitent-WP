@@ -7,7 +7,7 @@ Template Name: homepage
 /**
  * The template for displaying home page.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent 
  */
 
  
@@ -43,7 +43,7 @@ Template Name: homepage
 							
 						<div class = "do-icon">
 
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/do.svg">
+							<img src="<?php echo esc_url( get_stylesheet_directory_uri() )?>/product-type-icons/do.svg">
 							
 						</div>
 
@@ -70,7 +70,7 @@ Template Name: homepage
 
 						<div class = "eat-icon">
 
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/eat.svg">
+							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/product-type-icons/eat.svg">
 							
 						</div>
 
@@ -95,7 +95,7 @@ Template Name: homepage
 
 						<div class = "sleep-icon">
 
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/sleep.svg">
+							<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/product-type-icons/sleep.svg">
 		
 						</div>
 
@@ -121,7 +121,7 @@ Template Name: homepage
 
 							<div class = "wear-icon">
 
-								<img src="<?php bloginfo('stylesheet_directory'); ?>/product-type-icons/wear.svg">
+								<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/product-type-icons/wear.svg">
 							
 							</div>
 
@@ -164,7 +164,7 @@ Template Name: homepage
 	<div class = "last-posts">
 
 		<?php
-		$args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => 3 );
+		$args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => 3);
 		$posts = new WP_Query( $args ); 
 		?>
 

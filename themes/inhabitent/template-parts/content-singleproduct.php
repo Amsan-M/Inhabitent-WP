@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single products.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent
  */
 
 ?>

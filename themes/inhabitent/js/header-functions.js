@@ -1,9 +1,3 @@
-// jQuery( document ).ready(function () {
-//     // alert('hey1');
-
-
-    
-// });
 
 
 function toggleSearch() {
@@ -21,3 +15,8 @@ function toggleSearch() {
 document.getElementById('toogle-searchbar').onclick = function(){
        toggleSearch();
      };
+
+
+
+
+
