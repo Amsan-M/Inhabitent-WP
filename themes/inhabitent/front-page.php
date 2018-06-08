@@ -231,7 +231,10 @@ Template Name: homepage
 </div> <!-- posts-wrapper -->
 
 	<!--       ===========================================                   adventures section             ================================================= -->
+	<div class = "latest-adventures-title">
 
+<h1> latest adventures  <h1>
+</div>
 
 <div class = "adventures-gallery-wrapper">
 	<div class = "adventures-gallery">

@@ -1094,7 +1094,8 @@ footer .site-info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%; }
+  width: 100%;
+  margin-top: 5%; }
   .page-template-page-main .shop-section-title h1 {
     text-transform: uppercase;
     font-size: 2rem;
@@ -1395,8 +1396,22 @@ footer .site-info {
         .page-template-page-main .last-posts .single-thumbnail .single-thumbnail-meta .post-button button:hover p {
           color: white; }
 
+.page-template-page-main .latest-adventures-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 5%; }
+  .page-template-page-main .latest-adventures-title h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'headings'; }
+
 .page-template-page-main .adventures-gallery-wrapper {
-  margin-top: 10%;
+  margin-top: 5%;
   width: 100%;
   max-width: 100%;
   height: 30rem; }
