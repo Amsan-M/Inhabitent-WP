@@ -1671,53 +1671,30 @@ body.blog article {
   .page-template-page-about .site-header {
     z-index: 1; }
   .page-template-page-about .page-image {
-    width: 100%;
-    height: 50rem;
-    min-width: 1120px;
-    position: absolute;
-    color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-    .page-template-page-about .page-image h1 {
-      text-transform: uppercase;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      justify-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-      font-family: 'headings-bold'; }
-  .page-template-page-about .entry-img {
-    height: 50rem;
-    min-width: 1120px;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.36)), to(rgba(0, 0, 0, 0.36)));
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36));
-    background-size: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .page-template-page-about .entry-img img {
-      z-index: -1; }
-    .page-template-page-about .entry-img .entry-title {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)); }
+    .page-template-page-about .page-image h1 {
       position: absolute;
-      -ms-flex-item-align: center;
-          align-self: center;
       color: white;
-      font-family: 'headings-bold';
-      text-transform: uppercase;
-      font-size: 2rem; }
+      font-family: "headings-bold"; }
+  .page-template-page-about img {
+    position: relative;
+    z-index: -1; }
   .page-template-page-about .entry-text {
     display: -webkit-box;
     display: -ms-flexbox;

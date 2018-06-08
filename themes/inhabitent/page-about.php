@@ -19,14 +19,21 @@ Template Name: about
 
 		<!-- <main id="main" class="site-main" role="main"> -->
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?> 
 
 
 			<div class = "page-image">
 
 				
-				<?php echo CFS()->get( 'about_img' ); ?>
+			<?php 
 
+			$image = get_field('image');
+
+			if( !empty($image) ): ?>
+
+				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+			<?php endif; ?>
 		
 
 	              <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> 

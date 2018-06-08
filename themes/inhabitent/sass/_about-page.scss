@@ -21,55 +21,34 @@
 	}
 
 
-	// ===================================================================================
-	//                                HERO IMAGE 
-	// ===================================================================================
+	// // ===================================================================================
+	// //                                HERO IMAGE 
+	// // ===================================================================================
 	.page-image{
-		width: 100%;
-		height: 50rem;
-		min-width: 1120px;
-		position: absolute;
-		color: white;
-		display:flex;
-		justify-content: center;
+	    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	height: 100%;
+	background:linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36));
+	
 		h1{
-			text-transform:uppercase;
-			display: flex;
-    		justify-self: center;
-			align-self: center;
-			font-family: 'headings-bold';
+			position:absolute;
+			color:white;
+			font-family:"headings-bold";
 		}
 	}
 	
 
-	.entry-img {
-		height: 50rem;
-		min-width: 1120px;
-		background:linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36));
-		background-size: 100%;
-		width: 100%;
-		background-repeat: no-repeat;
-		background-position: bottom center;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		
-		//z-index:1;
+
+
 
 		img{
+			position:relative;
 			z-index:-1;
 		}
 
-			.entry-title {
-				position: absolute;
-				align-self: center;
-				color: white;
-				font-family: 'headings-bold';
-				text-transform: uppercase;
-				font-size: 2rem;
-			}
-
-	}
 
 	// ===================================================================================
 	//                               About Text
