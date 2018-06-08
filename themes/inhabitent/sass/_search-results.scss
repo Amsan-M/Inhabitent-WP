@@ -1,7 +1,10 @@
 .search.search-results{
 
+
+    
     .site-content{
         flex-direction:row-reverse;
+       
     }
 
     .content-area{
@@ -10,9 +13,13 @@
         margin-right: 5%;
         border-right:1px solid $lightgrey;
         padding-right:1%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 70%;
     }
     .sidebar-wrapper{
-        width:100%;
+        width: 30%;
     }
 
     .entry-title a{
