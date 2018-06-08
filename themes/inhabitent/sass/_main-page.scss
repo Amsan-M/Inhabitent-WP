@@ -93,6 +93,21 @@ section{
 .page-template-page-main {
 
 
+    .shop-section-title{
+        display:flex;
+        justify-content:center;
+        width: 100%;
+        
+
+        h1{
+            text-transform:uppercase;
+            font-size:2rem;
+            font-family: 'headings'; 
+        }
+
+    }
+
+
 
 
 .shop-categories{

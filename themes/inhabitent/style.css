@@ -1087,6 +1087,19 @@ footer .site-info {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
+.page-template-page-main .shop-section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+  .page-template-page-main .shop-section-title h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'headings'; }
+
 .page-template-page-main .shop-categories {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;

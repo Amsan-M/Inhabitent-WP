@@ -30,6 +30,11 @@ Template Name: homepage
 <div class = "section-wrapper">
  <!--       ===========================================                    Shop categories section             ================================================= -->
 
+
+<div class = "shop-section-title">
+
+<h1> shop stuff <h1>
+</div>
 	<div class = "shop-categories">
 
 		<div class = "shop-menu">
