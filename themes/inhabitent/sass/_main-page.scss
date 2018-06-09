@@ -445,6 +445,7 @@ section{
     .single-adventure img{
         width:100%;
         position:relative;
+        z-index:-1;
         
 
      
@@ -476,7 +477,8 @@ section{
     
     
         .single-adventure:nth-child(1){
-            
+
+            background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36));
             position:relative;
             grid-column-start:1 ;
             grid-column-end:3 ;
@@ -488,6 +490,7 @@ section{
              position:absolute;
               width:100%;
               height:100%;
+              z-index:-1;
               
                }
 
@@ -503,6 +506,7 @@ section{
 
     
         .single-adventure:nth-child(2){
+            background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36));
             position:relative;
             grid-column-start:3 ;
             grid-column-end:5;
@@ -532,6 +536,7 @@ section{
 
 
         .single-adventure:nth-child(3){
+            background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36));
             grid-column-start:3;
             grid-row-start:2;
             display: flex;
@@ -542,6 +547,7 @@ section{
             position:absolute;
             width:100%;
             height:100%;
+            z-index:-1;
             
     
             }
@@ -556,7 +562,7 @@ section{
         }
 
         .single-adventure:nth-child(4){
-           
+            background: linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36));
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
@@ -564,6 +570,7 @@ section{
                 .single-adventure img{
                     width:100%;
                     height:100%;
+                    
                 }
 
                 a{
