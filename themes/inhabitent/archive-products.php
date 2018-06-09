@@ -15,12 +15,13 @@ Template Name: products
 
 <?php get_header();  ?>
 
-<div class = "shop-menu">
+    <div class = "shop-menu">
 
-<h1> <?php the_title(); ?> </h1>
+        <h1> <?php the_title(); ?> </h1>
 
 <nav class = "categories-menu"> 
-    <ul>
+   
+<ul>
         <li><a href="/Inhabitent/do/" <h1> do </h1> </a></li>
         <li><a href="/Inhabitent/eat/" <h1> eat </h1> </a></li>
         <li><a href="/Inhabitent/sleep/" <h1> sleep </h1> </a></li>
@@ -42,19 +43,23 @@ Template Name: products
 
 
        <div class = "single-product">
+
            <div class = "product-image">
 
            <a href="<?php the_permalink(); ?>"  
            <?php get_template_part( 'template-parts/content', 'products' ); ?>
 
-           </div>
+           </div> <!-- .product-image -->
+
 
            <div class = "product-info">
+
             <?php the_title(); ?> ................ $<?php echo CFS()->get( 'price' ); ?> </a>
-            </div>
+
+            </div> <!-- .product-info --> 
 
 
-        </div>
+        </div> <!-- .single-product -->
            
 
 
@@ -71,16 +76,8 @@ Template Name: products
 
 
 
-
-		
-		
-
+</div>
 		
 
-
-
-		
-
-	
 
 <?php get_footer(); ?>

@@ -1,10 +1,6 @@
-
 // ==========================================================================================================
-
 //                                  ABOUT PAGE 
-
 // ==========================================================================================================
-
 .page-template-page-about {
 	display: flex;
 	flex-direction: row;
@@ -15,41 +11,35 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-
-	.site-header{
-		z-index:1;
-	}
-
-
+	.site-header {
+		z-index: 1;
+	} 
+	
 	// // ===================================================================================
 	// //                                HERO IMAGE 
 	// // ===================================================================================
-	.page-image{
-	    display: flex;
-    max-width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	height: 100%;
-	background:linear-gradient(0deg,rgba(0, 0, 0, 0.36),rgba(0, 0, 0, 0.36));
-	
-		h1{
-			position:absolute;
-			color:white;
-			font-family:"headings-bold";
+
+	.page-image {
+		display: flex;
+		max-width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36));
+
+		h1 {
+			position: absolute;
+			color: white;
+			font-family: "headings-bold";
 		}
 	}
+
+	img {
+		position: relative;
+		z-index: -1;
+	} 
 	
-
-
-
-
-		img{
-			position:relative;
-			z-index:-1;
-		}
-
-
 	// ===================================================================================
 	//                               About Text
 	// ===================================================================================
@@ -62,20 +52,21 @@
 		margin-left: 15%;
 		margin-right: 15%;
 
-			h2 {
-				font-family: 'headings';
-				font-size: 2rem;
-				text-align: center;
-			}
-			p {
-				font-family: 'main-light';
-				font-size: 1rem;
-			}
+		h2 {
+			font-family: 'headings';
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		p {
+			font-family: 'main-light';
+			font-size: 1rem;
+		}
+	}
+
+
+	footer {
+		width: 100%;
+	}
 	
-	}
-	footer{
-		width:100%;
-	}
-
-
 }

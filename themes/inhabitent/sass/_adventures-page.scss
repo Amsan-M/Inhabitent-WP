@@ -29,6 +29,7 @@
     }
 
     .single-adventure {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36));
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -47,7 +48,8 @@
 
     .adventure-image,
     img {
-        height: 100%;
+         height: 100%;
+         z-index:-1;
     }
 
     .adventure-link {
@@ -71,9 +73,10 @@
             height: 4rem;
         }
 
-            a:hover{
-                color:$yellow;
-            }
+        a:hover{
+            color:$yellow;
+        }
+
 
         button {
             background-color: transparent;
@@ -89,10 +92,10 @@
             width: 30%;
         }
 
-            button:hover{
-                background-color:$green;
-                color:white;
-                border:none;
+        button:hover{
+            background-color:$green;
+            color:white;
+            border:none;
             }
     
     }

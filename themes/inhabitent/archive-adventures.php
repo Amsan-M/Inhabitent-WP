@@ -15,12 +15,14 @@ Template Name: adventures
 
 <?php get_header();  ?>
 
-<div class = "adventures-title">
+	<div class = "adventures-title">
 
-<h1> <?php the_title(); ?> </h1>
+	<h1> <?php the_title(); ?> </h1>
 
-</div>
- <div class = "all-adventures">
+	</div>
+
+
+	<div class = "all-adventures">
 			
 		<?php
 		$args = array( 'post_type' => 'adventures', 'order' => 'ASC', 'posts_per_page' => -1  );
@@ -36,25 +38,28 @@ Template Name: adventures
 
 			<span class = "adventure-wrapper">
 
-			<div class = "adventure-image"> 
 
-			   <?php the_post_thumbnail( 'large' ); ?>
+				<div class = "adventure-image"> 
 
-			</div>
+				<?php the_post_thumbnail( 'large' ); ?>
 
-			<div class = "adventure-link">
+				</div> <!-- .adventure-image -->
 
-			   <a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> <br> </h1> <button type = "button"> read more </button> </a>
 
-			</div>
+				<div class = "adventure-link">
+
+				<a href="<?php the_permalink(); ?>" <h1> <?php the_title(); ?> <br> </h1> <button type = "button"> read more </button> </a>
+
+				</div> <!-- .adventure-link-->
+				
 			
 
-		</div>
-			   
+		</div> <!-- .single-adventure -->
 	
-	
-	<?php endwhile; ?>
-	</div>
+		<?php endwhile; ?>
+
+
+	</div> <!-- .all-adventures -->
 
 
 	<?php wp_reset_postdata(); ?>

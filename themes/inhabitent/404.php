@@ -12,6 +12,7 @@ get_header(); ?>
 <?php get_sidebar();?>
 
 	<div id="primary" class="content-area">
+
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
@@ -27,9 +28,14 @@ get_header(); ?>
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
 					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
+					
+					
+						<div class="widget widget_categories">
+
 						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
+
 						<ul>
+
 						<?php
 							wp_list_categories( array(
 								'orderby'    => 'count',
@@ -39,8 +45,11 @@ get_header(); ?>
 								'number'     => 10,
 							) );
 						?>
+
 						</ul>
-					</div><!-- .widget -->
+
+					</div><!-- .widget widget_categories-->
+
 					<?php endif; ?>
 
 					<?php
@@ -49,9 +58,11 @@ get_header(); ?>
 					?>
 
 				</div><!-- .page-content -->
+
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
+		
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
