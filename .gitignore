@@ -134,6 +134,12 @@ $RECYCLE.BIN/
 index.php
 assets/*
 
+# Ignore uploads
+uploads/
+
+# Ignore mu-plugins
+mu-plugins/
+
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
 !plugins/inhabitent-functionality/
@@ -143,6 +149,7 @@ plugins/*
 # Ignore everything in "themes" except the active theme. #
 themes/*
 !themes/inhabitent/
+!themes/inhabitent/index.php
 
 # Ignore packages #
 themes/inhabitent/node_modules/
@@ -150,6 +157,7 @@ themes/inhabitent/.vscode/
 
 # Ignore OS files #
 .DS_Store
+.ds_store
 .DS_Store?
 ._*
 .Spotlight-V100
