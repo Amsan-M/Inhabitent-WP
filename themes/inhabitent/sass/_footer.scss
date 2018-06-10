@@ -36,6 +36,17 @@ footer .site-info {
             text-transform:uppercase;
         }
 
+        a{
+            color:white;
+            font-family: 'main-light';
+            text-decoration: none;
+            font-size:1rem;
+        }
+        a:hover{
+            text-decoration: underline;
+            color:white;
+        }
+
        
         
     }

@@ -785,6 +785,13 @@ body.archive.category .navigation-searchbar,
 span.day-of-the-week {
   font-weight: bold; }
 
+.textwidget a {
+  color: #248A83;
+  text-decoration: none; }
+
+.textwidget a:hover {
+  color: black; }
+
 .widget.widget_archive {
   margin-top: 15%; }
 
@@ -969,6 +976,14 @@ footer .site-info {
       font-size: 1.3rem;
       width: 100%;
       text-transform: uppercase; }
+    footer .site-info div a {
+      color: white;
+      font-family: 'main-light';
+      text-decoration: none;
+      font-size: 1rem; }
+    footer .site-info div a:hover {
+      text-decoration: underline;
+      color: white; }
 
 .site-header {
   position: absolute;
@@ -1422,16 +1437,16 @@ footer .site-info {
 
 .page-template-page-main .single-adventure a {
   position: absolute;
-  font-family: 'main-bold';
-  font-size: 2rem;
-  max-width: 80%;
+  font-family: 'main';
+  font-size: 4rem;
+  max-width: 95%;
   word-break: break-word;
   color: white;
   text-shadow: none;
   text-decoration: none;
   margin-top: 5%;
   margin-left: 1rem;
-  text-transform: capitalize; }
+  text-transform: none; }
   .page-template-page-main .single-adventure a p {
     margin: 0px; }
 
@@ -1452,8 +1467,7 @@ footer .site-info {
     height: 100%;
     z-index: -1; }
   .page-template-page-main .single-adventure:nth-child(1) a {
-    position: absolute;
-    width: 20rem; }
+    position: absolute; }
 
 .page-template-page-main .single-adventure:nth-child(2) {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.36)), to(rgba(0, 0, 0, 0.36)));
@@ -1474,10 +1488,22 @@ footer .site-info {
     position: absolute;
     width: 100%;
     height: 100%; }
-  .page-template-page-main .single-adventure:nth-child(2) .single-adventure:nth-child(2) a {
-    position: absolute;
-    width: 20rem;
-    margin-left: 1rem; }
+
+.page-template-page-main .single-adventure:nth-child(2) a {
+  position: absolute;
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  -ms-flex-direction: column;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .page-template-page-main .single-adventure:nth-child(3) {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.36)), to(rgba(0, 0, 0, 0.36)));
@@ -1500,9 +1526,8 @@ footer .site-info {
     z-index: -1; }
   .page-template-page-main .single-adventure:nth-child(3) a {
     display: block;
-    font-size: 1.5rem;
-    width: 10rem;
-    height: 4rem;
+    font-size: 1.8rem;
+    width: 13rem;
     margin-top: 1%; }
 
 .page-template-page-main .single-adventure:nth-child(4) {
@@ -1522,7 +1547,7 @@ footer .site-info {
     height: 100%; }
   .page-template-page-main .single-adventure:nth-child(4) a {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: 10rem;
     height: 4rem;
     margin-top: 1%; }
@@ -1548,7 +1573,7 @@ footer .site-info {
           box-shadow: none;
   border: 2px solid white;
   height: 3rem;
-  width: 5rem;
+  width: 8rem;
   margin: 0px; }
   .page-template-page-main .single-adventure button p {
     text-decoration: none;
