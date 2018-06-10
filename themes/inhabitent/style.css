@@ -1247,6 +1247,8 @@ footer .site-info {
       text-decoration: none;
       color: white;
       text-shadow: none; }
+  .page-template-page-main .category-description button:hover {
+    background-color: #1a6560; }
 
 .page-template-page-main .latest-post-heading {
   display: -webkit-box;
@@ -1610,6 +1612,9 @@ footer .site-info {
     margin: 0px;
     font-size: 1.5rem; }
 
+.page-template-page-main .adventure-page-button :hover {
+  background-color: #1a6560; }
+
 .page-template-page-main footer {
   margin-top: 10%; }
 
@@ -1662,6 +1667,8 @@ body.blog .entry-title {
     font-size: 3rem;
     font-family: 'headings-bold';
     text-decoration: none; }
+  body.blog .entry-title a:hover {
+    color: #f0e4d1; }
 
 body.blog .entry-meta {
   background-color: #248A83;
@@ -1692,8 +1699,14 @@ body.blog button {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-family: 'main-light';
+    font-family: 'headings';
     font-size: 0.8rem; }
+
+body.blog button:hover {
+  background-color: #248A83;
+  border: none; }
+  body.blog button:hover a {
+    color: white; }
 
 body.blog article {
   margin-top: 10%;
@@ -1746,7 +1759,8 @@ body.blog article {
     .page-template-page-about .page-image h1 {
       position: absolute;
       color: white;
-      font-family: "headings-bold"; }
+      font-family: "headings-bold";
+      font-size: 3rem; }
   .page-template-page-about img {
     position: relative;
     z-index: -1; }

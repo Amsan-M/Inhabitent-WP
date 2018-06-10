@@ -178,6 +178,10 @@
                 text-shadow: none;
             }
         }
+
+        button:hover {
+            background-color:#1a6560;
+        }
     }
 }
 
@@ -516,6 +520,9 @@
         }
     }
 
+    .adventure-page-button :hover {
+        background-color:#1a6560;
+    }
     footer {
         margin-top: 10%
     }

@@ -51,6 +51,10 @@ body.blog {
             font-family: 'headings-bold';
             text-decoration: none;
         }
+
+        a:hover{
+            color:$yellow;
+        }
     }
 
     .entry-meta {
@@ -83,8 +87,16 @@ body.blog {
             text-decoration: none;
             text-transform: uppercase;
             color: black;
-            font-family: 'main-light';
+            font-family: 'headings';
             font-size:0.8rem; 
+        }
+    }
+    button:hover{
+        background-color: $green;
+        border:none;
+
+        a{
+        color:white;
         }
     }
 
