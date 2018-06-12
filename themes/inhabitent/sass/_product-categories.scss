@@ -8,6 +8,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-bottom: 15%;
     }
 
     .hentry {
@@ -25,15 +26,27 @@
     }
 
     .content-area {
-        display: inline-flex;
+        display: flex;
         width: 100%;
-        margin-top: 15%;
+        margin-top: 10%;
+        flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
 
         .site-main {
+            height: 10rem;
             width: 87%;
             border-bottom: 1px dashed $lightgrey;
             display:flex;
+            justify-content:center;
+            flex-direction: column;
+
+            h1, p{
+                display:flex;
+                justify-content:center;
+            }
+
+           
         }
 
         a {
@@ -77,18 +90,37 @@
     }
 
     .single-product {
-        display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        flex-basis: 24%;
-        border: 1px solid $lightgrey;
+        align-items: center;
+        flex-basis: 22%;
+        border: 1px solid #e1e1e1;
         margin: 1%;
-    }
+        height: 65%;
 
+        .product-info{     
+            font-family: 'main-light';
+            font-size: .9rem;
+            height: 3rem;
+            justify-content: center;
+            margin-bottom: .2rem;
+            text-align: center;
+            align-items: center;
+            display: inline-flex;
+            width: 100%;
+        }
+        
+    }
     img {
         border-bottom: 4px solid $lightgrey;
-        height: 12rem;
+        height: 100%;
+        width: 100%;
         max-width: 100%;
+    }
+
+    .product-image{
+        display: flex;
+        flex-wrap: wrap;
+        height: 80%;
     }
 
     .product-info a {
@@ -98,11 +130,5 @@
         text-decoration: none;
     }
 
-    .product-info {
-        height: 3rem;
-        margin-top: -0.8rem;
-        margin-bottom: 0.2rem;
-        text-align: center;
-    }
     
 }

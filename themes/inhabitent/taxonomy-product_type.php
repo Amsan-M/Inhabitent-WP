@@ -14,9 +14,12 @@ Template for product categories
 
 
             <?php 
-            $taxonomy = get_queried_object();
-            echo  $taxonomy->name;
-            ?>
+            $taxonomy = get_queried_object();?>
+            <h1><?php echo  $taxonomy->name ;?></h1>
+
+            <?php $description = term_description(); ?>
+            <p> <?php echo $description ?> </p>
+        
 
         </main> <!-- .main-->
 

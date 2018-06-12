@@ -109,7 +109,7 @@ Template Name: homepage
 							</li>
 
 					</ul>
-				</div> <!-- .shop menu -->
+				</div> <!--.shop menu -->
 
 			</div>   <!-- .shop-categories -->
 
