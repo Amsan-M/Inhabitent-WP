@@ -32,83 +32,23 @@ Template Name: homepage
 			<div class = "shop-section-title">
 				<h1> shop stuff </h1>
 			</div> <!--.shop-section-title-->
+			
 
 			<div class = "shop-categories">
 
 				<div class = "shop-menu">
-
-					<ul>
-						<li> 
-								
-							<div class = "do-category"> 
-			
-								<div class = "do-icon">
-									<img src="<?php echo esc_url( get_stylesheet_directory_uri() )?>/product-type-icons/do.svg">		
-								</div>
-
-								<div class = "category-description">
-									<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-									<button type="button"><a href="/Inhabitent/do/" <h1> do stuff</h1> </a> </button>
-								</div>		
-
-							</div> 
-
-						</li>
-
-						<li> 
-
-							<div class = "eat-category"> 
-
-								<div class = "eat-icon">
-									<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/product-type-icons/eat.svg">
-								</div>
-
-								<div class = "category-description">
-									<p> Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-									<button type="button"><a href="/Inhabitent/eat/" <h1> eat stuff</h1> </a> </button>
-
-								</div>
-
-							</div> 
+				<?php 
+                $terms = get_terms('product_type');
+                echo '<ul class = "product-type">';
+				foreach ($terms as $term){?>
 				
-						</li>
+                  <button> <?php echo '<li class="type"><a href="'.get_term_link($term).'">'.$term->name.'</a></li>' ;?></button>
+               <?php }  
+                echo '</ul>';
+           ?>
 
 
-						<li> 
-								
-							<div class = "sleep-category"> 
 
-								<div class = "sleep-icon">
-									<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/product-type-icons/sleep.svg">
-								</div>
-
-								<div class = "category-description">
-									<p>Get a good night's rest in the wild in a home away from home that travels well.</p>		
-									<button type="button"><a href="/Inhabitent/sleep/" <h1> sleep stuff</h1> </a> </button>
-								</div>
-
-							</div> 
-
-								
-						</li>
-							<li> 
-
-								<div class = "wear-category"> 
-
-									<div class = "wear-icon">
-										<img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/product-type-icons/wear.svg">
-									</div>
-
-									<div class = "category-description">
-										<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-										<button type="button"><a href="/Inhabitent/wear/" <h1> wear stuff</h1> </a> </button>
-									</div>
-
-								</div> 
-								
-							</li>
-
-					</ul>
 				</div> <!--.shop menu -->
 
 			</div>   <!-- .shop-categories -->
