@@ -1,39 +1,52 @@
 <?php
 
 /*
-Template Name: product-types
+Template for product categories
 */
 
 ?>
 
+<?php get_header();  ?>
+
+<div id="primary" class="content-area">
+    
+        <main id="main" class="site-main" role="main"> 
 
 
-<?php get_header(); ?>
+            <?php 
+            $taxonomy = get_queried_object();
+            echo  $taxonomy->name;
+            ?>
 
-	<?php while ( have_posts() ) : the_post(); ?> 
-            <div class = "single-product">
-            
+        </main> <!-- .main-->
+
+    <?php while ( have_posts() ) : the_post(); ?>
+        
+
+        <div class = "single-product">
+
             <div class = "product-image">
-            <a href="<?php the_permalink(); ?>"  
-            <?php get_template_part( 'template-parts/content', 'products' ); ?>
-            </div> 
+
+                <a href="<?php the_permalink(); ?>"  
+                <?php the_content(); ?>
+
+            </div> <!-- .product-image -->
 
             <div class = "product-info">
-             <?php the_title(); ?>..............$<?php echo CFS()->get( 'price' ); ?> </a>
-            </div>
-         </div>
-            
-   
-     </div>
-     <?php wp_reset_postdata(); ?>
-     <?php endwhile; ?>
+                    
+                <?php the_title(); ?>..............$<?php echo CFS()->get( 'price' ); ?> </a>
+                    
+            </div> <!-- .product-info -->
     
- 
- 
-     <?php// endif; ?>
-             
- 
- 
- </div>	
- 
- <?php get_footer(); ?>
+        </div> <!--.single-product-->
+
+	<?php endwhile; // End of the loop. ?>
+        
+	
+
+</div><!-- #primary -->
+    
+
+
+		
+<?php get_footer(); ?>

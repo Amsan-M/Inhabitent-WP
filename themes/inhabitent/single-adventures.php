@@ -25,8 +25,10 @@ get_header();
 
 
 		 	<div class = "social-media-buttons"> 
-			<button type="button"> <i class="fab fa-facebook-f"></i> <p> like </p> </button><button type="button"> <i class="fab fa-twitter"></i>  <p>tweet </p> </button><button type="button"> <i class="fab fa-pinterest"></i> <p> pin </p> </button>
- 			</div>  <!-- social media buttons-->
+
+				<button type="button"> <i class="fab fa-facebook-f"></i> <p> like </p> </button><button type="button"> <i class="fab fa-twitter"></i>  <p>tweet </p> </button><button type="button"> <i class="fab fa-pinterest"></i> <p> pin </p> </button>
+ 			
+			 </div>  <!-- social media buttons-->
 
 			
 			

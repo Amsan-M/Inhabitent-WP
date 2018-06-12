@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The main template file used by Journal page.
+ * The index template
  *
  * @package inhabitent
  */
@@ -20,10 +20,10 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content' ); ?>
-				
 				<button type="button"><a href="<?php the_permalink(); ?>" <h1> Read More &#8594; </h1> </a> </button>	
 
 			<?php endwhile; ?>

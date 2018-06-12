@@ -24,20 +24,19 @@ get_header();
 
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 							
-							<?php 
-
-				$price = CFS()->get( 'price' );
-				$exerpt =CFS()->get( 'exerpt' );
-
+				<?php 
+					$price = CFS()->get( 'price' );
+					$exerpt =CFS()->get( 'exerpt' );
 				?>
-				<?php echo "<p class=\"price\">Price: \${$price}</p>";?>
 
+				<?php echo "<p class=\"price\">Price: \${$price}</p>";?>
 				<?php echo "<p class=\"product-exerpt\">{$exerpt}</p>";?>
 
 
-
 				<div class = "social-media-buttons">
-				<button type="button"> <i class="fab fa-facebook-f"></i> <p> like </p> </button><button type="button"> <i class="fab fa-twitter"></i>  <p>tweet </p> </button><button type="button"> <i class="fab fa-pinterest"></i> <p> pin </p> </button>
+
+					<button type="button"> <i class="fab fa-facebook-f"></i> <p> like </p> </button><button type="button"> <i class="fab fa-twitter"></i>  <p>tweet </p> </button><button type="button"> <i class="fab fa-pinterest"></i> <p> pin </p> </button>
+				
 				</div> <!-- social media buttons-->
 
 			</div> <!-- product-info -->

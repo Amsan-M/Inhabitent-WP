@@ -1,47 +1,40 @@
 <?php
 /**
- * The template for displaying the footer.
+ * The template for the footer.
  *
  * @package inhabitent
  */
 
 ?>
 
-			</div><!-- #content -->
-
-			<footer id="colophon" class="site-footer" role="contentinfo">
+</div><!-- #content -->
 
 
-				<div class="site-info">
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
 
 
-				<?php if (is_active_sidebar ('footer-sidebar')):?>
+		<div class="site-info">
+
+			<?php if (is_active_sidebar ('footer-sidebar')):?>
+			
 				<?php dynamic_sidebar('footer-sidebar'); ?>
-					<?php endif; ?>
+						
+			<?php endif; ?>
 
-					</div>   		
+		</div> <!--.site-info -->   		
 
-<div class= "footer-image">
-
-</div>
+		
+		<div class= "footer-image"> </div>
+					
+					<!-- </div>.site-info -->			
 				
-				
-					<!-- <a href="<?php// echo esc_url( 'https://wordpress.org/' ); ?>"><?php //printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
-	
-				
-				</div><!-- .site-info -->
-			
-			
-			</footer><!-- #colophon -->
+	</footer><!-- #colophon -->
 
 
-		</div><!-- #page -->
+	</div><!-- #page -->
 
 		<?php wp_footer(); ?>
-		
 
-		 
-
-
-	</body>
+</body>
 </html>
