@@ -20,13 +20,27 @@ Template Name: products
         <h1> <?php the_title(); ?> </h1>
 
 <nav class = "categories-menu"> 
+
+<?php 
+
+
+$terms = get_terms('product_type');
+echo '<ul class = "product-type">';
+foreach ($terms as $term){
+    echo '<li class="type"><a href="'.get_term_link($term).'">'.$term->name.'</a></li>' ;
+}  
+echo '</ul>';
+
+
+            ?>
+
    
-<ul>
+<!-- <ul>
         <li><a href="/Inhabitent/do/" <h1> do </h1> </a></li>
         <li><a href="/Inhabitent/eat/" <h1> eat </h1> </a></li>
         <li><a href="/Inhabitent/sleep/" <h1> sleep </h1> </a></li>
         <li><a href="/Inhabitent/wear/" <h1> wear </h1> </a></li>
-    </ul>
+    </ul> -->
 
 </div>
 
