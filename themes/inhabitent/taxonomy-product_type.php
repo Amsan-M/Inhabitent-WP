@@ -23,32 +23,35 @@ Template for product categories
 
         </main> <!-- .main-->
 
+    <div class = "products-gallery">
+
     <?php while ( have_posts() ) : the_post(); ?>
         
+   
+            <div class = "single-product">
 
-        <div class = "single-product">
+                <div class = "product-image">
 
-            <div class = "product-image">
+                    <a href="<?php the_permalink(); ?>"  
+                    <?php the_content(); ?>
 
-                <a href="<?php the_permalink(); ?>"  
-                <?php the_content(); ?>
+                </div> <!-- .product-image -->
 
-            </div> <!-- .product-image -->
-
-            <div class = "product-info">
-                    
-                <?php the_title(); ?>..........$<?php echo CFS()->get( 'price' ); ?> </a>
-                    
-            </div> <!-- .product-info -->
-    
-        </div> <!--.single-product-->
+                <div class = "product-info">
+                        
+                    <?php the_title(); ?>.........$<?php echo CFS()->get( 'price' ); ?> </a>
+                        
+                </div> <!-- .product-info -->
+        
+            </div> <!--.single-product-->
+      
 
 	<?php endwhile; // End of the loop. ?>
         
 	
 
 </div><!-- #primary -->
-    
+</div>   
 
 
 		

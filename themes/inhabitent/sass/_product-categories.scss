@@ -5,7 +5,9 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
+        justify-content: center;
+       
     }
 
     .hentry {
@@ -24,7 +26,7 @@
 
     .content-area {
         display: flex;
-        width: 100%;
+        width: 87%;
         margin-top: 10%;
         flex-direction: row;
         justify-content: center;
@@ -32,7 +34,7 @@
 
         .site-main {
             height: 10rem;
-            width: 87%;
+            width: 97%;
             border-bottom: 1px dashed $lightgrey;
             display:flex;
             justify-content:center;
@@ -41,6 +43,15 @@
             h1, p{
                 display:flex;
                 justify-content:center;
+            }
+
+            h1{
+                text-transform:uppercase;
+                font-size:2.5rem;
+            }
+
+            p{
+                font-family:'main-light';
             }
 
            
@@ -74,6 +85,14 @@
             text-align: center;
         }
     }
+    .products-gallery{
+        display: flex;
+        margin-top: 5%;
+        flex-wrap: wrap;
+        width: 100%;
+    
+
+    }
 
     .products {
         display: flex;
@@ -88,12 +107,12 @@
 
     .single-product {
         flex-direction: column;
+        display: flex;
         align-items: center;
-        flex-basis: 23%;
+        flex-basis: 24%;
         border: 1px solid #e1e1e1;
-        margin: 1%;
-        height: 65%;
-
+        margin: .3rem;
+        
         .product-info{     
             font-family: 'main-light';
             font-size: .9rem;

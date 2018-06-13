@@ -120,7 +120,7 @@ Template Name: homepage
 							<div class = "post-info">
 
 								<?php red_starter_posted_on(); ?> / 
-								<?php comments_number('0 comment', '1 comment'); ?> 
+								<?php comments_number('0 comment', '1 comment','% Comments'); ?> 
 							
 
 							</div> <!-- post-info -->

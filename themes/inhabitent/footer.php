@@ -22,13 +22,21 @@
 						
 			<?php endif; ?>
 
+			<span class = "copyright-wrapper">
+
+				<p> copyright 	&copy; 2018 inhabitent</p>
+
+			</span>
+
 		</div> <!--.site-info -->   		
 
 		
-		<div class= "footer-image"> </div>
+		<div class= "footer-image">
 					
-					<!-- </div>.site-info -->			
-				
+					<!-- </div>.site-info -->	
+					
+					
+					</div>		
 	</footer><!-- #colophon -->
 
 
