@@ -37,17 +37,30 @@ Template Name: homepage
 			<div class = "shop-categories">
 
 				<div class = "shop-menu">
-				<?php 
-                $terms = get_terms('product_type');
-                echo '<ul class = "product-type">';
-				foreach ($terms as $term){?>
+
+						<?php 
+						$terms = get_terms('product_type');
+						echo '<ul class = "product-type">';
+						foreach ($terms as $term){
+						?>
+
+					<li>
+
+						<div class = "category-description">
+
+							<?php $description = term_description($term); ?>
+							<p> <?php echo $description ?> </p>
+
+						</div>			
+
+						
+						<button> <?php echo '<div class="type"><a href="'.get_term_link($term).'">'.$term->name.'</a></div>' ;?></button>
 				
-                  <button> <?php echo '<li class="type"><a href="'.get_term_link($term).'">'.$term->name.'</a></li>' ;?></button>
-               <?php }  
-                echo '</ul>';
-           ?>
+						<?php }  ?>
+				
+					</li>
 
-
+              			<?php  echo '</ul>'; ?>
 
 				</div> <!--.shop menu -->
 
