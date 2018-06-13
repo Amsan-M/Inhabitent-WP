@@ -29,7 +29,7 @@ get_header();
 					$exerpt =CFS()->get( 'exerpt' );
 				?>
 
-				<?php echo "<p class=\"price\">Price: \${$price}</p>";?>
+				<?php echo "<p class=\"price\"> \${$price}</p>";?>
 				<?php echo "<p class=\"product-exerpt\">{$exerpt}</p>";?>
 
 

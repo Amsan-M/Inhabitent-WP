@@ -1,7 +1,4 @@
-// .page-template-taxonomy-do-category,
-// .page-template-taxonomy-eat-category,
-// .page-template-taxonomy-sleep-category,
-// .page-template-taxonomy-wear-category,
+
 .archive.tax-product_type{
 
     .site-content {
@@ -92,7 +89,7 @@
     .single-product {
         flex-direction: column;
         align-items: center;
-        flex-basis: 22%;
+        flex-basis: 23%;
         border: 1px solid #e1e1e1;
         margin: 1%;
         height: 65%;
@@ -128,6 +125,7 @@
         margin: 0px;
         font-family: 'main-light';
         text-decoration: none;
+        font-size: 0.9rem;
     }
 
     

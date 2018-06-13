@@ -37,7 +37,7 @@ Template for product categories
 
             <div class = "product-info">
                     
-                <?php the_title(); ?>..............$<?php echo CFS()->get( 'price' ); ?> </a>
+                <?php the_title(); ?>..........$<?php echo CFS()->get( 'price' ); ?> </a>
                     
             </div> <!-- .product-info -->
     

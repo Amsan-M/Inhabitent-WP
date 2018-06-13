@@ -38,6 +38,8 @@ Template Name: homepage
 
 				<div class = "shop-menu">
 
+					 <!-- loop to display the button links and to the shopping categories  -->
+
 						<?php 
 						$terms = get_terms('product_type');
 						echo '<ul class = "product-type">';
@@ -48,25 +50,26 @@ Template Name: homepage
 
 						<span class = "icon-categories-wrapper">
 
-						 <span class = "icon-wrapper"> <div class = "shop-icon"> </div></span>
+							<span class = "icon-wrapper"> <div class = "shop-icon"> </div></span>
 
-						<div class = "category-description">
+								<div class = "category-description">
 
-							<?php $description = term_description($term); ?>
-							<p> <?php echo $description ?> </p>
-							<!-- test -->
+									<?php $description = term_description($term); ?>
+									<p> <?php echo $description ?> </p>
 
-							<button> <?php echo '<div class="type"><a href="'.get_term_link($term).'">'.$term->name.'</a></div>' ;?></button>
-				
-							<!--  -->
 
-						</div>			
+									<span class = "button-wrapper">
+									<button> <?php echo '<div class="type"><a href="'.get_term_link($term).'">'.$term->name.'</a></div>' ;?></button>
+									</span>
+									
+								</div>	<!-- .category-description -->		
 
-						</span>
+						
+						</span> <!--.icon-categories-wrapper  -->
 						
 						<?php }  ?>
 				
-					</li>
+					</li> 
 
               			<?php  echo '</ul>'; ?>
 
@@ -79,11 +82,11 @@ Template Name: homepage
 <!-- ============================================ last posts section  =============================================== -->
 
 
-			<div class ="latest-post-heading"> 
+			<div class ="latest-post-title"> 
 
 				<h1> inhabitent journal </h1>
 
-			</div>  
+			</div>  <!-- latest-post-title -->
 
 			<div class = "posts-wrapper">
 
@@ -166,7 +169,7 @@ Template Name: homepage
 
 				<div class = "adventures-gallery">
 
-				<!-- display the adventures -->
+				<!-- loop to display the adventures -->
 				
 					<?php
 						$args = array( 'post_type' => 'adventures', 'order' => 'ASC', 'posts_per_page' => 4  );

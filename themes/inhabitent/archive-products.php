@@ -22,7 +22,7 @@ Template Name: products
     
         <nav class = "categories-menu"> 
 
-            <!-- loop to display the products links by category  -->
+            <!-- loop to display the links to the shopping categories  -->
 
             <?php 
                 $terms = get_terms('product_type');
@@ -65,7 +65,7 @@ Template Name: products
 
             <div class = "product-info">
 
-                <?php the_title(); ?> ................ $<?php echo CFS()->get( 'price' ); ?> </a>
+                <?php the_title(); ?> ........... $<?php echo CFS()->get( 'price' ); ?> </a>
 
             </div> <!-- .product-info --> 
 
