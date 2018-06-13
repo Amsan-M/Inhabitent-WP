@@ -19,8 +19,6 @@ Template Name: about
 
 			<div class = "page-image">
 
-				
-
 				<?php 
 					$image = CFS()->get('image');
 					echo '<img src="'.$image.'"/>';

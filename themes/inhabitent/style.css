@@ -1167,15 +1167,12 @@ footer .site-info {
   max-width: 100%;
   width: 60%; }
 
-.page-template-page-main .do-category,
-.page-template-page-main .eat-category,
-.page-template-page-main .sleep-category,
-.page-template-page-main .wear-category {
+.page-template-page-main .shop-categories .product-type li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
+  -ms-flex-preferred-size: 22%;
+      flex-basis: 22%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1185,17 +1182,22 @@ footer .site-info {
   border: 1px solid #e1e1e1;
   border-top: 5px solid #e1e1e1; }
 
-.page-template-page-main .do-category:hover,
-.page-template-page-main .sleep-category:hover,
-.page-template-page-main .wear-category:hover,
-.page-template-page-main .eat-category:hover {
+.page-template-page-main .shop-categories ul {
+  list-style: none;
+  height: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.page-template-page-main .shop-categories li:hover {
   border: 1px solid #d99054;
   border-top: 5px solid #d99054; }
 
-.page-template-page-main .do-icon,
-.page-template-page-main .eat-icon,
-.page-template-page-main .sleep-icon,
-.page-template-page-main .wear-icon {
+.page-template-page-main .shop-categories .shop-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1208,15 +1210,42 @@ footer .site-info {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 30%; }
-  .page-template-page-main .do-icon img,
-  .page-template-page-main .eat-icon img,
-  .page-template-page-main .sleep-icon img,
-  .page-template-page-main .wear-icon img {
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  .page-template-page-main .shop-categories .shop-icon img {
     width: 30%;
     margin: 10%; }
 
-.page-template-page-main .category-description {
+.page-template-page-main .shop-categories .icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-template-page-main .shop-categories .product-type li:nth-child(1) .shop-icon {
+  background-image: url("product-type-icons/do.svg"); }
+
+.page-template-page-main .shop-categories .product-type li:nth-child(2) .shop-icon {
+  background-image: url("product-type-icons/eat.svg"); }
+
+.page-template-page-main .shop-categories .product-type li:nth-child(3) .shop-icon {
+  background-image: url("product-type-icons/sleep.svg"); }
+
+.page-template-page-main .shop-categories .product-type li:nth-child(4) .shop-icon {
+  background-image: url("product-type-icons/wear.svg"); }
+
+.page-template-page-main .shop-categories .category-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1229,26 +1258,28 @@ footer .site-info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .page-template-page-main .category-description p {
+  .page-template-page-main .shop-categories .category-description p {
     text-align: center;
     font-family: 'main-light';
     margin: 5%; }
-  .page-template-page-main .category-description button {
-    background-color: #248A83;
-    border: none;
-    width: 55%;
-    height: 3rem;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border-radius: 0px; }
-    .page-template-page-main .category-description button a {
-      font-family: 'headings';
-      text-transform: uppercase;
-      text-decoration: none;
-      color: white;
-      text-shadow: none; }
-  .page-template-page-main .category-description button:hover {
-    background-color: #1a6560; }
+
+.page-template-page-main .shop-categories button {
+  background-color: #248A83;
+  border: none;
+  width: 55%;
+  height: 3rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0px; }
+  .page-template-page-main .shop-categories button a {
+    font-family: 'headings';
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-shadow: none; }
+
+.page-template-page-main .shop-categories button:hover {
+  background-color: #1a6560; }
 
 .page-template-page-main .latest-post-heading {
   display: -webkit-box;

@@ -46,20 +46,24 @@ Template Name: homepage
 
 					<li>
 
+						<span class = "icon-categories-wrapper">
+
+						 <span class = "icon-wrapper"> <div class = "shop-icon"> </div></span>
+
 						<div class = "category-description">
 
 							<?php $description = term_description($term); ?>
 							<p> <?php echo $description ?> </p>
 							<!-- test -->
 
-
+							<button> <?php echo '<div class="type"><a href="'.get_term_link($term).'">'.$term->name.'</a></div>' ;?></button>
+				
 							<!--  -->
 
 						</div>			
 
+						</span>
 						
-						<button> <?php echo '<div class="type"><a href="'.get_term_link($term).'">'.$term->name.'</a></div>' ;?></button>
-				
 						<?php }  ?>
 				
 					</li>
