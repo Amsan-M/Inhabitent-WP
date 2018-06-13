@@ -20,13 +20,11 @@ Template Name: about
 			<div class = "page-image">
 
 				
-				<?php 
-				$image = get_field('image');
 
-				if( !empty($image) ): ?>
-					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-				
-				<?php endif; ?>
+				<?php 
+					$image = CFS()->get('image');
+					echo '<img src="'.$image.'"/>';
+				?>
 		
 	            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>   
 				

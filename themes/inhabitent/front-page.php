@@ -50,6 +50,10 @@ Template Name: homepage
 
 							<?php $description = term_description($term); ?>
 							<p> <?php echo $description ?> </p>
+							<!-- test -->
+
+
+							<!--  -->
 
 						</div>			
 
