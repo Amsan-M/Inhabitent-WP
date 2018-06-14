@@ -9,6 +9,7 @@ body.blog {
         margin-left: 3%;
         margin-right: 1%;
         border-right: 1px solid $lightgrey;
+        max-width: 60%;
     }
 
     .site-main {
@@ -106,6 +107,11 @@ body.blog {
         margin-top: 10%;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .widget-area{
+        
+        width:45%;
     }
     
 }
