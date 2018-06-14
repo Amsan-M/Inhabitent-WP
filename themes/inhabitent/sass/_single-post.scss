@@ -44,13 +44,11 @@
         
         }
 
-        h1:hover{
-            color:$yellow;
-        }
+       
         .entry-meta{
             position: absolute;
             right: 0;
-            bottom: 0;
+            bottom: 0; 
             justify-content: flex-end;
             padding-right: 1%;
 
@@ -290,7 +288,7 @@
 }
 
 
-
+// comment form when the user is logged out
 
     .comment-form{
         display: flex;
@@ -318,7 +316,7 @@
             flex-direction: column;
             flex-wrap: wrap;
             width: 45%;
-            margin:1%;
+          
         
         }
         textarea{
@@ -357,6 +355,10 @@
             font-size:1rem;
             text-transform:uppercase;
             font-size:1.2rem;
+
+            .required{
+                color:$orange;
+            }
         }
 
     }

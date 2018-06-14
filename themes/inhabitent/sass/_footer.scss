@@ -16,17 +16,12 @@ footer .site-info {
 
   
     div{
-
-     
         flex-direction: column;
-        flex-wrap:wrap;
-        color:white; 
+        color: #fff;
         font-family: 'main-light';
-        
-       
-        height:auto;
-        width:30%;
-        margin-left:3rem;
+        width: 20%;
+        margin-left: 10rem;
+    
       
         h3{
             color:$orange;

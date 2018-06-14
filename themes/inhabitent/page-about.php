@@ -19,11 +19,16 @@ Template Name: about
 
 			<div class = "page-image">
 
-				<?php 
-					$image = CFS()->get('image');
-					echo '<img src="'.$image.'"/>';
+				<?php  $images = CFS()->get('hero');
+				   foreach ($images as $image) {
+    echo '<img src="'.$image["image"].'"/>';
+  }?>
+
+				<!-- <?php 
+					//$image = CFS()->get('image');
+					//echo '<img src="'.$image.'"/>';
 				?>
-		
+		 -->
 	            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>   
 				
 				
