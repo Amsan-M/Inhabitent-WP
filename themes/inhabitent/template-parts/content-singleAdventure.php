@@ -13,7 +13,7 @@
 		
         
 	<?php if ( 'post' === get_post_type() ) : ?>
-	<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+	<?php red_starter_posted_on(); ?>  / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
 	
 	<?php endif; ?>
 	<!-- </header>.entry-header -->

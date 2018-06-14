@@ -59,7 +59,7 @@ Template Name: homepage
 
 
 									<span class = "button-wrapper">
-									<button> <?php echo '<div class="type"><a href="'.get_term_link($term).'">'.$term->name.'</a></div>' ;?></button>
+									<button> <?php echo '<div class="type"><a href="'.get_term_link($term).'">'.$term->name.'  stuff </a></div>' ;?></button>
 									</span>
 									
 								</div>	<!-- .category-description -->		
@@ -119,8 +119,7 @@ Template Name: homepage
 
 							<div class = "post-info">
 
-								<?php red_starter_posted_on(); ?> / 
-								<?php comments_number('0 comment', '1 comment','% Comments'); ?> 
+								<?php red_starter_posted_on();?> / <?php comments_number('0 comment', '1 comment','% Comments'); ?> 
 							
 
 							</div> <!-- post-info -->

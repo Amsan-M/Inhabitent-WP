@@ -1273,7 +1273,10 @@ footer .site-info {
   .page-template-page-main .shop-categories .category-description p {
     text-align: center;
     font-family: 'main-light';
-    margin: 0px; }
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 0px;
+    margin-bottom: 0px; }
 
 .page-template-page-main .shop-categories .button-wrapper {
   width: 100%;
@@ -1286,7 +1289,7 @@ footer .site-info {
   .page-template-page-main .shop-categories .button-wrapper button {
     background-color: #248A83;
     border: none;
-    width: 55%;
+    width: 57%;
     height: 3rem;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -1296,7 +1299,8 @@ footer .site-info {
       text-transform: uppercase;
       text-decoration: none;
       color: white;
-      text-shadow: none; }
+      text-shadow: none;
+      font-size: 0.9rem; }
   .page-template-page-main .shop-categories .button-wrapper button:hover {
     background-color: #1a6560; }
 
@@ -1489,8 +1493,8 @@ footer .site-info {
 
 .page-template-page-main .single-adventure a {
   position: absolute;
-  font-family: 'main';
-  font-size: 4rem;
+  font-family: 'main-light';
+  font-size: 3rem;
   max-width: 95%;
   word-break: break-word;
   color: white;
@@ -1561,27 +1565,9 @@ footer .site-info {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.36)), to(rgba(0, 0, 0, 0.36)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36));
   grid-column-start: 3;
-  grid-row-start: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row; }
-  .page-template-page-main .single-adventure:nth-child(3) .single-adventure img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1; }
-  .page-template-page-main .single-adventure:nth-child(3) a {
-    display: block;
-    font-size: 1.8rem;
-    width: 13rem;
-    margin-top: 1%; }
+  grid-row-start: 2; }
 
+.page-template-page-main .single-adventure:nth-child(3),
 .page-template-page-main .single-adventure:nth-child(4) {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.36)), to(rgba(0, 0, 0, 0.36)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36));
@@ -1594,15 +1580,21 @@ footer .site-info {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+  .page-template-page-main .single-adventure:nth-child(3) .single-adventure img,
   .page-template-page-main .single-adventure:nth-child(4) .single-adventure img {
     width: 100%;
     height: 100%; }
+  .page-template-page-main .single-adventure:nth-child(3) a,
   .page-template-page-main .single-adventure:nth-child(4) a {
-    display: block;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     width: 10rem;
     height: 4rem;
-    margin-top: 1%; }
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-top: 3%; }
+  .page-template-page-main .single-adventure:nth-child(3) button,
+  .page-template-page-main .single-adventure:nth-child(4) button {
+    margin: 3%; }
 
 .page-template-page-main .single-adventure button {
   display: -webkit-box;
@@ -1711,7 +1703,8 @@ body.blog .entry-title {
   background-color: #248A83;
   background-color: #248a83;
   position: absolute;
-  width: 80%; }
+  width: 80%;
+  padding: 1%; }
   body.blog .entry-title a {
     color: white;
     font-size: 3rem;
@@ -1729,7 +1722,8 @@ body.blog .entry-meta {
   right: 0px;
   bottom: 0px;
   text-transform: uppercase;
-  font-family: 'headings'; }
+  font-family: 'headings';
+  padding: 1%; }
 
 body.blog .entry-content {
   margin-top: 5%;
@@ -2318,7 +2312,7 @@ body.blog article {
 
 .post-template-default .content-area {
   margin-top: 7%;
-  padding-left: 11%;
+  padding-left: 8%;
   padding-right: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2339,7 +2333,7 @@ body.blog article {
 
 .post-template-default .site-main {
   margin-top: 10%;
-  width: 90%; }
+  width: 100%; }
 
 .post-template-default .entry-header {
   display: -webkit-box;
@@ -2358,11 +2352,27 @@ body.blog article {
     padding: 1%;
     text-transform: uppercase;
     font-size: 2.5rem;
-    font-family: 'headings-bold'; }
+    font-family: 'headings-bold';
+    width: 82%;
+    height: 30%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .post-template-default .entry-header .entry-meta {
     position: absolute;
-    right: 0px;
-    bottom: 0px; }
+    right: 0;
+    bottom: 0;
+    width: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 1%; }
+    .post-template-default .entry-header .entry-meta span {
+      margin-right: 1%;
+      margin-left: 1%; }
 
 .post-template-default .entry-meta,
 .post-template-default .entry-header {
@@ -2390,7 +2400,9 @@ body.blog article {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 5%; }
+  margin-top: 5%;
+  font-family: 'headings';
+  text-transform: uppercase; }
   .post-template-default .entry-footer a {
     color: #248A83;
     text-transform: uppercase;
@@ -2450,10 +2462,10 @@ body.blog article {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 20%;
+  width: 25%;
   margin-left: 1rem;
   margin-top: 5rem;
-  font-family: main-light;
+  font-family: 'main-light';
   font-size: 16px;
   padding-left: 3%;
   padding-top: 5%; }
@@ -2499,6 +2511,62 @@ body.blog article {
     color: white;
     border: none; }
 
+.post-template-default .comments-area {
+  margin-top: 10%; }
+  .post-template-default .comments-area .comments-title {
+    font-family: 'headings';
+    font-size: 2rem; }
+  .post-template-default .comments-area .comment-list {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10%; }
+
+.post-template-default .comment-content {
+  border-bottom: 1px solid #e1e1e1; }
+  .post-template-default .comment-content p {
+    font-size: 1rem;
+    font-family: 'main-light'; }
+
+.post-template-default .comment-author-avatar img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 50%; }
+
+.post-template-default .fn {
+  font-size: 1.3rem;
+  font-family: 'main-bold'; }
+
+.post-template-default .comment-body {
+  padding-bottom: 5%; }
+
+.post-template-default .comment-metadata {
+  color: grey;
+  font-family: 'main';
+  font-size: 1.2rem;
+  margin-top: 4%; }
+  .post-template-default .comment-metadata a {
+    color: #248A83; }
+
+.post-template-default .comment-reply-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: 'headings-bold'; }
+
+.post-template-default .reply {
+  padding-bottom: 5%; }
+  .post-template-default .reply a {
+    font-family: 'main';
+    color: #248A83;
+    font-size: 1.2rem; }
+
+.post-template-default .logged-in-as {
+  color: #248A83; }
+  .post-template-default .logged-in-as a {
+    color: #248A83; }
+
+.post-template-default .comment-respond a {
+  color: #248A83; }
+
 .post-template-default .comment-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2513,6 +2581,9 @@ body.blog article {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 0px; }
+  .post-template-default .comment-form p {
+    font-family: 'main-light';
+    font-size: 1rem; }
   .post-template-default .comment-form .comment-form-comment,
   .post-template-default .comment-form .comment-form-url {
     display: -webkit-box;
@@ -2561,9 +2632,10 @@ body.blog article {
     color: white;
     text-shadow: none; }
   .post-template-default .comment-form label {
-    font-family: 'main-light';
+    font-family: 'headings';
     font-size: 1rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 1.2rem; }
 
 .products-template-default {
   display: -webkit-box;
@@ -3046,6 +3118,11 @@ body.archive.category .content-area {
     width: 80%;
     margin-top: 10%; }
 
+body.archive.date .page-header h1,
+body.archive.tag .page-header h1,
+body.archive.category .page-header h1 {
+  text-transform: uppercase; }
+
 body.archive.date .entry-wrapper,
 body.archive.tag .entry-wrapper,
 body.archive.category .entry-wrapper {
@@ -3076,7 +3153,14 @@ body.archive.category .entry-wrapper {
   body.archive.date .entry-wrapper .entry-title,
   body.archive.tag .entry-wrapper .entry-title,
   body.archive.category .entry-wrapper .entry-title {
-    width: 80%; }
+    width: 80%;
+    height: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   body.archive.date .entry-wrapper .entry-title a,
   body.archive.tag .entry-wrapper .entry-title a,
   body.archive.category .entry-wrapper .entry-title a {
@@ -3085,12 +3169,17 @@ body.archive.category .entry-wrapper {
     font-size: 2rem;
     color: white;
     text-transform: uppercase; }
+  body.archive.date .entry-wrapper .entry-title a:hover,
+  body.archive.tag .entry-wrapper .entry-title a:hover,
+  body.archive.category .entry-wrapper .entry-title a:hover {
+    color: #f0e4d1; }
   body.archive.date .entry-wrapper .entry-meta,
   body.archive.tag .entry-wrapper .entry-meta,
   body.archive.category .entry-wrapper .entry-meta {
     position: absolute;
     right: 0px;
-    bottom: 0px; }
+    bottom: 0px;
+    text-transform: uppercase; }
 
 body.archive.date .entry-content p,
 body.archive.tag .entry-content p,
@@ -3104,7 +3193,7 @@ body.archive.category button {
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: transparent;
-  width: 20%;
+  width: 25%;
   border: 1px solid black;
   text-shadow: none;
   border-radius: 0px;
@@ -3115,7 +3204,18 @@ body.archive.category button {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-family: 'main-light'; }
+    font-family: 'headings';
+    font-size: 1rem; }
+
+body.archive.date button:hover,
+body.archive.tag button:hover,
+body.archive.category button:hover {
+  border: none;
+  background-color: #248A83; }
+  body.archive.date button:hover a,
+  body.archive.tag button:hover a,
+  body.archive.category button:hover a {
+    color: white; }
 
 body.archive.date .widget-area,
 body.archive.tag .widget-area,
