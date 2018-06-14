@@ -2358,21 +2358,16 @@ body.blog article {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .post-template-default .entry-header h1:hover {
+    color: #f0e4d1; }
   .post-template-default .entry-header .entry-meta {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 55%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding-right: 1%; }
-    .post-template-default .entry-header .entry-meta span {
-      margin-right: 1%;
-      margin-left: 1%; }
 
 .post-template-default .entry-meta,
 .post-template-default .entry-header {
