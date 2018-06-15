@@ -487,7 +487,6 @@ a {
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
@@ -715,12 +714,10 @@ body.archive.category .navigation-searchbar,
 --------------------------------------------------------------*/
 .alignleft {
   display: inline;
-  float: left;
   margin-right: 1.5rem; }
 
 .alignright {
   display: inline;
-  float: right;
   margin-left: 1.5rem; }
 
 .aligncenter {
@@ -994,6 +991,7 @@ footer .site-info {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
@@ -1001,6 +999,9 @@ footer .site-info {
   width: 100%;
   min-width: 1120px;
   border-bottom: 1px solid #e1e1e1; }
+
+.menu-toggle {
+  display: none; }
 
 .site-branding {
   margin-left: 5rem; }
@@ -1044,6 +1045,11 @@ footer .site-info {
     .adventures-template-default.single-adventures .site-branding .logo-link a {
       width: 50px;
       height: 50px; }
+
+.page-template-page-main .menu-toggle,
+.page-template-page-about .menu-toggle,
+.adventures-template-default.single-adventures .menu-toggle {
+  display: none; }
 
 .adventures-template-default.single-adventures header {
   border-bottom: none; }
@@ -1665,7 +1671,7 @@ body.blog .content-area {
   margin-left: 3%;
   margin-right: 1%;
   border-right: 1px solid #e1e1e1;
-  max-width: 60%; }
+  max-width: 65%; }
 
 body.blog .site-main {
   margin-top: 5%;
@@ -1732,7 +1738,7 @@ body.blog button {
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: transparent;
-  width: 20%;
+  width: 22%;
   border: 1px solid black;
   text-shadow: none;
   border-radius: 0px;
@@ -1962,7 +1968,8 @@ body.blog .widget-area {
         color: #248A83;
         text-decoration: none;
         text-transform: uppercase;
-        font-family: 'headings'; }
+        font-family: 'headings';
+        font-size: 1.2rem; }
 
 .page-template-archive-products .products-gallery {
   display: -webkit-box;
@@ -2617,7 +2624,7 @@ body.blog .widget-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 6%; }
+  margin-top: 10%; }
 
 .products-template-default article {
   display: -webkit-box;
@@ -2629,7 +2636,8 @@ body.blog .widget-area {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 3%; }
+  margin: 3%;
+  margin-top: 0px; }
 
 .products-template-default .entry-header {
   margin-top: 10%; }
@@ -2653,7 +2661,7 @@ body.blog .widget-area {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 45%;
+  width: 40%;
   margin-top: 3%; }
   .products-template-default .product-info .price {
     margin: 0px;
@@ -2929,46 +2937,10 @@ body.blog .widget-area {
     text-transform: uppercase;
     font-family: 'headings'; }
 
-.archive.tax-product_type .entry-header {
-  width: 100%;
+.archive.tax-product_type .products-gallery-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.archive.tax-product_type .entry-content {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .archive.tax-product_type .entry-content p {
-    font-size: 1rem;
-    font-family: 'main-light';
-    text-align: center; }
-
-.archive.tax-product_type .products-gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 5%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%; }
+  display: flex; }
 
 .archive.tax-product_type .products {
   display: -webkit-box;
@@ -3032,7 +3004,7 @@ body.blog .widget-area {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 80%; }
+  height: 85%; }
 
 .archive.tax-product_type .product-info a {
   color: black;
@@ -3056,7 +3028,8 @@ body.archive.category .content-area {
   display: -ms-flexbox;
   display: flex;
   margin-top: 7%;
-  border-right: 1px solid #e1e1e1; }
+  border-right: 1px solid #e1e1e1;
+  width: 70%; }
   body.archive.date .content-area .site-main,
   body.archive.tag .content-area .site-main,
   body.archive.category .content-area .site-main {

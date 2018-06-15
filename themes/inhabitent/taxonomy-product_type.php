@@ -25,6 +25,8 @@ Template for product categories
 
     <div class = "products-gallery">
 
+        <span class = "products-gallery-wrapper">
+
     <?php while ( have_posts() ) : the_post(); ?>
         
    
@@ -47,7 +49,8 @@ Template for product categories
       
 
 	<?php endwhile; // End of the loop. ?>
-        
+    
+</span>
 	
 
 </div><!-- #primary -->

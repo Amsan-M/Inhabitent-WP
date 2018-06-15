@@ -7,13 +7,23 @@
         margin-top: 1.5rem;
         display: -ms-flexbox;
         display: inline-flex;
+        flex-wrap:wrap;
         -ms-flex-wrap: wrap;
         -ms-flex-pack: justify;
         justify-content: space-between;
         width:100%;
         min-width:1120px;
         border-bottom:1px solid $lightgrey;
+
+        
 }
+
+.menu-toggle{
+    display:none;
+}
+
+    
+
 
 .site-branding{
     margin-left:5rem;
@@ -59,7 +69,11 @@
                 height: 50px; 
             }
         }
-    }    
+    }   
+    
+    .menu-toggle{
+        display:none;
+    }
 }
 
 .adventures-template-default.single-adventures{
