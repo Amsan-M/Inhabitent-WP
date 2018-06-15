@@ -10,16 +10,21 @@ body.archive.category {
     .hentry {
         margin-top: 5%;
     }
+    .site-content{
+        margin-top:-7px;
+
+    }
 
     .content-area {
         justify-content: center;
         display: flex; 
         margin-top: 7%;
-        border-right: 1px solid $lightgrey;
         width: 70%;
         .site-main {
             width: 80%;
-            margin-top: 10%;
+            padding-bottom: 5%;
+
+            
         }
     }
 
@@ -50,8 +55,8 @@ body.archive.category {
         }
 
         .entry-title {
-            width: 80%;
-            height: 25%;
+            width: 70%;
+            padding: 1%;
             display: flex;
             align-items: center;
         }
@@ -114,11 +119,7 @@ body.archive.category {
        } 
     }
 
-    .widget-area{
-        margin-top:12%;
-      
-       
-    }
+  
 
 
 }

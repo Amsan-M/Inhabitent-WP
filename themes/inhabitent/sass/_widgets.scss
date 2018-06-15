@@ -1,7 +1,6 @@
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-
 .widget {
 	margin: 0 0 $base__space-unit;
 	/* Make sure select elements fit in widgets. */
@@ -22,66 +21,77 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	//width: 100%;
-	margin-left: 1rem;
-	margin-top: 5rem;
+	margin: 0% 5% 0% 0%;
 	font-family: 'main-light';
 	font-size: 16px;
-	padding-left:3%;
+	padding-left: 3%;
+	border-left: 1px solid $lightgrey;
 }
-.widget.widget_text{
-	p:nth-child(1),p:nth-child(2){
-		color:$green;
 
-		i{
-			color:black;
+.widget.widget_text {
+	margin-top: 10%;
+	p:nth-child(1),
+	p:nth-child(2) {
+		color: $green;
+		i {
+			color: black;
 		}
 	}
-
 }
-.widget.inhabitent-buisness-hours-class p,
-.widget.inhabitent-contact-info-class p{
-	font-family:'main-light';
 
+.widget.inhabitent-buisness-hours-class p,
+.widget.inhabitent-contact-info-class p {
+	font-family: 'main-light';
 }
 
 .widget.inhabitent-buisness-hours-class h3,
-.widget.widget_text h2{
-	font-family:'headings-bold';
-	font-size:1.5rem;
-	text-transform:uppercase;
-}
- 
-
-
-span.day-of-the-week{
-	font-weight:bold;
-
+.widget.widget_text h2 {
+	font-family: 'headings-bold';
+	font-size: 1.5rem;
+	text-transform: uppercase;
 }
 
-.textwidget a{
-	color:$green;
+span.day-of-the-week {
+	font-weight: bold;
+}
+
+.textwidget a {
+	color: $green;
 	text-decoration: none;
 }
-.textwidget a:hover{
-	color:black;
-}
 
- 
+.textwidget a:hover {
+	color: black;
+}
 
 // archive 
-
-.widget.widget_archive{
-	margin-top:15%;
+.widget.widget_archive {
+	margin-top: 15%;
 }
+
 .widget.widget_archive a {
-	color: #248a83;;
+	color: #248a83;
+	;
 	text-decoration: none;
-	font-family:'main-light';
+	font-family: 'main-light';
 }
 
 .widget.widget_archive ul {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
+}
+
+// from 404 page 
+.error404 {
+	.widget.inhabitent-buisness-hours-class {
+		width: 100%;
+	}
+}
+
+.page-template-page-findus{
+	.widget-area{
+		width:40%;
+		
+	}
 }

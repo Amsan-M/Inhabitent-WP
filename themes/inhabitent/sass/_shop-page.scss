@@ -73,14 +73,13 @@
     }
     
     .single-product {
-        flex-wrap: wrap;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-basis: 22%;
-        border: 1px solid #e1e1e1;
-        margin: 1%;
+         flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-basis: 24%;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 1%;
     
 
         img {

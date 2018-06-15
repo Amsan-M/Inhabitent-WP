@@ -4,11 +4,16 @@ body.blog {
         position: relative;
     }
 
+    .site-content{
+        margin-top:-7px;
+
+    }
+
     .content-area {
         margin-top: 1%;
         margin-left: 3%;
         margin-right: 1%;
-        border-right: 1px solid $lightgrey;
+        padding-bottom:5%;
         max-width: 65%;
     }
 
@@ -46,7 +51,9 @@ body.blog {
         background-color: #248a83;
         position: absolute;
         width: 80%;
-        padding:1%;
+        padding: 1%;
+        padding-left: 5%;
+        margin-top: 5%;
         a {
             color: white;
             font-size: 3rem;
@@ -109,9 +116,6 @@ body.blog {
         flex-wrap: wrap;
     }
 
-    .widget-area{
-        
-        width:45%;
-    }
+  
     
 }

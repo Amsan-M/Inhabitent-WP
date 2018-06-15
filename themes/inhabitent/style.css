@@ -757,16 +757,20 @@ body.archive.category .navigation-searchbar,
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 1rem;
-  margin-top: 5rem;
+  margin: 0% 5% 0% 0%;
   font-family: 'main-light';
   font-size: 16px;
-  padding-left: 3%; }
+  padding-left: 3%;
+  border-left: 1px solid #e1e1e1; }
 
-.widget.widget_text p:nth-child(1), .widget.widget_text p:nth-child(2) {
-  color: #248A83; }
-  .widget.widget_text p:nth-child(1) i, .widget.widget_text p:nth-child(2) i {
-    color: black; }
+.widget.widget_text {
+  margin-top: 10%; }
+  .widget.widget_text p:nth-child(1),
+  .widget.widget_text p:nth-child(2) {
+    color: #248A83; }
+    .widget.widget_text p:nth-child(1) i,
+    .widget.widget_text p:nth-child(2) i {
+      color: black; }
 
 .widget.inhabitent-buisness-hours-class p,
 .widget.inhabitent-contact-info-class p {
@@ -800,6 +804,12 @@ span.day-of-the-week {
   list-style: none;
   margin: 0px;
   padding: 0px; }
+
+.error404 .widget.inhabitent-buisness-hours-class {
+  width: 100%; }
+
+.page-template-page-findus .widget-area {
+  width: 40%; }
 
 /* Posts and pages */
 .sticky {
@@ -952,8 +962,7 @@ footer .site-info {
   background-position: 100%;
   background-repeat: no-repeat,no-repeat;
   background-position-y: 15%;
-  background-position-x: 95%;
-  margin-top: 5%; }
+  background-position-x: 95%; }
   footer .site-info div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -985,7 +994,7 @@ footer .site-info {
     text-transform: uppercase; }
 
 .site-header {
-  position: absolute;
+  position: relative;
   margin-top: 1.5rem;
   display: -ms-flexbox;
   display: -webkit-inline-box;
@@ -1022,7 +1031,8 @@ footer .site-info {
 .page-template-page-main header,
 .page-template-page-about header,
 .adventures-template-default.single-adventures header {
-  border-bottom: none; }
+  border-bottom: none;
+  position: absolute; }
 
 .page-template-page-main .site-branding,
 .page-template-page-about .site-branding,
@@ -1666,11 +1676,14 @@ footer .site-info {
 body.blog header {
   position: relative; }
 
+body.blog .site-content {
+  margin-top: -7px; }
+
 body.blog .content-area {
   margin-top: 1%;
   margin-left: 3%;
   margin-right: 1%;
-  border-right: 1px solid #e1e1e1;
+  padding-bottom: 5%;
   max-width: 65%; }
 
 body.blog .site-main {
@@ -1708,7 +1721,9 @@ body.blog .entry-title {
   background-color: #248a83;
   position: absolute;
   width: 80%;
-  padding: 1%; }
+  padding: 1%;
+  padding-left: 5%;
+  margin-top: 5%; }
   body.blog .entry-title a {
     color: white;
     font-size: 3rem;
@@ -1763,9 +1778,6 @@ body.blog article {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-
-body.blog .widget-area {
-  width: 45%; }
 
 .page-template-page-about {
   display: -webkit-box;
@@ -1845,12 +1857,11 @@ body.blog .widget-area {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  font-family: 'main-light'; }
+  font-family: 'main-light';
+  margin-top: -7px; }
 
 .page-template-page-findus .content-area {
-  margin-left: 4%;
-  margin-top: 7%;
-  border-right: 1px solid #e1e1e1; }
+  margin-left: 4%; }
 
 .page-template-page-findus .entry-content {
   margin-top: 10%;
@@ -1871,10 +1882,6 @@ body.blog .widget-area {
 
 .page-template-page-findus .entry-content p {
   font-family: 'main-light'; }
-
-.page-template-page-findus .widget-area {
-  width: 40%;
-  margin-top: 15%; }
 
 .page-template-page-findus input, .page-template-page-findus textarea {
   background-color: #f4f4f4;
@@ -2002,13 +2009,10 @@ body.blog .widget-area {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-preferred-size: 22%;
-      flex-basis: 22%;
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
   border: 1px solid #e1e1e1;
-  margin: 1%; }
+  margin-bottom: 1%; }
   .page-template-archive-products .single-product img {
     border-bottom: 4px solid #e1e1e1;
     height: 12rem;
@@ -2169,10 +2173,8 @@ body.blog .widget-area {
           flex-direction: row-reverse;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
-  margin-top: 6%; }
-  .error404 .site-content .content-area,
-  .error404 .site-content .widget-area {
+  width: 100%; }
+  .error404 .site-content .content-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2189,12 +2191,34 @@ body.blog .widget-area {
 
 .error404 .site-main {
   width: 100%;
-  margin-left: 5%;
-  padding-left: 10%; }
+  margin-left: 5%; }
 
 .error404 section.error-404-not-found {
   margin: 10%;
   width: 100%; }
+
+.error404 .page-title {
+  text-transform: uppercase; }
+
+.error404 .page-content {
+  padding-bottom: 5%; }
+  .error404 .page-content p {
+    font-family: 'main-light'; }
+  .error404 .page-content .navigation-searchbar input[type=search] {
+    background-color: #e1e1e1;
+    border-radius: 0px; }
+  .error404 .page-content .navigation-searchbar input[type=search]::-webkit-input-placeholder {
+    font-family: 'main-light';
+    text-transform: capitalize; }
+  .error404 .page-content .navigation-searchbar input[type=search]:-ms-input-placeholder {
+    font-family: 'main-light';
+    text-transform: capitalize; }
+  .error404 .page-content .navigation-searchbar input[type=search]::-ms-input-placeholder {
+    font-family: 'main-light';
+    text-transform: capitalize; }
+  .error404 .page-content .navigation-searchbar input[type=search]::placeholder {
+    font-family: 'main-light';
+    text-transform: capitalize; }
 
 .error404 section.content-area {
   width: 100%; }
@@ -2205,16 +2229,8 @@ body.blog .widget-area {
   .error404 form.search-form fieldset input[type=search] {
     width: 100%; }
 
-.error404 .widget-area {
-  width: 30%;
-  height: auto;
-  margin: 0px; }
-
-.error404 .sidebar-wrapper {
-  width: 30%; }
-
-.error404 .site-footer {
-  width: 100%; }
+.error404 .widget.widget .widget_archive {
+  margin-top: 5%; }
 
 .error404 .widget.widget h2 {
   font-size: 1.5rem;
@@ -2233,10 +2249,13 @@ body.blog .widget-area {
   .error404 .widget.widget ul li a:hover {
     color: black; }
 
-.error404 .widget_archive {
-  margin-top: 5%; }
+.error404 .widget_recent_entries {
+  margin: 10% 0% 0% 0%; }
 
-.error404 .widget.inhabitent-buisness-hours-class {
+.error404 .sidebar-wrapper {
+  width: 30%; }
+
+.error404 .site-footer {
   width: 100%; }
 
 .search.search-results .site-content {
@@ -2318,8 +2337,10 @@ body.blog .widget-area {
   .search.search-no-results .page-content button {
     display: none; }
 
+.post-template-default .site-content {
+  margin-top: -7px; }
+
 .post-template-default .content-area {
-  margin-top: 7%;
   padding-left: 8%;
   padding-right: 3%;
   display: -webkit-box;
@@ -2331,7 +2352,6 @@ body.blog .widget-area {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border-right: 1px solid #e1e1e1;
   width: 70%; }
 
 .post-template-default .entry-header img {
@@ -2408,24 +2428,6 @@ body.blog .widget-area {
     font-family: 'headings'; }
   .post-template-default .entry-footer span.cat-links {
     margin-right: 1%; }
-
-.post-template-default .widget-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 25%;
-  margin-left: 1rem;
-  margin-top: 5rem;
-  font-family: 'main-light';
-  font-size: 16px;
-  padding-left: 3%;
-  padding-top: 5%; }
 
 .post-template-default .social-media-buttons {
   display: -webkit-inline-box;
@@ -2894,8 +2896,8 @@ body.blog .widget-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 87%;
-  margin-top: 10%;
+  width: 90%;
+  margin-top: 5%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -2937,6 +2939,9 @@ body.blog .widget-area {
     text-transform: uppercase;
     font-family: 'headings'; }
 
+.archive.tax-product_type .products-gallery {
+  padding-top: 5%; }
+
 .archive.tax-product_type .products-gallery-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2976,8 +2981,6 @@ body.blog .widget-area {
   border: 1px solid #e1e1e1;
   margin: .3rem; }
   .archive.tax-product_type .single-product .product-info {
-    font-family: 'main-light';
-    font-size: .9rem;
     height: 3rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3011,12 +3014,18 @@ body.blog .widget-area {
   margin: 0px;
   font-family: 'main-light';
   text-decoration: none;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  text-transform: capitalize; }
 
 body.archive.date .hentry,
 body.archive.tag .hentry,
 body.archive.category .hentry {
   margin-top: 5%; }
+
+body.archive.date .site-content,
+body.archive.tag .site-content,
+body.archive.category .site-content {
+  margin-top: -7px; }
 
 body.archive.date .content-area,
 body.archive.tag .content-area,
@@ -3028,13 +3037,12 @@ body.archive.category .content-area {
   display: -ms-flexbox;
   display: flex;
   margin-top: 7%;
-  border-right: 1px solid #e1e1e1;
   width: 70%; }
   body.archive.date .content-area .site-main,
   body.archive.tag .content-area .site-main,
   body.archive.category .content-area .site-main {
     width: 80%;
-    margin-top: 10%; }
+    padding-bottom: 5%; }
 
 body.archive.date .page-header h1,
 body.archive.tag .page-header h1,
@@ -3071,8 +3079,8 @@ body.archive.category .entry-wrapper {
   body.archive.date .entry-wrapper .entry-title,
   body.archive.tag .entry-wrapper .entry-title,
   body.archive.category .entry-wrapper .entry-title {
-    width: 80%;
-    height: 25%;
+    width: 70%;
+    padding: 1%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3134,8 +3142,3 @@ body.archive.category button:hover {
   body.archive.tag button:hover a,
   body.archive.category button:hover a {
     color: white; }
-
-body.archive.date .widget-area,
-body.archive.tag .widget-area,
-body.archive.category .widget-area {
-  margin-top: 12%; }

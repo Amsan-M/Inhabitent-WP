@@ -12,11 +12,10 @@
         flex-direction: row-reverse;
         flex-wrap: wrap;
         width: 100%;
-        margin-top: 6%;
+       
 
 
-        .content-area,
-        .widget-area {
+        .content-area{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -32,12 +31,38 @@
     .site-main {
         width: 100%;
         margin-left: 5%;
-        padding-left: 10%;
+        
     }
 
     section.error-404-not-found {
         margin: 10%;
         width: 100%;
+
+       
+    }
+    .page-title{
+        text-transform:uppercase;
+        
+    }
+
+    .page-content{
+        padding-bottom:5%;
+        p{
+            font-family:'main-light';
+        }
+
+        .navigation-searchbar{
+
+            input[type=search]{
+                background-color:$lightgrey;
+                border-radius:0px;
+            }
+            input[type=search]::placeholder{
+                font-family:'main-light';
+                text-transform:capitalize;
+            }
+            
+        }
     }
 
     section.content-area {
@@ -53,22 +78,14 @@
 
     }
 
-    .widget-area {
-        width: 30%;
-        ;
-        height: auto;
-        margin: 0px;
-    }
-
-    .sidebar-wrapper {
-        width: 30%;
-    }
-
-    .site-footer {
-        width: 100%;
-    }
+    // page widgets for recent posts and most used 
+    // categories suggestions
 
     .widget.widget {
+
+        .widget_archive {
+            margin-top: 5%;
+        }
 
         h2 {
             font-size: 1.5rem;
@@ -94,11 +111,16 @@
         }
     }
 
-    .widget_archive {
-        margin-top: 5%;
+    .widget_recent_entries{
+        margin: 10% 0% 0% 0%;
     }
 
-    .widget.inhabitent-buisness-hours-class {
+
+    .sidebar-wrapper {
+        width: 30%;
+    }
+
+    .site-footer {
         width: 100%;
     }
     

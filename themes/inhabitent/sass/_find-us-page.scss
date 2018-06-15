@@ -11,12 +11,12 @@
 	.site-content {
 		flex-direction: row-reverse;
 		font-family: 'main-light';
+		margin-top: -7px;
 		
 	}
 	.content-area{
 		margin-left: 4%;
-		margin-top:7%;
-		border-right: 1px solid $lightgrey;
+		
 	}
 
 	.entry-content{
@@ -45,10 +45,6 @@
 	}
 
 
-	.widget-area{
-		width:40%;
-		margin-top:15%;
-	}
 
 	input, textarea{
 		background-color: #f4f4f4;

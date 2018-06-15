@@ -3,7 +3,7 @@
 
 .site-header {
     
-        position:absolute;
+        position:relative;
         margin-top: 1.5rem;
         display: -ms-flexbox;
         display: inline-flex;
@@ -50,6 +50,7 @@
 
     header{
         border-bottom:none;
+        position:absolute;
     }
 
     .site-branding{
