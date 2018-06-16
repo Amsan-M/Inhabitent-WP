@@ -19,7 +19,9 @@
     flex-wrap: wrap;
         h1{
             text-transform: uppercase;
-            font-family: 'headings-bold';
+            font-family: 'Novecento';
+            font-weight: 600;
+            font-style: normal;
             
         }
     }
@@ -52,7 +54,9 @@
                     color:$green;
                     text-decoration:none;
                     text-transform:uppercase;
-                    font-family: 'headings';
+                    font-family: 'Novecento';
+                    font-weight: normal;
+                    font-style: normal;
                     font-size:1.2rem;
                 }
             }
@@ -100,7 +104,9 @@
     
     .product-info a{
         color: black;
-        font-family: 'main-light';
+        font-family:'Merriweather';
+        font-weight: 300;
+        font-style: normal;
         text-decoration: none;
        
        

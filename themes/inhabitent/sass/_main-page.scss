@@ -70,7 +70,9 @@
         h1 {
             text-transform: uppercase;
             font-size: 2rem;
-            font-family: 'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
         }
     }
 
@@ -194,7 +196,9 @@
 
             p {
                 text-align: center;
-                font-family: 'main-light';
+                font-family:'Merriweather';
+                font-weight: 300;
+                font-style: normal;
                 margin-left: 2%;
                 margin-right: 2%;
                 margin-top: 0px;
@@ -216,7 +220,9 @@
                 border-radius: 0px;
 
                 a {
-                    font-family: 'headings';
+                    font-family: 'Novecento';
+                    font-weight: normal;
+                    font-style: normal;
                     text-transform: uppercase;
                     text-decoration: none;
                     color: white;
@@ -247,7 +253,9 @@
         align-content: center;
         justify-content: center;
         text-transform: uppercase;
-        font-family: 'headings';
+        font-family: 'Novecento';
+        font-weight: normal;
+        font-style: normal;
     }
 
     .posts-wrapper {
@@ -264,7 +272,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        font-family: 'main-light';
+        font-family:'Merriweather';
+        font-weight: 300;
+        font-style: normal;
 
         .single-thumbnail {
             display: flex;
@@ -312,7 +322,9 @@
                 a {
                     color: $green;
                     font-size: 1.5rem;
-                    font-family: 'headings-bold';
+                    font-family: 'Novecento';
+                    font-weight: 600;
+                    font-style: normal;
                     text-transform: uppercase;
                     text-decoration: none;
                 }
@@ -336,7 +348,9 @@
 
                     p {
                         text-shadow: none;
-                        font-family: 'headings';
+                        font-family: 'Novecento';
+                        font-weight: normal;
+                        font-style: normal;
                         font-size: 1rem;
                         color: black;
                         text-transform: uppercase;
@@ -373,7 +387,9 @@
         h1 {
             text-transform: uppercase;
             font-size: 2rem;
-            font-family: 'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
         }
     }
 
@@ -404,7 +420,9 @@
 
     .single-adventure a {
         position: absolute;
-        font-family: 'main-light';
+        font-family:'Merriweather';
+        font-weight: 300;
+        font-style: normal;
         font-size: 3rem;
         max-width: 95%;
         word-break: break-word;
@@ -529,7 +547,9 @@
             text-shadow: none;
             color: white;
             text-transform: uppercase;
-            font-family: 'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
             margin: 0px;
         }
     }
@@ -555,7 +575,9 @@
             text-shadow: none;
             color: white;
             text-transform: uppercase;
-            font-family: 'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
             margin: 0px;
             font-size: 1.5rem;
         }

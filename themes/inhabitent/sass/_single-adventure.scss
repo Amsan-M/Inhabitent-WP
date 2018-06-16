@@ -26,7 +26,9 @@
 
     h2.entry-title {
         margin:0px;
-        font-family:'headings-bold';
+        font-family: 'Novecento';
+        font-weight: 600;
+        font-style: normal;
         text-transform: uppercase;
         order:2; 
         margin-top:5%;
@@ -53,7 +55,9 @@
     
     
     .adventure-text{
-        font-family:'main-light';
+        font-family:'Merriweather';
+        font-weight: 300;
+        font-style: normal;
         font-size:1rem;
         order:3;
         width:80%; 
@@ -92,7 +96,9 @@
         article > span.byline{
             width:80%;  
             order: 3; 
-            font-family: 'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
             font-size:1rem;
             text-transform: uppercase;    
         }
@@ -131,7 +137,9 @@
                     margin:0px;
                     margin-left:3%;
                     text-transform:uppercase;
-                    font-family:'headings';
+                    font-family: 'Novecento';
+                    font-weight: normal;
+                    font-style: normal;
                     font-size:1rem;
                 }
 

@@ -22,7 +22,9 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin: 0% 5% 0% 0%;
-	font-family: 'main-light';
+	font-family:'Merriweather';
+	font-weight: 300;
+    font-style: normal;
 	font-size: 16px;
 	padding-left: 3%;
 	border-left: 1px solid $lightgrey;
@@ -41,12 +43,16 @@
 
 .widget.inhabitent-buisness-hours-class p,
 .widget.inhabitent-contact-info-class p {
-	font-family: 'main-light';
+	font-family:'Merriweather';
+	font-weight: 300;
+    font-style: normal;
 }
 
 .widget.inhabitent-buisness-hours-class h3,
-.widget.widget_text h2 {
-	font-family: 'headings-bold';
+.widget.widget_text h2, .widget-title {
+	font-family: 'Novecento';
+	font-weight: 600;
+    font-style: normal;
 	font-size: 1.5rem;
 	text-transform: uppercase;
 }
@@ -73,7 +79,9 @@ span.day-of-the-week {
 	color: #248a83;
 	;
 	text-decoration: none;
-	font-family: 'main-light';
+	font-family:'Merriweather';
+	font-weight: 300;
+    font-style: normal;
 }
 
 .widget.widget_archive ul {

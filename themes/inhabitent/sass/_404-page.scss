@@ -48,7 +48,9 @@
     .page-content{
         padding-bottom:5%;
         p{
-            font-family:'main-light';
+            font-family:'Merriweather';
+            font-weight: 300;
+            font-style: normal;
         }
 
         .navigation-searchbar{
@@ -58,7 +60,7 @@
                 border-radius:0px;
             }
             input[type=search]::placeholder{
-                font-family:'main-light';
+                font-family:'Merriweather';
                 text-transform:capitalize;
             }
             
@@ -89,7 +91,9 @@
 
         h2 {
             font-size: 1.5rem;
-            font-family: 'headings-bold';
+            font-family: 'Novecento';
+            font-weight: 600;
+            font-style: normal;
         }
 
         ul {
@@ -100,7 +104,7 @@
 
             li a {
                 text-decoration: none;
-                font-family: 'main-light';
+                font-family: 'Merriweather';
                 color: $green;
                 font-size: 1rem;
             }

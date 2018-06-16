@@ -1,6 +1,6 @@
 
 @font-face {
-    font-family: 'main-light-italic';
+    font-family: 'Merriweather';
     src: url('./fonts/Merriweather-LightItalic.eot');
     src: url('./fonts/Merriweather-LightItalic.eot?#iefix') format('embedded-opentype'),
         url('./fonts/Merriweather-LightItalic.woff2') format('woff2'),
@@ -8,11 +8,11 @@
         url('./fonts/Merriweather-LightItalic.ttf') format('truetype'),
         url('./fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic') format('svg');
     font-weight: 300;
-    font-style: italic;
+    font-style: italic
 }
 
 @font-face {
-    font-family: 'main-bold-italic';
+    font-family: 'Merriweather';
     src: url('./fonts/Merriweather-BoldItalic.eot');
     src: url('./fonts/Merriweather-BoldItalic.eot?#iefix') format('embedded-opentype'),
         url('./fonts/Merriweather-BoldItalic.woff2') format('woff2'),
@@ -24,7 +24,7 @@
 }
 
 @font-face {
-    font-family: 'main-bold';
+    font-family: 'Merriweather';
     src: url('./fonts/Merriweather-Bold.eot');
     src: url('./fonts/Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
         url('./fonts/Merriweather-Bold.woff2') format('woff2'),
@@ -36,7 +36,7 @@
 }
 
 @font-face {
-    font-family: 'main-light';
+    font-family: 'Merriweather';
     src: url('./fonts/Merriweather-Light.eot');
     src: url('./fonts/Merriweather-Light.eot?#iefix') format('embedded-opentype'),
         url('./fonts/Merriweather-Light.woff2') format('woff2'),
@@ -48,7 +48,7 @@
 }
 
 @font-face {
-    font-family: 'headings-bold';
+    font-family: 'Novecento';
     src: url('./fonts/Novecentosanswide-DemiBold.eot');
     src: url('./fonts/Novecentosanswide-DemiBold.eot?#iefix') format('embedded-opentype'),
         url('./fonts/Novecentosanswide-DemiBold.woff2') format('woff2'),
@@ -60,7 +60,7 @@
 }
 
 @font-face {
-    font-family: 'headings';
+    font-family: 'Novecento';
     src: url('./fonts/Novecentosanswide-Normal.eot');
     src: url('./fonts/Novecentosanswide-Normal.eot?#iefix') format('embedded-opentype'),
         url('./fonts/Novecentosanswide-Normal.woff2') format('woff2'),

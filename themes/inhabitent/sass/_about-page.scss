@@ -1,7 +1,7 @@
 // ==========================================================================================================
 //                                  ABOUT PAGE 
 // ==========================================================================================================
-.page-template-page-about {
+.page-template-about {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -31,7 +31,9 @@
 		h1 {
 			position: absolute;
 			color: white;
-			font-family: "headings-bold";
+			font-family: 'Novecento';
+			font-weight: 600;
+			font-style: normal;
 			font-size:3rem;
 		}
 	}
@@ -54,14 +56,18 @@
 		margin-right: 15%;
 
 		h2 {
-			font-family: 'headings';
+			font-family: 'Novecento';
+			font-weight: normal;
+			font-style: normal;
 			font-size: 2rem;
 			text-align: center;
 		}
 
 		p {
-			font-family: 'main-light';
+			font-family:'Merriweather';
 			font-size: 1rem;
+			font-weight: 300;
+			font-style: normal;
 		}
 	}
 

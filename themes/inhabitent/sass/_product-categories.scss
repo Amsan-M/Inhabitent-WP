@@ -22,7 +22,9 @@
         flex-wrap: wrap;
         h1 {
             text-transform: uppercase;
-            font-family: 'headings-bold';
+            font-family: 'Novecento';
+            font-weight: 600;
+            font-style: normal;
         }
     }
 
@@ -53,7 +55,9 @@
             }
 
             p{
-                font-family:'main-light';
+                font-family:'Merriweather';
+                font-weight: 300;
+                font-style: normal;
             }
 
            
@@ -63,7 +67,9 @@
             color: $green;
             text-decoration: none;
             text-transform: uppercase;
-            font-family: 'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
         }
     }
 
@@ -125,7 +131,9 @@
     .product-info a {
         color: black;
         margin: 0px;
-        font-family: 'main-light';
+        font-family:'Merriweather';
+        font-weight: 300;
+        font-style: normal;
         text-decoration: none;
         font-size: 0.9rem;
         text-transform:capitalize;

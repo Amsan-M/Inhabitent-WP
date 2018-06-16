@@ -57,7 +57,9 @@ body.blog {
         a {
             color: white;
             font-size: 3rem;
-            font-family: 'headings-bold';
+            font-family: 'Novecento';
+            font-weight: 600;
+            font-style: normal;
             text-decoration: none;
         }
 
@@ -75,13 +77,17 @@ body.blog {
         right: 0px;
         bottom: 0px;
         text-transform: uppercase;
-        font-family: 'headings';
+        font-family: 'Novecento';
+        font-weight: normal;
+        font-style: normal;
         padding:1%;
     }
 
     .entry-content {
         margin-top: 5%;
-        font-family: 'main-light';
+        font-family:'Merriweather';
+        font-weight: 300;
+        font-style: normal;
         font-size: 1rem;
     }
 
@@ -101,7 +107,9 @@ body.blog {
             text-decoration: none;
             text-transform: uppercase;
             color: black;
-            font-family: 'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
             font-size:0.8rem; 
         }
     }

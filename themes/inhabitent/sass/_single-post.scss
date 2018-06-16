@@ -39,7 +39,9 @@
             padding:2%;
             text-transform:uppercase;
             font-size:2.5rem;
-            font-family:'headings-bold';
+            font-family: 'Novecento';
+            font-weight: 600;
+            font-style: normal;
             align-items: center;
             width: 70%;
         
@@ -70,7 +72,9 @@
 
     .entry-content{
         margin-top:5%;
-        font-family:'main-light';
+        font-family:'Merriweather';
+        font-weight: 300;
+        font-style: normal;
         font-size:1rem;
     }
 
@@ -79,12 +83,16 @@
         flex-direction:row;
         flex-wrap:wrap;
         margin-top:5%;
-        font-family: 'headings';
+        font-family: 'Novecento';
+        font-weight: normal;
+        font-style: normal;
         text-transform:uppercase;
         a{
             color:$green;
             text-transform:uppercase;
-            font-family: 'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
         }
 
         span.cat-links{
@@ -121,7 +129,9 @@
                 margin:0px;
                 margin-left:3%;
                 text-transform:uppercase;
-                font-family:'headings';
+                font-family: 'Novecento';
+                font-weight: normal;
+                font-style: normal;
                 font-size:1rem;
             }
 
@@ -149,7 +159,9 @@
     margin-top: 10%;
 
     .comments-title{
-    font-family:'headings';
+        font-family: 'Novecento';
+    font-weight: normal;
+    font-style: normal;
     font-size:2rem;
     }
 
@@ -170,7 +182,9 @@
 
     p{
         font-size:1rem;
-        font-family:'main-light';
+        font-family:'Merriweather';
+        font-weight: 300;
+        font-style: normal;
     }
 
 }
@@ -186,7 +200,9 @@
 // comment author name
 .fn{
     font-size:1.3rem;
-    font-family:'main-bold';
+    font-family:'Merriweather';
+    font-weight: bold;
+    font-style: normal;
 }
 
 
@@ -213,7 +229,9 @@
 .comment-reply-title{
     text-transform:uppercase;
     font-size:2rem;
-    font-family:'headings-bold';
+    font-family: 'Novecento';
+    font-weight: 600;
+    font-style: normal;
 }
 
 .reply {
@@ -256,7 +274,9 @@
         border-radius:0px;
 
         p{
-            font-family:'main-light';
+            font-family:'Merriweather';
+            font-weight: 300;
+            font-style: normal;
             font-size:1rem;
         }
 
@@ -298,7 +318,9 @@
             height:3rem;
             box-shadow:none;
             border-radius:0px;
-            font-family:'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
             text-transform: uppercase;
             text-decoration:none;
             color:white;
@@ -309,7 +331,9 @@
         }
 
         label{
-            font-family:'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
             font-size:1rem;
             text-transform:uppercase;
             font-size:1.2rem;

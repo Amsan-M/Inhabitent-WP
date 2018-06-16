@@ -18,14 +18,18 @@ footer .site-info {
     div{
         flex-direction: column;
         color: #fff;
-        font-family: 'main-light';
+        font-family:'Merriweather';
+        font-weight: 300;
+        font-style: normal;
         width: 20%;
         margin-left: 10rem;
     
       
         h3{
             color:$orange;
-            font-family: 'headings-bold';
+            font-family: 'Novecento';
+            font-weight: 600;
+            font-style: normal;
             font-size:1.3rem;
             width:100%;
             text-transform:uppercase;
@@ -33,7 +37,9 @@ footer .site-info {
 
         a{
             color:white;
-            font-family: 'main-light';
+            font-family:'Merriweather';
+            font-weight: 300;
+            font-style: normal;
             text-decoration: none;
             font-size:1rem;
         }
@@ -50,7 +56,9 @@ footer .site-info {
         width: 100%;
         color: white;
         text-align: center;
-        font-family:'headings';
+        font-family: 'Novecento';
+        font-weight: normal;
+        font-style: normal;
         text-transform:uppercase;
     }
 

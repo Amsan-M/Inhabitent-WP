@@ -46,7 +46,9 @@
             text-decoration:none;
             text-transform:uppercase;
             color:black;
-            font-family:'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
 
         }
 
@@ -74,7 +76,9 @@
 
     .entry-title a{
         color:$green;
-        font-family:'headings-bold';
+        font-family: 'Novecento';
+        font-weight: 600;
+        font-style: normal;
         text-transform: uppercase;
         font-size: 2.5rem;
         text-decoration: none;
@@ -87,7 +91,9 @@
     }
 
     .entry-summary p{
-        font-family:'main-light';
+        font-family:'Merriweather';
+        font-weight: 300;
+        font-style: normal;
         font-size:1rem;
     }
 

@@ -10,7 +10,9 @@
 .page-template-page-findus{
 	.site-content {
 		flex-direction: row-reverse;
-		font-family: 'main-light';
+		font-family:'Merriweather';
+		font-weight: 300;
+		font-style: normal;
 		margin-top: -7px;
 		
 	}
@@ -29,18 +31,24 @@
 	.entry-title{
 	color: black;
     text-transform: uppercase;
-    font-family: 'headings-bold';
+	font-family: 'Novecento';
+	font-weight: 600;
+    font-style: normal;
 	}
 
 	.entry-content h2{
 		text-transform: uppercase;
 		color:black;
-		font-family: 'headings-bold';
+		font-family: 'Novecento';
+		font-weight: 600;
+		font-style: normal;
 		font-size:2rem;
 	}
 
 	.entry-content p{
-		font-family: 'main-light';
+		font-family:'Merriweather';
+		font-weight: 300;
+		font-style: normal;
 		
 	}
 
@@ -61,14 +69,18 @@
 		height:2.5rem;
 		color:white;
 		text-shadow: none;
-		font-family: 'headings';
+		font-family: 'Novecento';
+		font-weight: normal;
+		font-style: normal;
 		text-transform:uppercase;
 
 	}
 
 
 	label{
-		font-family: 'headings';
+		font-family: 'Novecento';
+		font-weight: normal;
+		font-style: normal;
 		text-transform:uppercase;
 		
 	}

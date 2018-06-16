@@ -51,12 +51,16 @@
 
         .price {
             margin: 0px;
-            font-family: 'headings';
+            font-family: 'Novecento';
+            font-weight: normal;
+            font-style: normal;
             font-size: 1.8rem;
         }
     }
     .product-exerpt {
-        font-family: 'main-light';
+        font-family:'Merriweather';
+        font-weight: 300;
+        font-style: normal;
         font-size: 1rem;
     }
     .site-main .post-navigation,
@@ -92,7 +96,9 @@
                 margin: 0px;
                 margin-left: 3%;
                 text-transform: uppercase;
-                font-family: 'headings';
+                font-family: 'Novecento';
+                font-weight: normal;
+                font-style: normal;
                 font-size: 1rem;
             }
 
