@@ -85,6 +85,10 @@ body.blog {
         font-size: 1rem;
     }
 
+
+    .site-main{
+
+       
     button {
         box-shadow: none;
         background-color: transparent;
@@ -93,7 +97,7 @@ body.blog {
         text-shadow: none;
         border-radius: 0px;
         height: 3rem;
-        a {
+        a{
             text-decoration: none;
             text-transform: uppercase;
             color: black;
@@ -109,6 +113,7 @@ body.blog {
         color:white;
         }
     }
+}
 
     article {
         margin-top: 10%;

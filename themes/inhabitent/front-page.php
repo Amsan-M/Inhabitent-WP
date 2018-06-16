@@ -59,7 +59,7 @@ Template Name: homepage
 
 
 									<span class = "button-wrapper">
-									<button> <?php echo '<div class="type"><a href="'.get_term_link($term).'">'.$term->name.'  stuff </a></div>' ;?></button>
+									<button> <?php echo '<div class="type"><a href="'.get_term_link($term).'"> '.$term->name.'   stuff </a></div>' ;?></button>
 									</span>
 									
 								</div>	<!-- .category-description -->		

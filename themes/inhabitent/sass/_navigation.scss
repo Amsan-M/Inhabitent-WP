@@ -149,7 +149,7 @@ a {
 				background-color: transparent;
 				border: none;
 				width: 10px;
-				transition: width 0.4s ease-in-out;
+				transition: width 0.5s ease-in-out;
 				color: grey;
 			}
 
@@ -175,12 +175,12 @@ a {
 	display: inline-flex;
 	flex-wrap: wrap;
 	margin-top: -2rem;
-	width: 32%;
+	padding-right: 10%;
 
 	form {
 
 		display: block;
-		width: 74%;
+		width: 90%;
 		order: 2;
 	}
 
@@ -248,7 +248,7 @@ body.blog,
 				background-color: transparent;
 				border: none;
 				width: 10px;
-				transition: width 0.4s ease-in-out;
+				transition: width 0.1s ease-in-out;
 				
 				color: white;
 			}
@@ -295,6 +295,25 @@ body.archive.category,
 			border: none;
 			width: 5%;
 			margin-top: 7%;
+		}
+	}
+}
+
+body.blog{
+	
+	.main-navigation{
+		button{
+			width:100%;
+			height:auto;
+		}
+
+		.navigation-searchbar{
+			flex-wrap:nowrap;
+
+		}
+
+		fieldset{
+			width:10rem;
 		}
 	}
 }

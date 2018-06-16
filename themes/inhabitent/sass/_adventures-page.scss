@@ -7,6 +7,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
+        padding-bottom:5%;
     }
 
     .adventures-title {
@@ -18,7 +19,8 @@
         margin-bottom: 10%;
         justify-content: center;
         margin: 5%;
-        border-bottom: 1px dashed $lightgrey
+        border-bottom: 1px dashed $lightgrey;
+        text-transform: uppercase;
     }
 
     .all-adventures {

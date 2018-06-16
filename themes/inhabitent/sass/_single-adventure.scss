@@ -4,6 +4,10 @@
     margin: 0px;
     padding: 0px;
 
+    .site-content{
+        padding-bottom: 5%;
+    }
+
     .main-navigation a, i {
         color:white;
       
@@ -138,6 +142,22 @@ article{
     justify-content: center;
 }
 
+footer{
 
+    .site-info div {
+        width:23%;
+        margin-left:7rem;
+    }
+    
+
+    
+    p{
+        margin-bottom:5%;
+    }
+
+    .copyright-wrapper {
+        margin: 2%;
+    }
+}
 
 }

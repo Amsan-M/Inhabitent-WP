@@ -562,8 +562,8 @@ a {
       background-color: transparent;
       border: none;
       width: 10px;
-      -webkit-transition: width 0.4s ease-in-out;
-      transition: width 0.4s ease-in-out;
+      -webkit-transition: width 0.5s ease-in-out;
+      transition: width 0.5s ease-in-out;
       color: grey; }
     .site-header form#search-toggle.search-form fieldset input[type=search]:focus {
       width: 100%; }
@@ -587,10 +587,10 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: -2rem;
-  width: 32%; }
+  padding-right: 10%; }
   .navigation-searchbar form {
     display: block;
-    width: 74%;
+    width: 90%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2; }
@@ -627,8 +627,8 @@ body.blog button#toggle-searchbar,
   background-color: transparent;
   border: none;
   width: 10px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.1s ease-in-out;
+  transition: width 0.1s ease-in-out;
   color: white; }
 
 .page-template-page-about .site-header form#search-toggle.search-form input[type=search]:focus,
@@ -677,6 +677,17 @@ body.archive.category .navigation-searchbar,
     border: none;
     width: 5%;
     margin-top: 7%; }
+
+body.blog .main-navigation button {
+  width: 100%;
+  height: auto; }
+
+body.blog .main-navigation .navigation-searchbar {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+body.blog .main-navigation fieldset {
+  width: 10rem; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1749,7 +1760,7 @@ body.blog .entry-content {
   font-family: 'main-light';
   font-size: 1rem; }
 
-body.blog button {
+body.blog .site-main button {
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: transparent;
@@ -1758,17 +1769,17 @@ body.blog button {
   text-shadow: none;
   border-radius: 0px;
   height: 3rem; }
-  body.blog button a {
+  body.blog .site-main button a {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
     font-family: 'headings';
     font-size: 0.8rem; }
 
-body.blog button:hover {
+body.blog .site-main button:hover {
   background-color: #248A83;
   border: none; }
-  body.blog button:hover a {
+  body.blog .site-main button:hover a {
     color: white; }
 
 body.blog article {
@@ -1919,7 +1930,8 @@ body.blog article {
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  padding-bottom: 5%; }
 
 .page-template-archive-products .shop-menu {
   width: 100%;
@@ -2045,7 +2057,8 @@ body.blog article {
             flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    padding-bottom: 5%; }
   .page-template-archive-adventures .adventures-title {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -2063,7 +2076,8 @@ body.blog article {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 5%;
-    border-bottom: 1px dashed #e1e1e1; }
+    border-bottom: 1px dashed #e1e1e1;
+    text-transform: uppercase; }
   .page-template-archive-adventures .all-adventures {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2264,11 +2278,13 @@ body.blog article {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
 
+.search.search-results .site-main {
+  padding-left: 15%; }
+
 .search.search-results .content-area {
   margin-top: 10%;
   margin-left: 5%;
   margin-right: 5%;
-  border-right: 1px solid #e1e1e1;
   padding-right: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2279,34 +2295,55 @@ body.blog article {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 70%; }
+  width: 70%;
+  padding-bottom: 5%; }
+  .search.search-results .content-area .page-header {
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%; }
+  .search.search-results .content-area .page-title {
+    text-transform: uppercase;
+    font-size: 2.6rem; }
+  .search.search-results .content-area button {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: transparent;
+    width: 10rem;
+    border: 1px solid black;
+    text-shadow: none;
+    border-radius: 0px;
+    height: 3rem; }
+    .search.search-results .content-area button a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: black;
+      font-family: 'headings'; }
+  .search.search-results .content-area .hentry {
+    margin: 10% 0% 5% 0%; }
+  .search.search-results .content-area button:hover {
+    background-color: #248A83;
+    border: none; }
+    .search.search-results .content-area button:hover a {
+      color: white; }
 
 .search.search-results .sidebar-wrapper {
-  width: 30%; }
+  width: 30%;
+  margin-top: -7px;
+  border-left: 1px solid #e1e1e1; }
 
 .search.search-results .entry-title a {
   color: #248A83;
   font-family: 'headings-bold';
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-decoration: none; }
+
+.search.search-results .widget-area {
+  padding-left: 10%;
+  border-left: none; }
 
 .search.search-results .entry-summary p {
   font-family: 'main-light';
   font-size: 1rem; }
-
-.search.search-results button {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: transparent;
-  width: 10rem;
-  border: 1px solid black;
-  text-shadow: none;
-  border-radius: 0px;
-  height: 3rem; }
-  .search.search-results button a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-family: 'main-light'; }
 
 .search.search-no-results {
   min-width: 1120px;
@@ -2324,16 +2361,29 @@ body.blog article {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    margin-top: 10%; }
+            flex-direction: row-reverse; }
   .search.search-no-results .content-area {
     width: 80%; }
+  .search.search-no-results .sidebar-wrapper {
+    margin-top: -7px; }
+  .search.search-no-results .widget-area {
+    padding-left: 20%; }
   .search.search-no-results .site-main {
-    border-top: 1px solid #e1e1e1; }
+    margin: 16%;
+    padding: 5%;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5%;
+    margin-left: 5%; }
   .search.search-no-results .page-content form#search-toggle.search-form {
     display: block; }
     .search.search-no-results .page-content form#search-toggle.search-form fieldset {
       border: none; }
+      .search.search-no-results .page-content form#search-toggle.search-form fieldset input[type=search] {
+        background-color: #e1e1e1;
+        border-radius: 0px; }
+      .search.search-no-results .page-content form#search-toggle.search-form fieldset input {
+        font-family: "main-light";
+        font-size: 1rem; }
   .search.search-no-results .page-content button {
     display: none; }
 
@@ -2615,18 +2665,17 @@ body.blog article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-
-.products-template-default .site-main {
-  width: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 10%; }
+  .products-template-default .content-area .site-main {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 7%; }
 
 .products-template-default article {
   display: -webkit-box;
@@ -2639,19 +2688,8 @@ body.blog article {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 3%;
-  margin-top: 0px; }
-
-.products-template-default .entry-header {
-  margin-top: 10%; }
-
-.products-template-default .entry-title {
-  width: 100%;
-  height: 10%;
-  text-align: left;
-  color: #d99054;
   margin-top: 0px;
-  font-size: 2.5rem;
-  text-transform: uppercase; }
+  margin-bottom: 0px; }
 
 .products-template-default .product-info {
   display: -webkit-box;
@@ -2664,7 +2702,15 @@ body.blog article {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 40%;
-  margin-top: 3%; }
+  padding-bottom: 5%; }
+  .products-template-default .product-info .entry-title {
+    width: 100%;
+    height: 10%;
+    text-align: left;
+    color: #d99054;
+    margin-top: 0px;
+    font-size: 2.5rem;
+    text-transform: uppercase; }
   .products-template-default .product-info .price {
     margin: 0px;
     font-family: 'headings';
@@ -2674,7 +2720,8 @@ body.blog article {
   font-family: 'main-light';
   font-size: 1rem; }
 
-.products-template-default .site-main .post-navigation, .products-template-default .site-main .posts-navigation {
+.products-template-default .site-main .post-navigation,
+.products-template-default .site-main .posts-navigation {
   margin: 0 0 1.5rem;
   overflow: hidden;
   width: 100%;
@@ -2692,50 +2739,50 @@ body.blog article {
           flex-direction: row;
   width: 100%;
   margin-top: 2%; }
-
-.products-template-default button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 8rem;
-  height: 3rem;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-shadow: none;
-  color: black;
-  background-color: white;
-  border-radius: 0px;
-  border: 1px solid black;
-  margin: 2%; }
-  .products-template-default button p {
-    margin: 0px;
-    margin-left: 3%;
-    text-transform: uppercase;
-    font-family: 'headings';
-    font-size: 1rem; }
-  .products-template-default button i {
-    font-size: 1rem;
-    margin-right: 5%; }
-
-.products-template-default button:hover {
-  background-color: #248A83;
-  color: white;
-  border: none; }
+  .products-template-default .social-media-buttons button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 8rem;
+    height: 3rem;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    color: black;
+    background-color: white;
+    border-radius: 0px;
+    border: 1px solid black;
+    margin: 1%; }
+    .products-template-default .social-media-buttons button p {
+      margin: 0px;
+      margin-left: 3%;
+      text-transform: uppercase;
+      font-family: 'headings';
+      font-size: 1rem; }
+    .products-template-default .social-media-buttons button i {
+      font-size: 1rem;
+      margin-right: 5%; }
+  .products-template-default .social-media-buttons button:hover {
+    background-color: #248A83;
+    color: white;
+    border: none; }
 
 .adventures-template-default.single-adventures {
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px; }
+  .adventures-template-default.single-adventures .site-content {
+    padding-bottom: 5%; }
   .adventures-template-default.single-adventures .main-navigation a, .adventures-template-default.single-adventures i {
     color: white; }
   .adventures-template-default.single-adventures .main-navigation a:hover, .adventures-template-default.single-adventures i:hover {
@@ -2856,6 +2903,13 @@ body.blog article {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  .adventures-template-default.single-adventures footer .site-info div {
+    width: 23%;
+    margin-left: 7rem; }
+  .adventures-template-default.single-adventures footer p {
+    margin-bottom: 5%; }
+  .adventures-template-default.single-adventures footer .copyright-wrapper {
+    margin: 2%; }
 
 .archive.tax-product_type .site-content {
   display: -webkit-box;

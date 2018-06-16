@@ -10,15 +10,28 @@
     .site-content {
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 10%
+       
     }
 
     .content-area {
         width: 80%;
+        
+    }
+
+    .sidebar-wrapper{
+        margin-top:-7px;
+    }
+
+    .widget-area{
+        padding-left: 20%;
     }
 
     .site-main {
-       border-top: 1px solid $lightgrey;
+        margin: 16%;
+        padding: 5%;
+        border-top: 1px solid #e1e1e1;
+        margin-top: 5%;
+        margin-left: 5%;
     }
 
     .page-content {
@@ -26,6 +39,16 @@
             display: block;
             fieldset {
                 border: none;
+
+                input[type=search]{
+                   background-color:$lightgrey;
+                   border-radius:0px;
+                }
+                input{
+                    font-family:"main-light";
+                    font-size:1rem;
+
+                }
             }
         }
     }
