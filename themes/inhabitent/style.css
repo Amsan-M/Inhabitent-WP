@@ -675,8 +675,7 @@ body.archive.category .navigation-searchbar,
   .adventures-template-default.single-adventures .navigation-searchbar button {
     background-color: transparent;
     border: none;
-    width: 5%;
-    margin-top: 7%; }
+    width: 5%; }
 
 body.blog .main-navigation button {
   width: 100%;
@@ -688,6 +687,16 @@ body.blog .main-navigation .navigation-searchbar {
 
 body.blog .main-navigation fieldset {
   width: 10rem; }
+
+.adventures-template-default.single-adventures .navigation-searchbar {
+  padding-top: 1.5%; }
+  .adventures-template-default.single-adventures .navigation-searchbar button {
+    margin: 0px; }
+
+.adventures-template-default.single-adventures .site-header form#search-toggle.search-form {
+  display: none;
+  height: 2rem;
+  margin-top: 0.4rem; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -2433,7 +2442,8 @@ body.blog article {
     font-family: 'headings-bold';
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    width: 70%; }
   .post-template-default .entry-header .entry-meta {
     position: absolute;
     right: 0;
@@ -3076,11 +3086,6 @@ body.archive.tag .hentry,
 body.archive.category .hentry {
   margin-top: 5%; }
 
-body.archive.date .site-content,
-body.archive.tag .site-content,
-body.archive.category .site-content {
-  margin-top: -7px; }
-
 body.archive.date .content-area,
 body.archive.tag .content-area,
 body.archive.category .content-area {
@@ -3167,32 +3172,35 @@ body.archive.category .entry-content p {
   font-size: 1rem;
   margin-top: 5%; }
 
-body.archive.date button,
-body.archive.tag button,
-body.archive.category button {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: transparent;
-  width: 25%;
-  border: 1px solid black;
-  text-shadow: none;
-  border-radius: 0px;
-  height: 3rem; }
-  body.archive.date button a,
-  body.archive.tag button a,
-  body.archive.category button a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-family: 'headings';
-    font-size: 1rem; }
-
-body.archive.date button:hover,
-body.archive.tag button:hover,
-body.archive.category button:hover {
-  border: none;
-  background-color: #248A83; }
-  body.archive.date button:hover a,
-  body.archive.tag button:hover a,
-  body.archive.category button:hover a {
-    color: white; }
+body.archive.date .site-content,
+body.archive.tag .site-content,
+body.archive.category .site-content {
+  margin-top: -7px; }
+  body.archive.date .site-content button,
+  body.archive.tag .site-content button,
+  body.archive.category .site-content button {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: transparent;
+    width: 25%;
+    border: 1px solid black;
+    text-shadow: none;
+    border-radius: 0px;
+    height: 3rem; }
+    body.archive.date .site-content button a,
+    body.archive.tag .site-content button a,
+    body.archive.category .site-content button a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: black;
+      font-family: 'headings';
+      font-size: 1rem; }
+  body.archive.date .site-content button:hover,
+  body.archive.tag .site-content button:hover,
+  body.archive.category .site-content button:hover {
+    border: none;
+    background-color: #248A83; }
+    body.archive.date .site-content button:hover a,
+    body.archive.tag .site-content button:hover a,
+    body.archive.category .site-content button:hover a {
+      color: white; }

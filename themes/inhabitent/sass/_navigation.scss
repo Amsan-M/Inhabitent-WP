@@ -294,7 +294,7 @@ body.archive.category,
 			background-color: transparent;
 			border: none;
 			width: 5%;
-			margin-top: 7%;
+			//margin-top: 7%;
 		}
 	}
 }
@@ -315,5 +315,22 @@ body.blog{
 		fieldset{
 			width:10rem;
 		}
+	}
+}
+
+.adventures-template-default.single-adventures{
+
+	.navigation-searchbar{
+		padding-top: 1.5%;
+
+		button{
+			margin:0px;
+		}
+	}
+
+	.site-header form#search-toggle.search-form {
+		display: none;
+		height: 2rem;
+		margin-top: 0.4rem;
 	}
 }
