@@ -586,8 +586,6 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: -2rem;
   padding-right: 10%; }
   .navigation-searchbar form {
