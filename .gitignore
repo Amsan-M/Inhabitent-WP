@@ -132,10 +132,11 @@ $RECYCLE.BIN/
 
 # Ignore everything in "wp-content" except these directories. #
 index.php
+uploads/
 assets/*
 
-# Ignore uploads
-uploads/
+
+
 
 # Ignore mu-plugins
 mu-plugins/
