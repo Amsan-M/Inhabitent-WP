@@ -253,9 +253,12 @@
         align-content: center;
         justify-content: center;
         text-transform: uppercase;
+
+        h1{
         font-family: 'Novecento';
         font-weight: normal;
         font-style: normal;
+        }
     }
 
     .posts-wrapper {

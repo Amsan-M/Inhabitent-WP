@@ -1375,10 +1375,11 @@ footer .site-info {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-transform: uppercase;
-  font-family: 'Novecento';
-  font-weight: normal;
-  font-style: normal; }
+  text-transform: uppercase; }
+  .page-template-page-main .latest-post-title h1 {
+    font-family: 'Novecento';
+    font-weight: normal;
+    font-style: normal; }
 
 .page-template-page-main .posts-wrapper {
   display: -webkit-box;
@@ -2012,7 +2013,7 @@ body.blog article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10%;
+  margin-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
